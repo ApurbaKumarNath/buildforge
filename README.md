@@ -44,7 +44,7 @@
 *   **Uniqueness:** This feature demonstrates complex relational queries and business logic, providing a guided and user-friendly experience that dramatically simplifies the build process.
 
 #### 8. Curated Pre-Built Guides & "One-Click" Cloning
-*   **Functionality:** For beginners, BuildForge offers a selection of curated, pre-configured PC builds created by administrators (or expert users). These "guides" are optimized for specific use-cases and price points (e.g., "The $800 Esports Starter," "The $2000 Content Creator Pro").
+*   **Functionality:** For beginners, BuildForge offers a selection of curated, pre-configured PC builds created by administrators. These "guides" are optimized for specific use-cases and price points (e.g., "The $800 Esports Starter," "The $2000 Content Creator Pro").
 *   Any user can view these guides and, with a single click, **clone the entire parts list** into their own Multi-Build Workshop to use as a starting point for their own customizations.
 *   **Uniqueness:** This feature serves a different user segment (beginners), adds value through expert curation, and showcases a practical "template" or "clone" database operation.
 
