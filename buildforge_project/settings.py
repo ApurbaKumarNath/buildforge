@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -37,6 +38,19 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    #_____________________________________________________________________________________________________________________ (akn)
+
+    # Third-party apps
+    'django_htmx',
+
+    # My apps
+    'users.apps.UsersConfig',
+    'catalog.apps.CatalogConfig',
+    'builds.apps.BuildsConfig',
+    'marketplace.apps.MarketplaceConfig',
+
+    #_____________________________________________________________________________________________________________________
 ]
 
 MIDDLEWARE = [
@@ -71,7 +85,7 @@ WSGI_APPLICATION = 'buildforge_project.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
-#____________________________________________________________________________________________________________________________ Connecting Django to the database
+#____________________________________________________________________________________________________________________________ Connecting Django to the database (akn)
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -127,3 +141,19 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+#____________________________________________________________________________________________________________________________ configure images/media, users, (akn)
+
+# Media files (user-uploaded content) configuration
+# This is the URL that will serve the media files.
+MEDIA_URL = '/media/'
+
+# This is the absolute path to the directory where media files will be stored.
+# os.path.join(BASE_DIR, 'media') creates a folder named 'media' in your project's root directory.
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Tell Django to use our CustomUser model for authentication (every ForeignKey to a user will correctly point to your CustomUser table)
+AUTH_USER_MODEL = 'users.CustomUser'
+
+#____________________________________________________________________________________________________________________________

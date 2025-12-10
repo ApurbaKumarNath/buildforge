@@ -1,0 +1,12 @@
+# builds/admin.py
+
+#__________________________________________________________________________________________________________________________ (akn)
+
+from django.contrib import admin
+from .models import Build, BuildComponent, WishlistItem
+
+admin.site.register(Build)
+admin.site.register(BuildComponent)
+admin.site.register(WishlistItem)
+
+#__________________________________________________________________________________________________________________________
