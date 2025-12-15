@@ -15,16 +15,26 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from builds import views as build_views
 
 from django.conf import settings
 from django.conf.urls.static import static
 
+#_________________________________________________________________________________________________________________________ (akn)
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    
+    path('accounts/', include(('users.urls', 'users'), namespace='users')), # Any URL starting with 'accounts/' will be handled by our 'users.urls' file.
+
+    path('builds/', include('builds.urls')), # URL starting with 'builds/' will be handled by our builds.urls file.
+
+    path('', build_views.home_view, name='home'), # This is the home page.
 ]
 
-#_________________________________________________________________________________________________________________________ necessary configuration to serve media files during development (akn)
+# necessary configuration to serve media files during development (akn)
 
 # This is for development purposes only. In production, your web server handles this.
 if settings.DEBUG:

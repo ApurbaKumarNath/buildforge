@@ -13,17 +13,37 @@ class Component(models.Model):
     name = models.CharField(max_length=255)
     manufacturer = models.CharField(max_length=255)
     image = models.ImageField(upload_to='components/', null=True, blank=True)
-    
-    # PositiveIntegerField ensures the value is 0 or greater.
-    # help_text provides a small description in the Django admin panel.
     tdp = models.PositiveIntegerField(null=True, blank=True, help_text="Thermal Design Power in Watts")
-    
-    # DecimalField is crucial for money to avoid floating-point rounding errors.
-    # max_digits is the total number of digits, decimal_places is the number after the decimal.
     price = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
+
+    # === THIS IS THE MISSING PIECE ===
+    TIER_CHOICES = [
+        ('Entry', 'Entry-Level'),
+        ('Mid', 'Mid-Range'),
+        ('High', 'High-End'),
+    ]
+    performance_tier = models.CharField(
+        max_length=10, 
+        choices=TIER_CHOICES, 
+        null=True, 
+        blank=True,
+        help_text="Performance tier for bottleneck calculations (primarily for CPU/GPU)"
+    )
+    # =================================
 
     def __str__(self):
         return f"{self.manufacturer} {self.name}"
+    
+    def get_type(self):
+        """Returns the specific type of component (CPU, GPU, etc.)"""
+        if hasattr(self, 'cpu'): return "CPU"
+        if hasattr(self, 'gpu'): return "GPU"
+        if hasattr(self, 'motherboard'): return "Motherboard"
+        if hasattr(self, 'ram'): return "RAM"
+        if hasattr(self, 'storage'): return "Storage"
+        if hasattr(self, 'psu'): return "PSU"
+        if hasattr(self, 'case'): return "Case"
+        return "Component"
 
 
 # ==============================================================================
@@ -41,7 +61,7 @@ class CPU(Component):
 
 class GPU(Component):
     vram_gb = models.PositiveIntegerField(help_text="VRAM in Gigabytes")
-    gpu_clock_speed = models.DecimalField(max_digits=5, decimal_places=2, help_text="Clock speed in MHz")
+    gpu_clock_speed = models.DecimalField(max_digits=7, decimal_places=2, help_text="Clock speed in MHz")
 
 class Motherboard(Component):
     # Using 'choices' creates a dropdown menu in forms and the admin panel, ensuring data consistency.

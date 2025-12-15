@@ -1,0 +1,96 @@
+<!-- akn -->
+
+<!-- templates/builds/workbench.html -->
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Workbench: {{ build.name }}</h2>
+    <p>{{ build.description }}</p>
+
+    <!-- SYSTEM STATUS PANEL -->
+    <!-- hx-trigger="load, componentAdded from:body" is powerful. It tells this div to update itself under two conditions:
+    load: As soon as the page loads.
+    componentAdded from:body: Whenever a custom event named componentAdded is triggered anywhere on the page. We'll trigger this event next. 
+    -->
+    <div 
+        id="system-status-container" 
+        hx-get="{% url 'builds:update_status' build.id %}" 
+        hx-trigger="load, componentAdded from:body, componentRemoved from:body"
+        hx-target="#system-status-container"
+        hx-swap="innerHTML">
+        
+        <!-- We include the partial here for the very first page load -->
+        <!-- The hx-trigger="load" will immediately replace this with fresh data -->
+        {% include 'builds/partials/system_status.html' %}
+    </div>
+
+    <hr>
+
+    <div style="display: flex; gap: 2em;">
+        <!-- Left Side: Components in Build -->
+        <div style="flex: 1;">
+            <h3>Components in this Build</h3>
+            <table border="1" style="width:100%; border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th style="padding: 8px; text-align: left;">Slot</th>
+                        <th style="padding: 8px; text-align: left;">Component</th>
+                        <th style="padding: 8px; text-align: left;">Manufacturer</th>
+                        <th style="padding: 8px; text-align: center;">Actions</th>
+                        <!-- We will add an action column later for removing components -->
+                    </tr>
+                </thead>
+                <!-- IMPORTANT: We still give the table body an ID for HTMX -->
+                <tbody id="components-list">
+                    <!-- We now render the scaffold directly -->
+                    {% include 'builds/partials/scaffold_list.html' %}
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Right Side: Available Components (The Parts Shelf) -->
+        <div style="flex: 1;">
+            <h3>Available Components</h3>
+
+            <input type="search" 
+                   name="q" 
+                   placeholder="Search by name or brand..."
+                   style="width: 100%; padding: 8px; margin-bottom: 1em; box-sizing: border-box;"
+                   hx-get="{% url 'builds:search_components' build.id %}"
+                   hx-trigger="keyup changed delay:500ms, search"
+                   hx-target="#available-components-list"
+                   hx-swap="innerHTML">
+
+            <!-- The container for our dynamic list -->
+            <div id="available-components-list" style="height: 350px; overflow-y: auto; border: 1px solid #ccc; padding: 1em;">
+                <!-- We now include the partial for the initial page load -->
+                {% include 'builds/partials/available_components_list.html' %}
+            </div>
+
+            <!-- <div style="height: 400px; overflow-y: auto; border: 1px solid #ccc; padding: 1em;">
+                {% for component in all_components %}
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.5em 0; border-bottom: 1px solid #eee;">
+                        <span>{{ component.name }}</span> -->
+                        <!-- THE HTMX MAGIC BUTTON -->
+                        <!--hx-post: Tells the button where to send its request (our new add_component URL).
+                        hx-vals: Packages up the component.id into the POST data. This is how the view knows which component to add.
+                        hx-target="#components-list": Tells HTMX: "When you get a response, find the element with id='components-list'."
+                        hx-swap="innerHTML": Tells HTMX: "Take the entire response and replace the inside of the target element with it."
+                        hx-headers: This is crucial for Django POST requests. It includes the CSRF token to prove the request is legitimate. 
+                        -->
+                        <!--<button 
+                            hx-post="{% url 'builds:add_component' build.id %}"
+                            hx-vals='{"component_id": "{{ component.id }}"}'
+                            hx-target="#components-list"
+                            hx-swap="innerHTML"
+                            hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'>
+                            Add
+                        </button>
+                    </div> -->
+                <!--{% endfor %} 
+            </div>-->
+        </div>
+    </div>
+{% endblock %}
+
+<!-- akn -->

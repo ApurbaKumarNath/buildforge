@@ -1,0 +1,21 @@
+<!-- akn -->
+
+<!-- templates/builds/partials/system_status.html -->
+
+<!-- This is the container for our status panel. The ID is crucial for HTMX targeting. -->
+<div id="system-status-panel" style="background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 5px solid #007bff;">
+    <h4 style="margin-top: 0;">🛠️ BuildForge Intelligence (System Status)</h4>
+    
+    <div style="margin-bottom: 10px; padding: 10px; border-radius: 4px; background: {% if bottleneck_level == 'major' %}#f8d7da{% elif bottleneck_level == 'minor' %}#fff3cd{% elif bottleneck_level == 'good' %}#d4edda{% else %}#e2e3e5{% endif %};">
+        <strong>Bottleneck Analysis:</strong> 
+        <span style="color: {% if bottleneck_level == 'major' %}#721c24{% elif bottleneck_level == 'minor' %}#856404{% elif bottleneck_level == 'good' %}#155724{% endif %};">
+            {{ bottleneck_message }}
+        </span>
+    </div>
+
+    <div style="padding: 10px; border-radius: 4px; background: #d1ecf1; color: #0c5460;">
+        <strong>⚡ Power Requirement:</strong> {{ psu_recommendation }}
+    </div>
+</div>
+
+<!-- akn -->

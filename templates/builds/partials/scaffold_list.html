@@ -1,0 +1,96 @@
+<!-- akn -->
+
+<!-- templates/builds/partials/scaffold_list.html -->
+
+<!-- ====================================================================== -->
+<!-- Section for Unique Components (CPU, Motherboard, etc.)                 -->
+<!-- ====================================================================== -->
+{% for type, item in scaffold.items %}
+    {% if type in "CPU,Motherboard,GPU,PSU,Case" %}
+    <tr>
+        <td style="padding: 8px;"><strong>{{ type }}</strong></td>
+        
+        {% if item %}
+            <!-- If the slot is filled -->
+            <td style="padding: 8px;">{{ item.component.name }}</td>
+            <td style="padding: 8px;">{{ item.component.manufacturer }}</td>
+            <td style="padding: 8px; text-align: center;">
+                <button 
+                    hx-post="{% url 'builds:remove_component' item.build.id %}"
+                    hx-vals='{"component_id": "{{ item.component.id }}"}'
+                    hx-target="#components-list"
+                    hx-swap="innerHTML"
+                    hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'
+                    style="color: #dc3545; border: 1px solid #dc3545; background: #fff; cursor: pointer; padding: 4px 8px; border-radius: 4px;">
+                    Remove
+                </button>
+            </td>
+        {% else %}
+            <!-- If the slot is empty -->
+            <td colspan="3" style="padding: 8px; color: #888;"><i>Empty Slot</i></td>
+        {% endif %}
+    </tr>
+    {% endif %}
+{% endfor %}
+
+<!-- ====================================================================== -->
+<!-- Section for RAM Slots (Dynamically numbered)                         -->
+<!-- ====================================================================== -->
+{% for item in scaffold.RAM %}
+    <tr>
+        <!-- Use the loop counter to number the slots -->
+        <td style="padding: 8px;"><strong>RAM Slot {{ forloop.counter }}</strong></td>
+        
+        {% if item %}
+            <!-- If the slot is filled -->
+            <td style="padding: 8px;">{{ item.component.name }}</td>
+            <td style="padding: 8px;">{{ item.component.manufacturer }}</td>
+            <td style="padding: 8px; text-align: center;">
+                <button 
+                    hx-post="{% url 'builds:remove_component' item.build.id %}"
+                    hx-vals='{"component_id": "{{ item.component.id }}"}'
+                    hx-target="#components-list"
+                    hx-swap="innerHTML"
+                    hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'
+                    style="color: #dc3545; border: 1px solid #dc3545; background: #fff; cursor: pointer; padding: 4px 8px; border-radius: 4px;">
+                    Remove
+                </button>
+            </td>
+        {% else %}
+            <!-- If the slot is empty -->
+            <td colspan="3" style="padding: 8px; color: #888;"><i>Empty Slot</i></td>
+        {% endif %}
+    </tr>
+{% endfor %}
+
+<!-- ====================================================================== -->
+<!-- Section for Storage Slots (Fixed number, numbered)                   -->
+<!-- ====================================================================== -->
+{% for item in scaffold.Storage %}
+    <tr>
+        <!-- Use the loop counter to number the slots -->
+        <td style="padding: 8px;"><strong>Storage Slot {{ forloop.counter }}</strong></td>
+        
+        {% if item %}
+            <!-- If the slot is filled -->
+            <td style="padding: 8px;">{{ item.component.name }}</td>
+            <td style="padding: 8px;">{{ item.component.manufacturer }}</td>
+            <td style="padding: 8px; text-align: center;">
+                <button 
+                    hx-post="{% url 'builds:remove_component' item.build.id %}"
+                    hx-vals='{"component_id": "{{ item.component.id }}"}'
+                    hx-target="#components-list"
+                    hx-swap="innerHTML"
+                    hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'
+                    style="color: #dc3545; border: 1px solid #dc3545; background: #fff; cursor: pointer; padding: 4px 8px; border-radius: 4px;">
+                    Remove
+                </button>
+            </td>
+        {% else %}
+            <!-- If the slot is empty -->
+            <td colspan="3" style="padding: 8px; color: #888;"><i>Empty Slot</i></td>
+        {% endif %}
+    </tr>
+{% endfor %}
+
+<!-- akn -->

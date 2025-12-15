@@ -1,0 +1,49 @@
+<!-- akn -->
+
+<!-- templates/home.html -->
+{% extends "base.html" %}
+
+{% block content %}
+    <style>
+        /* Add some simple styling to make it look better */
+        .build-list { list-style: none; padding: 0; }
+        .build-item { background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 8px; margin-bottom: 1em; padding: 1em; }
+        .build-item a { text-decoration: none; color: #007bff; font-weight: bold; font-size: 1.2em; }
+        .build-item p { margin: 0.5em 0 0; color: #6c757d; }
+        .form-container { background: #fff; border: 1px solid #dee2e6; border-radius: 8px; padding: 1.5em; margin-top: 2em; }
+        .form-container h3 { margin-top: 0; }
+    </style>
+
+    <h1>Welcome to BuildForge, {{ user.username|default:'Guest' }}!</h1>
+    
+    {% if user.is_authenticated %}
+        <h3>Your Builds</h3>
+        {% if builds %}
+            <ul class="build-list">
+                {% for build in builds %}
+                    <li class="build-item">
+                        <a href="{% url 'builds:workbench' build.id %}">{{ build.name }}</a>
+                        <p>{{ build.description|default:"No description." }}</p>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>You haven't created any builds yet. Use the form below to start your first one!</p>
+        {% endif %}
+
+        <!-- NEW BUILD FORM -->
+        <div class="form-container">
+            <h3>Create a New Build</h3>
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Create and Go to Workbench</button>
+            </form>
+        </div>
+
+    {% else %}
+        <p>Please <a href="{% url 'login' %}">login</a> or <a href="{% url 'register' %}">register</a> to start creating your PC builds.</p>
+    {% endif %}
+{% endblock %}
+
+<!-- akn -->

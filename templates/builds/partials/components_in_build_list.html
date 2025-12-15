@@ -1,0 +1,22 @@
+<!-- akn -->
+
+<!-- templates/builds/partials/components_in_build_list.html -->
+
+<!-- This is NOT a full page. It's just the table body's content. -->
+{% for item in components_in_build %}
+<tr>
+    <!-- We will solve the "Component Type" problem in the next phase -->
+    <td style="padding: 8px;">{{ item.component.get_type }}</td>
+    <td style="padding: 8px;">{{ item.component.name }}</td>
+    <td style="padding: 8px;">{{ item.component.manufacturer }}</td>
+    <td style="padding: 8px; text-align: center;">{{ item.quantity }}</td>
+    
+</tr>
+{% empty %}
+<!-- This provides feedback if the list becomes empty -->
+<tr>
+    <td colspan="4" style="padding: 8px; text-align: center;">This build is empty.</td>
+</tr>
+{% endfor %}
+
+<!-- akn -->

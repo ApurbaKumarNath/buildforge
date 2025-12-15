@@ -68,7 +68,10 @@ ROOT_URLCONF = 'buildforge_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        #_________________________________________________________________________________________________________________ (akn)
+
+        'DIRS': [os.path.join(BASE_DIR, 'templates')], # telling Django where to find project-wide templates.
+        #_________________________________________________________________________________________________________________
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -143,7 +146,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-#____________________________________________________________________________________________________________________________ configure images/media, users, (akn)
+#____________________________________________________________________________________________________________________________ (akn)
 
 # Media files (user-uploaded content) configuration
 # This is the URL that will serve the media files.
@@ -156,4 +159,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Tell Django to use our CustomUser model for authentication (every ForeignKey to a user will correctly point to your CustomUser table)
 AUTH_USER_MODEL = 'users.CustomUser'
 
+# tell Django where to send users after they log in or log out.
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
 #____________________________________________________________________________________________________________________________
