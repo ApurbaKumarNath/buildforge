@@ -60,8 +60,8 @@ class CPU(Component):
     socket = models.CharField(max_length=50)
 
 class GPU(Component):
-    vram_gb = models.CharField(max_length=7,help_text="VRAM in Gigabytes")
-    gpu_clock_speed = models.CharField(max_length=20, help_text="Clock speed in MHz")
+    vram_gb = models.PositiveIntegerField(help_text="VRAM in Gigabytes")
+    gpu_clock_speed = models.CharField(max_length=7, help_text="Clock speed in MHz")
 
 class Motherboard(Component):
     # Using 'choices' creates a dropdown menu in forms and the admin panel, ensuring data consistency.
@@ -84,7 +84,7 @@ class Storage(Component):
         ('NVMe', 'NVMe SSD'),
         ('HDD', 'Hard Disk Drive'),
     ]
-    capacity_gb = models.CharField(max_length=10, help_text="Capacity in Gigabytes")
+    capacity_gb = models.PositiveIntegerField(help_text="Capacity in Gigabytes")
     storage_type = models.CharField(max_length=10, choices=STORAGE_TYPE_CHOICES)
 
 class PSU(Component):

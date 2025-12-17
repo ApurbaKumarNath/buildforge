@@ -1,0 +1,770 @@
+[
+ {
+  "name": "Apacer Panther Golden 4GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/apacer-panther-golden-4gb-ddr4-2666mhz-gaming-11722759823.webp",
+  "manufacturer": "Apacer",
+  "price": 2500,
+  "capacity_gb": "4GB",
+  "speed_mhz": 2666
+ },
+ {
+  "name": "CORSAIR Vengeance LPX 4GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/patriot-signature-line-premium-8gb-ddr4-2400mhz-11582180012.webp",
+  "manufacturer": "CORSAIR",
+  "price": 2800,
+  "capacity_gb": "4GB",
+  "speed_mhz": 2400
+ },
+ {
+  "name": "Patriot Signature Line 4GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-shadow-8gb-ddr4-2666mhz-yellow-desktop-ram-11723020787.webp",
+  "manufacturer": "Patriot",
+  "price": 2900,
+  "capacity_gb": "4GB",
+  "speed_mhz": 2666
+ },
+ {
+  "name": "Kingston FURY Beast 4GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gskill-4gb-ddr4-2400-mhz-desktop-ram-11723012998.webp",
+  "manufacturer": "Kingston",
+  "price": 3000,
+  "capacity_gb": "4GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "Patriot Signature Line 8GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/adata-premier-8gb-ddr4-2666mhz-desktop-ram-11722756489.webp",
+  "manufacturer": "Patriot",
+  "price": 3300,
+  "capacity_gb": "8GB",
+  "speed_mhz": 2400
+ },
+ {
+  "name": "Apacer Panther 8GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/corsair-vengeance-lpx-8gb-ddr4-2400mhz-black-11597824128.webp",
+  "manufacturer": "Apacer",
+  "price": 3500,
+  "capacity_gb": "8GB",
+  "speed_mhz": 2666
+ },
+ {
+  "name": "OCPC X3 RGB 4GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-basic-8gb-ddr4-2666mhz-desktop-ram-11664965260.webp",
+  "manufacturer": "OCPC",
+  "price": 3500,
+  "capacity_gb": "4GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "Netac Shadow 8GB DDR4 Yellow",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-basic-8gb-ddr4-3200mhz-desktop-ram-11664950070.webp",
+  "manufacturer": "Netac",
+  "price": 3600,
+  "capacity_gb": "8GB",
+  "speed_mhz": 2666
+ },
+ {
+  "name": "OCPC X3 RGB 8GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gskill-ripjaws-v-4gb-ddr4-2400-bus-red-heatsink-21545711305.webp",
+  "manufacturer": "OCPC",
+  "price": 3750,
+  "capacity_gb": "8GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "Patriot Viper Steel 4GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/team-vulcan-z-8gb-ddr4-3200-mhz-desktop-ram-11644480312.webp",
+  "manufacturer": "Patriot",
+  "price": 3900,
+  "capacity_gb": "4GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "Netac Basic 8GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/patriot-signature-line-premium-8gb-ddr4-2666mhz-11619245413.webp",
+  "manufacturer": "Netac",
+  "price": 4099,
+  "capacity_gb": "8GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "Kingston FURY Beast RGB 8GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/neo-forza-16gb-ddr4-2666mhz-black-heatsink-11758963060.webp",
+  "manufacturer": "Kingston",
+  "price": 4400,
+  "capacity_gb": "8GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "Patriot Signature Line 8GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/patriot-viper-steel-rgb-8gb-ddr4-3200mhz-desktop-11754972905.webp",
+  "manufacturer": "Patriot",
+  "price": 4500,
+  "capacity_gb": "8GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "TEAM T-Force Vulcan Z 8GB DDR4 Red",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-shadow-rgb-16gb-ddr4-3600mhz-grey-desktop-11691846153.webp",
+  "manufacturer": "TEAM",
+  "price": 4500,
+  "capacity_gb": "8GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "Patriot Signature Premium 8GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/patriot-viper-steel-rgb-8gb-ddr4-3600mhz-desktop-11716888225.webp",
+  "manufacturer": "Patriot",
+  "price": 4600,
+  "capacity_gb": "8GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "TEAM Elite 8GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/patriot-viper-steel-8gb-ddr4-3200mhz-desktop-ram-11582179230.webp",
+  "manufacturer": "TEAM",
+  "price": 4700,
+  "capacity_gb": "8GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "Kingston ValueRAM 8GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/adata-xpg-spectrix-d35g-rgb-8gb-ddr4-3200mhz-11692449562.webp",
+  "manufacturer": "Kingston",
+  "price": 4800,
+  "capacity_gb": "8GB",
+  "speed_mhz": 2666
+ },
+ {
+  "name": "Patriot Viper Steel RGB 8GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/twinmos-8gb-ddr4-2400mhz-desktop-ram-with-silver-11677407195.webp",
+  "manufacturer": "Patriot",
+  "price": 4900,
+  "capacity_gb": "8GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "Patriot Viper Steel 8GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/twinmos-tornadox7-8gb-ddr4-3200mhz-u-dimm-black-11757565934.webp",
+  "manufacturer": "Patriot",
+  "price": 4990,
+  "capacity_gb": "8GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "ADATA XPG Spectrix D35G RGB 8GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/patriot-signature-premium-8gb-ddr4-3200mhz-black-11754973143.webp",
+  "manufacturer": "ADATA",
+  "price": 5100,
+  "capacity_gb": "8GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "ADATA XPG GAMMIX D20 8GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/twinmos-thunder-gx-8gb-ddr4-3200mhz-black-11747213697.webp",
+  "manufacturer": "ADATA",
+  "price": 5500,
+  "capacity_gb": "8GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "Netac Basic 16GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/apacer-nox-8gb-ddr4-3200mhz-rgb-white-desktop-ram-11716612151.webp",
+  "manufacturer": "Netac",
+  "price": 5600,
+  "capacity_gb": "16GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "Apacer NOX 8GB DDR4 RGB White",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/apacer-8gb-ddr4-3200mhz-desktop-ram-el08g21gsh-11722757216.webp",
+  "manufacturer": "Apacer",
+  "price": 5700,
+  "capacity_gb": "8GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "G.Skill Ripjaws V 8GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/team-vulcan-z-8gb-ddr4-3200mhz-gray-heatsink-11711525506.webp",
+  "manufacturer": "G.Skill",
+  "price": 5800,
+  "capacity_gb": "8GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "TEAM Elite 16GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/patriot-signature-line-16gb-ddr4-2666mhz-desktop-11716704440.webp",
+  "manufacturer": "TEAM",
+  "price": 5900,
+  "capacity_gb": "16GB",
+  "speed_mhz": 2666
+ },
+ {
+  "name": "Kingston FURY Beast 8GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/kingston-fury-beast-8gb-ddr4-3200mhz-desktop-ram-11722752373.webp",
+  "manufacturer": "Kingston",
+  "price": 6300,
+  "capacity_gb": "8GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "TEAM T-Force Delta RGB 8GB DDR4 White",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/ocpc-x3-rgb-8gb-ddr4-3200mhz-white-desktop-ram-11690619134.webp",
+  "manufacturer": "TEAM",
+  "price": 6500,
+  "capacity_gb": "8GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "CORSAIR Vengeance LPX 8GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/apacer-nox-8gb-ddr4-3200mhz-black-desktop-ram-11685348228.webp",
+  "manufacturer": "CORSAIR",
+  "price": 6500,
+  "capacity_gb": "8GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "TEAM T-Force Delta RGB 8GB DDR4 Black",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/team-t-force-delta-rgb-8gb-ddr4-3200mhz-white-11733230673.webp",
+  "manufacturer": "TEAM",
+  "price": 6500,
+  "capacity_gb": "8GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "Patriot Viper Steel 16GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-basic-16gb-ddr4-2666mhz-desktop-ram-11664951734.webp",
+  "manufacturer": "Patriot",
+  "price": 7000,
+  "capacity_gb": "16GB",
+  "speed_mhz": 3000
+ },
+ {
+  "name": "OCPC X3 RGB 16GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/team-t-force-delta-rgb-8gb-ddr4-3200mhz-black-11733230509.webp",
+  "manufacturer": "OCPC",
+  "price": 7000,
+  "capacity_gb": "16GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "Apacer NOX RGB 16GB DDR4 White",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/corsair-vengeance-lpx-8gb-ddr4-3200mhz-black-11719397845.webp",
+  "manufacturer": "Apacer",
+  "price": 7500,
+  "capacity_gb": "16GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "Netac Shadow 16GB DDR4 Yellow",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gskill-trident-z-8gb-ddr4-3200mhz-black-white-11716028177.webp",
+  "manufacturer": "Netac",
+  "price": 7800,
+  "capacity_gb": "16GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "Patriot Viper Steel RGB 16GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/adata-8gb-ddr5-4800mhz-black-desktop-ram-11638013591.webp",
+  "manufacturer": "Patriot",
+  "price": 8200,
+  "capacity_gb": "16GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "Transcend JetRAM 16GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gskill-ripjaws-v-8gb-ddr4-2400mhz-red-heatsink-11752748912.webp",
+  "manufacturer": "Transcend",
+  "price": 8200,
+  "capacity_gb": "16GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "TEAM Elite 16GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gskill-ripjaws-v-8gb-ddr4-2666mhz-red-heatsink-11752748972.webp",
+  "manufacturer": "TEAM",
+  "price": 8400,
+  "capacity_gb": "16GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "CORSAIR Vengeance LPX 16GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gskill-8gb-ddr4-2400mhz-desktop-ram-11671008146.webp",
+  "manufacturer": "CORSAIR",
+  "price": 8500,
+  "capacity_gb": "16GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "TEAM T-Force Vulcan 8GB DDR5 Red",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gskill-8gb-ddr4-2666mhz-desktop-11723018241.webp",
+  "manufacturer": "TEAM",
+  "price": 8500,
+  "capacity_gb": "8GB",
+  "speed_mhz": 5600
+ },
+ {
+  "name": "TEAM T-Force Delta RGB 8GB DDR5 Black",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gskill-ripjaws-v-8gb-ddr4-3200-bus-black-11545718598.webp",
+  "manufacturer": "TEAM",
+  "price": 8500,
+  "capacity_gb": "8GB",
+  "speed_mhz": 5200
+ },
+ {
+  "name": "TEAM T-Force Vulcan 8GB DDR5 Red",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gskill-aegis-8gb-ddr4-3200mhz-desktop-ram-11723015346.webp",
+  "manufacturer": "TEAM",
+  "price": 8500,
+  "capacity_gb": "8GB",
+  "speed_mhz": 6000
+ },
+ {
+  "name": "Kingston FURY Beast 16GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-shadow-16gb-ddr4-3200mhz-yellow-desktop-ram-11723020656.webp",
+  "manufacturer": "Kingston",
+  "price": 8500,
+  "capacity_gb": "16GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "ADATA XPG Spectrix D50 RGB 16GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/neo-forza-8gb-ddr5-5200mhz-black-heatsink-desktop-11749990427.webp",
+  "manufacturer": "ADATA",
+  "price": 8900,
+  "capacity_gb": "16GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "Patriot Viper 4 Blackout 16GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/kingston-fury-beast-8gb-ddr5-5600mhz-black-11755952865.webp",
+  "manufacturer": "Patriot",
+  "price": 8900,
+  "capacity_gb": "16GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "Patriot Signature Premium 16GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gskill-trident-z-rgb-8gb-ddr4-3200mhz-black-21672650821.webp",
+  "manufacturer": "Patriot",
+  "price": 9300,
+  "capacity_gb": "16GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "ADATA XPG GAMMIX D30 16GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gskill-trident-z-royal-rgb-8gb-ddr4-4600mhz-11723019911.webp",
+  "manufacturer": "ADATA",
+  "price": 9500,
+  "capacity_gb": "16GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "CORSAIR Vengeance RGB RS 16GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/patriot-viper-steel-rgb-16gb-ddr4-3200mhz-desktop-11754972804.webp",
+  "manufacturer": "CORSAIR",
+  "price": 9500,
+  "capacity_gb": "16GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "G.Skill Ripjaws V 16GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/apacer-8gb-ddr5-5600mhz-desktop-ram-11736928606.webp",
+  "manufacturer": "G.Skill",
+  "price": 9800,
+  "capacity_gb": "16GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "Kingston Fury Beast 8GB DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-basic-16gb-ddr4-3200mhz-desktop-ram-11664948823.webp",
+  "manufacturer": "Kingston",
+  "price": 10500,
+  "capacity_gb": "8GB",
+  "speed_mhz": 5600
+ },
+ {
+  "name": "G.Skill Trident Z RGB 16GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/team-elite-16gb-ddr4-3200mhz-black-desktop-ram-11726658468.webp",
+  "manufacturer": "G.Skill",
+  "price": 10500,
+  "capacity_gb": "16GB",
+  "speed_mhz": 3600
+ },
+ {
+  "name": "CORSAIR Vengeance RGB Pro 16GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/adata-premier-16gb-ddr4-2666mhz-desktop-ram-11684240031.webp",
+  "manufacturer": "CORSAIR",
+  "price": 11000,
+  "capacity_gb": "16GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "TEAM T-Force Vulcan Z 16GB DDR4 Red",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/corsair-vengeance-lpx-16gb-ddr4-3200mhz-black-11723005488.webp",
+  "manufacturer": "TEAM",
+  "price": 12400,
+  "capacity_gb": "16GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "TEAM T-Force Delta RGB 16GB DDR4 Black",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/team-t-force-vulcan-8gb-ddr5-6000mhz-red-heatsink-11757565750.webp",
+  "manufacturer": "TEAM",
+  "price": 12500,
+  "capacity_gb": "16GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "TEAM T-Force Vulcan Z 16GB DDR4 Gray",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/team-t-force-vulcan-8gb-ddr5-5600mhz-red-heatsink-11736166439.webp",
+  "manufacturer": "TEAM",
+  "price": 12600,
+  "capacity_gb": "16GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "Dahua DHI-DDR-C600UHW16G32 16GB DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/team-t-force-delta-rgb-8gb-ddr5-5200mhz-black-11707382645.webp",
+  "manufacturer": "Dahua",
+  "price": 13500,
+  "capacity_gb": "16GB",
+  "speed_mhz": 5200
+ },
+ {
+  "name": "Apacer NOX 16GB DDR5 RGB",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/apacer-nox-8gb-ddr5-5200mhz-black-heatsink-11736928655.webp",
+  "manufacturer": "Apacer",
+  "price": 14500,
+  "capacity_gb": "16GB",
+  "speed_mhz": 6400
+ },
+ {
+  "name": "Apacer NOX 16GB DDR5 RGB",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/adata-xpg-gammix-d30-16gb-ddr4-3200mhz-red-11738673238.webp",
+  "manufacturer": "Apacer",
+  "price": 15500,
+  "capacity_gb": "16GB",
+  "speed_mhz": 6800
+ },
+ {
+  "name": "Netac Basic 32GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/twinmos-tornadox7-16gb-ddr4-3200mhz-u-dimm-black-11757565975.webp",
+  "manufacturer": "Netac",
+  "price": 16000,
+  "capacity_gb": "32GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "Patriot Viper Venom 16GB DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/patriot-signature-premium-16gb-ddr4-3200mhz-black-11754973084.webp",
+  "manufacturer": "Patriot",
+  "price": 16500,
+  "capacity_gb": "16GB",
+  "speed_mhz": 6000
+ },
+ {
+  "name": "Patriot Viper Elite 5 16GB DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/apacer-nox-16gb-ddr4-3200mhz-rgb-aura2-white-11722422171.webp",
+  "manufacturer": "Patriot",
+  "price": 16500,
+  "capacity_gb": "16GB",
+  "speed_mhz": 6000
+ },
+ {
+  "name": "TEAM T-Force Vulcan 32GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/ocpc-xt-ii-8gb-ddr5-4800mhz-black-desktop-ram-11757682162.webp",
+  "manufacturer": "TEAM",
+  "price": 17000,
+  "capacity_gb": "32GB",
+  "speed_mhz": 3600
+ },
+ {
+  "name": "CORSAIR Vengeance LPX 32GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/adata-xpg-spectrix-d35g-rgb-16gb-ddr4-3600mhz-11722516988.webp",
+  "manufacturer": "CORSAIR",
+  "price": 17000,
+  "capacity_gb": "32GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "ADATA XPG Lancer 16GB DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/apacer-16gb-ddr4-3200mhz-desktop-ram-11679721455.webp",
+  "manufacturer": "ADATA",
+  "price": 17000,
+  "capacity_gb": "16GB",
+  "speed_mhz": 5200
+ },
+ {
+  "name": "Patriot Viper Elite 5 RGB 16GB DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/team-t-force-vulcan-z-16gb-ddr4-3200mhz-red-11733230308.webp",
+  "manufacturer": "Patriot",
+  "price": 17500,
+  "capacity_gb": "16GB",
+  "speed_mhz": 5600
+ },
+ {
+  "name": "Kingston FURY Beast 16GB DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/apacer-nox-16gb-ddr4-3200mhz-black-desktop-ram-11685357147.webp",
+  "manufacturer": "Kingston",
+  "price": 17500,
+  "capacity_gb": "16GB",
+  "speed_mhz": 5600
+ },
+ {
+  "name": "Kingston FURY Beast 16GB DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/transcend-jetram-16gb-ddr4-3200mhz-desktop-ram-11722492452.webp",
+  "manufacturer": "Kingston",
+  "price": 17500,
+  "capacity_gb": "16GB",
+  "speed_mhz": 6000
+ },
+ {
+  "name": "Transcend JetRAM 32GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/team-t-force-vulcan-z-16gb-ddr4-3200mhz-gray-11733230393.webp",
+  "manufacturer": "Transcend",
+  "price": 17500,
+  "capacity_gb": "32GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "TEAM T-Force Delta RGB 16GB DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/team-t-force-delta-rgb-16gb-ddr4-3200mhz-black-11733230588.webp",
+  "manufacturer": "TEAM",
+  "price": 18000,
+  "capacity_gb": "16GB",
+  "speed_mhz": 6000
+ },
+ {
+  "name": "Kingston FURY Beast RGB 16GB DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gskill-ripjaws-v-16gb-ddr4-2666mhz-red-heatsink-11661603599.webp",
+  "manufacturer": "Kingston",
+  "price": 18000,
+  "capacity_gb": "16GB",
+  "speed_mhz": 6000
+ },
+ {
+  "name": "Patriot Signature Premium 32GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/patriot-viper-steel-16gb-ddr4-3200mhz-desktop-ram-11764069680.webp",
+  "manufacturer": "Patriot",
+  "price": 18000,
+  "capacity_gb": "32GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "TEAM T-Force Delta RGB 16GB DDR5 Black",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gskill-aegis-16gb-ddr4-3200mhz-desktop-ram-11723015385.webp",
+  "manufacturer": "TEAM",
+  "price": 18500,
+  "capacity_gb": "16GB",
+  "speed_mhz": 6000
+ },
+ {
+  "name": "Netac Z RGB 16GB DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gskill-ripjaws-v-16gb-ddr4-3200mhz-black-11723012156.webp",
+  "manufacturer": "Netac",
+  "price": 18500,
+  "capacity_gb": "16GB",
+  "speed_mhz": 6200
+ },
+ {
+  "name": "Patriot Viper Elite 5 RGB 16GB DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gskill-trident-z-16gb-ddr4-3200-bus-black-red-11545725160.webp",
+  "manufacturer": "Patriot",
+  "price": 18500,
+  "capacity_gb": "16GB",
+  "speed_mhz": 6000
+ },
+ {
+  "name": "Patriot Viper Steel 32GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gskill-trident-z-rgb-16gb-ddr4-3200-bus-desktop-11563601880.webp",
+  "manufacturer": "Patriot",
+  "price": 18500,
+  "capacity_gb": "32GB",
+  "speed_mhz": 3600
+ },
+ {
+  "name": "G.Skill Ripjaws S5 16GB DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gskill-trident-z-neo-rgb-16gb-ddr4-3600mhz-11614846639.webp",
+  "manufacturer": "G.Skill",
+  "price": 18500,
+  "capacity_gb": "16GB",
+  "speed_mhz": 5600
+ },
+ {
+  "name": "Kingston FURY Beast RGB 32GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/adata-xpg-gammix-d35-32gb-ddr4-3200mhz-black-11750142119.webp",
+  "manufacturer": "Kingston",
+  "price": 19000,
+  "capacity_gb": "32GB",
+  "speed_mhz": 3600
+ },
+ {
+  "name": "TEAM T-Force Vulcan 16GB DDR5 Red",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/apacer-16gb-ddr5-5600mhz-desktop-ram-11762430681.webp",
+  "manufacturer": "TEAM",
+  "price": 19000,
+  "capacity_gb": "16GB",
+  "speed_mhz": 5600
+ },
+ {
+  "name": "TEAM T-Force Delta RGB 32GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/adata-16gb-ddr5-4800mhz-black-desktop-ram-11638013432.webp",
+  "manufacturer": "TEAM",
+  "price": 19500,
+  "capacity_gb": "32GB",
+  "speed_mhz": 3200
+ },
+ {
+  "name": "Kingston FURY Renegade 16GB DDR5 RGB",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/kingston-fury-beast-16gb-ddr5-5600mhz-black-11735551609.webp",
+  "manufacturer": "Kingston",
+  "price": 20500,
+  "capacity_gb": "16GB",
+  "speed_mhz": 6400
+ },
+ {
+  "name": "G.Skill Trident Z5 RGB 16GB DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/twinmos-voltx-rgb-16gb-ddr5-6000mhz-red-heatsink-11729429221.webp",
+  "manufacturer": "G.Skill",
+  "price": 20500,
+  "capacity_gb": "16GB",
+  "speed_mhz": 6800
+ },
+ {
+  "name": "Kingston FURY Renegade 32GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/patriot-viper-elite-5-rgb-16gb-ddr5-5600mhz-11728908716.webp",
+  "manufacturer": "Kingston",
+  "price": 21000,
+  "capacity_gb": "32GB",
+  "speed_mhz": 4000
+ },
+ {
+  "name": "TEAM T-Force Xtreem ARGB 32GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/kingston-fury-beast-16gb-ddr5-6000mhz-black-11726317494.webp",
+  "manufacturer": "TEAM",
+  "price": 22000,
+  "capacity_gb": "32GB",
+  "speed_mhz": 4000
+ },
+ {
+  "name": "G.Skill Trident Z Royal 32GB DDR4",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/kingston-fury-beast-16gb-ddr5-5600mhz-rgb-black-11693202112.webp",
+  "manufacturer": "G.Skill",
+  "price": 25000,
+  "capacity_gb": "32GB",
+  "speed_mhz": 4400
+ },
+ {
+  "name": "Dahua DHI-DDR-C600URW32G64D 32GB DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/kingston-fury-beast-rgb-16gb-ddr5-6000mhz-desktop-11726316752.webp",
+  "manufacturer": "Dahua",
+  "price": 25500,
+  "capacity_gb": "32GB",
+  "speed_mhz": 6400
+ },
+ {
+  "name": "CORSAIR Vengeance 32GB DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/redragon-rr-760-pro-rgb-16gb-ddr5-6000mhz-u-dimm-11752920784.webp",
+  "manufacturer": "CORSAIR",
+  "price": 30000,
+  "capacity_gb": "32GB",
+  "speed_mhz": 5200
+ },
+ {
+  "name": "Patriot Viper Venom 32GB DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/redragon-rr-760w-pro-rgb-16gb-ddr5-6000mhz-u-dimm-11752920889.webp",
+  "manufacturer": "Patriot",
+  "price": 32000,
+  "capacity_gb": "32GB",
+  "speed_mhz": 6200
+ },
+ {
+  "name": "Patriot Viper Elite 5 32GB DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/team-delta-rgb-16gb-ddr5-6000mhz-black-heatsink-11700053121.webp",
+  "manufacturer": "Patriot",
+  "price": 34000,
+  "capacity_gb": "32GB",
+  "speed_mhz": 6000
+ },
+ {
+  "name": "Kingston FURY Beast RGB 32GB DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-shadow-rgb-16gb-ddr5-5600mhz-silver-11699503435.webp",
+  "manufacturer": "Kingston",
+  "price": 35000,
+  "capacity_gb": "32GB",
+  "speed_mhz": 6000
+ },
+ {
+  "name": "Kingston FURY Beast 32GB DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-z-rgb-16gb-ddr5-6200mhz-silver-heatsink-11699448481.webp",
+  "manufacturer": "Kingston",
+  "price": 35000,
+  "capacity_gb": "32GB",
+  "speed_mhz": 6400
+ },
+ {
+  "name": "G.Skill Trident Z5 RGB 32GB DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/team-t-force-delta-rgb-16gb-ddr5-6000mhz-black-11733478808.webp",
+  "manufacturer": "G.Skill",
+  "price": 38000,
+  "capacity_gb": "32GB",
+  "speed_mhz": 6600
+ },
+ {
+  "name": "Kingston FURY Renegade 32GB DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/adata-xpg-lancer-rgb-16gb-ddr5-7200mhz-black-11724568584.webp",
+  "manufacturer": "Kingston",
+  "price": 40000,
+  "capacity_gb": "32GB",
+  "speed_mhz": 6800
+ },
+ {
+  "name": "CORSAIR Vengeance RGB 32GB (2x16GB) DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/adata-xpg-spectrix-d35g-rgb-32gb-ddr4-3200mhz-11696507014.webp",
+  "manufacturer": "CORSAIR",
+  "price": 43000,
+  "capacity_gb": "32GB",
+  "speed_mhz": 8000
+ },
+ {
+  "name": "Apacer Panther RGB 32GB DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gskill-ripjaws-s5-16gb-ddr5-6000mhz-black-gaming-11653371637.webp",
+  "manufacturer": "Apacer",
+  "price": 48000,
+  "capacity_gb": "32GB",
+  "speed_mhz": 6000
+ },
+ {
+  "name": "TEAM T-Force Delta RGB 32GB DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gskill-trident-z5-rgb-16gb-ddr5-6000mhz-silver-11723011669.webp",
+  "manufacturer": "TEAM",
+  "price": 49000,
+  "capacity_gb": "32GB",
+  "speed_mhz": 6000
+ },
+ {
+  "name": "CORSAIR Vengeance RGB 64GB (2x32GB) DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/adata-xpg-lancer-neon-rgb-16gb-ddr5-8000mhz-11760763759.webp",
+  "manufacturer": "CORSAIR",
+  "price": 65000,
+  "capacity_gb": "64GB",
+  "speed_mhz": 6000
+ },
+ {
+  "name": "CORSAIR Vengeance 64GB (2x32GB) DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/kingston-fury-beast-rgb-32gb-ddr5-6000mhz-desktop-11726316391.webp",
+  "manufacturer": "CORSAIR",
+  "price": 68000,
+  "capacity_gb": "64GB",
+  "speed_mhz": 6400
+ },
+ {
+  "name": "G.Skill Trident Z5 RGB 64GB DDR5",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gskill-trident-z5-rgb-32gb-ddr5-5600mhz-black-11663737017.webp",
+  "manufacturer": "G.Skill",
+  "price": 70000,
+  "capacity_gb": "64GB",
+  "speed_mhz": 6400
+ }
+]

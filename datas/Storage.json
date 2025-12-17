@@ -1,0 +1,800 @@
+[
+ {
+  "name": "SA500 SATAIII SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-sa500-120gb-25-inch-sataiii-ssd-11664947130.webp",
+  "manufacturer": "Netac",
+  "price": 1750,
+  "capacity_gb": "120GB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "Voltrage SATAIII SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-n535s-120gb-25-inch-sataiii-ssd-11729249993.webp",
+  "manufacturer": "PC Power",
+  "price": 2500,
+  "capacity_gb": "128GB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "P400 M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-sa500-128gb-25-inch-sataiii-ssd-11664967293.webp",
+  "manufacturer": "Patriot",
+  "price": 2800,
+  "capacity_gb": "128GB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "N535S SATAIII SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-n5m-128gb-m2-2242-sataiii-11664974088.webp",
+  "manufacturer": "Netac",
+  "price": 2850,
+  "capacity_gb": "240GB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "MP33 M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/smart-sm1000-128gb-25-inch-black-sataiii-ssd-11760689113.webp",
+  "manufacturer": "TEAM",
+  "price": 3400,
+  "capacity_gb": "128GB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "XTL-200 SATAIII SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/patriot-p210-128gb-25-inch-sataiii-ssd-11723194914.webp",
+  "manufacturer": "OCPC",
+  "price": 3500,
+  "capacity_gb": "256GB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "CX2 SATAIII SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/redragon-rm-112-128gb-25-inch-sataiii-internal-11709980384.webp",
+  "manufacturer": "TEAM",
+  "price": 4300,
+  "capacity_gb": "256GB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "N535S SATAIII SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-n600s-128gb-25-inch-sataiii-ssd-11664968150.webp",
+  "manufacturer": "Netac",
+  "price": 5200,
+  "capacity_gb": "512GB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "XTL-200 SATAIII SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-n930e-pro-128gb-m2-2280-pcie-30-x4-nvme-11665051054.webp",
+  "manufacturer": "OCPC",
+  "price": 5200,
+  "capacity_gb": "512GB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "P310 M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/twinmos-hyper-h2-ultra-128gb-25-inch-sataiii-11692620023.webp",
+  "manufacturer": "Patriot",
+  "price": 5800,
+  "capacity_gb": "256GB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "Voltrage M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-n930es-128gb-m2-2242-pcie-30-x2-nvme-11665047831.webp",
+  "manufacturer": "PC Power",
+  "price": 5800,
+  "capacity_gb": "256GB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "Blue Compute HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/patriot-p300-128gb-m2-2280-pcie-gen3-21619258848.webp",
+  "manufacturer": "Western Digital",
+  "price": 6200,
+  "capacity_gb": "1TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "Barracuda Compute HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/oscoo-os002-128gb-25-inch-sataiii-11751959818.webp",
+  "manufacturer": "Seagate",
+  "price": 6500,
+  "capacity_gb": "1TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "MP44L M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/apacer-ast280-120gb-sataiii-m2-2280-11723110841.webp",
+  "manufacturer": "TEAM",
+  "price": 6500,
+  "capacity_gb": "500GB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "MP34 M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/transcend-120gb-m2-2280-sata-ssd-drive-11546405499.webp",
+  "manufacturer": "TEAM",
+  "price": 6900,
+  "capacity_gb": "256GB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "Blue SN580 M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/twinmos-alpha-pro-128gb-m2-2280-pcie-nvme-gen3-11723186221.webp",
+  "manufacturer": "Western Digital",
+  "price": 7200,
+  "capacity_gb": "500GB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "EX2 SATAIII SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/patriot-p210-256gb-25-inch-sataiii-ssd-11723194726.webp",
+  "manufacturer": "TEAM",
+  "price": 7500,
+  "capacity_gb": "512GB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "T-Force Cardea Z44L SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-n5m-256gb-m2-2242-sataiii-11664974158.webp",
+  "manufacturer": "TEAM",
+  "price": 8200,
+  "capacity_gb": "500GB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "XTL-200 SATAIII SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-sa500-240gb-25-inch-sataiii-ssd-11664947601.webp",
+  "manufacturer": "OCPC",
+  "price": 8500,
+  "capacity_gb": "1TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "N535S SATAIII SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-n535s-240gb-25-inch-sataiii-ssd-11729250049.webp",
+  "manufacturer": "Netac",
+  "price": 8500,
+  "capacity_gb": "960GB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "Blue Compute HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/transcend-230s-128gb-3d-tlc-sataiii-21660646963.webp",
+  "manufacturer": "Western Digital",
+  "price": 8900,
+  "capacity_gb": "2TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "Black SN770 M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-n535n-256gb-m2-2280-sataiii-ssd-11665032190.webp",
+  "manufacturer": "Western Digital",
+  "price": 9000,
+  "capacity_gb": "500GB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "Blue Compute HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/redragon-rm-113-256gb-25-inch-sataiii-internal-21709981431.webp",
+  "manufacturer": "Western Digital",
+  "price": 9500,
+  "capacity_gb": "1TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "P310 M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/oscoo-on900-128gb-m2-2280-nvme-pcie-gen3x4-11744538243.webp",
+  "manufacturer": "Patriot",
+  "price": 9500,
+  "capacity_gb": "512GB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "P300 M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/adata-su650-256gb-25-inch-sataiii-ssd-11706091405.webp",
+  "manufacturer": "Patriot",
+  "price": 10500,
+  "capacity_gb": "512GB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "SkyHawk Surveillance HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-n930e-pro-256gb-m2-2280-pcie-30-x4-nvme-11665051603.webp",
+  "manufacturer": "Seagate",
+  "price": 10500,
+  "capacity_gb": "2TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "P400 M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-nv2000-256gb-m2-2280-pcie-30-x4-nvme-11665059245.webp",
+  "manufacturer": "Patriot",
+  "price": 10500,
+  "capacity_gb": "512GB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "Purple Surveillance HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/patriot-p300-256gb-m2-2280-pcie-gen3-11619259210.webp",
+  "manufacturer": "Western Digital",
+  "price": 10800,
+  "capacity_gb": "2TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "CX2 SATAIII SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/team-mp33-128gb-m2-2280-pcie-ssd-11723199064.webp",
+  "manufacturer": "TEAM",
+  "price": 10900,
+  "capacity_gb": "1TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "N535S SATAIII SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/redragon-rm-312-256gb-m2-2280-internal-11709983604.webp",
+  "manufacturer": "Netac",
+  "price": 11500,
+  "capacity_gb": "1TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "MP44L M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/transcend-425s-250gb-m2-2242-sataiii-ssd-11723184656.webp",
+  "manufacturer": "TEAM",
+  "price": 11700,
+  "capacity_gb": "1TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "MP33 M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/transcend-825s-250gb-m2-2280-sataiii-ssd-11723185460.webp",
+  "manufacturer": "TEAM",
+  "price": 12500,
+  "capacity_gb": "512GB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "Blue SN580 M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-n930es-256gb-m2-2242-pcie-30-x2-nvme-11665055754.webp",
+  "manufacturer": "Western Digital",
+  "price": 12500,
+  "capacity_gb": "1TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "Blue Compute HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/twinmos-hyper-h2-ultra-256gb-25-inch-sataiii-11697285304.webp",
+  "manufacturer": "Western Digital",
+  "price": 12800,
+  "capacity_gb": "2TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "IronWolf NAS HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-gen4-4000e-250gb-m2-2280-internal-ssd-11723795134.webp",
+  "manufacturer": "Seagate",
+  "price": 12800,
+  "capacity_gb": "2TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "T-Create Classic C47 SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/transcend-115s-250gb-m2-2280-m-key-pcie-gen3x4-11689836175.webp",
+  "manufacturer": "TEAM",
+  "price": 13400,
+  "capacity_gb": "1TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "N300 NAS HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/transcend-112s-256gb-m2-2280-pcie-gen3x4-11618112341.webp",
+  "manufacturer": "Toshiba",
+  "price": 15200,
+  "capacity_gb": "4TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "Barracuda Compute HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/adata-legend-710-256gb-m2-2280-pcie-gen3x4-ssd-11687338660.webp",
+  "manufacturer": "Seagate",
+  "price": 15500,
+  "capacity_gb": "4TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "P400 M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/transcend-ssd225s-250gb-25-inch-sataiii-ssd-11723103711.webp",
+  "manufacturer": "Patriot",
+  "price": 15800,
+  "capacity_gb": "1TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "P310 M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/apacer-as2280p4-256gb-m2-2280-nvme-pcie-gen3-x4-11615629656.webp",
+  "manufacturer": "Patriot",
+  "price": 15800,
+  "capacity_gb": "1TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "IronWolf NAS HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/team-vulcan-z-256gb-25-inch-sataiii-ssd-11673780120.webp",
+  "manufacturer": "Seagate",
+  "price": 16500,
+  "capacity_gb": "4TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "SkyHawk Surveillance HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/twinmos-alpha-pro-256gb-m2-2280-pcie-nvme-gen3-11752401008.webp",
+  "manufacturer": "Seagate",
+  "price": 16500,
+  "capacity_gb": "4TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "XTL-200 SATAIII SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/oscoo-os002-256gb-25-inch-sataiii-11741429070.webp",
+  "manufacturer": "OCPC",
+  "price": 18000,
+  "capacity_gb": "2TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "MP34 M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-sa500-480gb-25-inch-sataiii-internal-ssd-11691670385.webp",
+  "manufacturer": "TEAM",
+  "price": 18000,
+  "capacity_gb": "1TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "Purple Surveillance HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/seagate-barracuda-250gb-m2-2280-internal-ssd-11711793676.webp",
+  "manufacturer": "Western Digital",
+  "price": 18000,
+  "capacity_gb": "4TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "Black SN770 M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/patriot-p210-512gb-25-inch-sataiii-ssd-11723194970.webp",
+  "manufacturer": "Western Digital",
+  "price": 18500,
+  "capacity_gb": "1TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "X300 Performance HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/apacer-ap256gpp3480-r-256gb-m2-2280-nvme-pcie-11751887550.webp",
+  "manufacturer": "Toshiba",
+  "price": 18700,
+  "capacity_gb": "4TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "T-Force Cardea Z44L SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-sa500-512gb-25-inch-sataiii-ssd-11664967836.webp",
+  "manufacturer": "TEAM",
+  "price": 19500,
+  "capacity_gb": "1TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "MP44L M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-n600s-512gb-25-inch-sataiii-ssd-11664971850.webp",
+  "manufacturer": "TEAM",
+  "price": 21000,
+  "capacity_gb": "2TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "Black SN850X M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-n5m-512gb-m2-2242-sataiii-11664974484.webp",
+  "manufacturer": "Western Digital",
+  "price": 21500,
+  "capacity_gb": "1TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "Barracuda Compute HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/seagate-barracuda-480gb-25-inch-sataiii-internal-11741576414.webp",
+  "manufacturer": "Seagate",
+  "price": 21500,
+  "capacity_gb": "6TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "Purple Surveillance HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/team-mp33-256gb-m2-2280-nvme-pcie-ssd-11723198806.webp",
+  "manufacturer": "Western Digital",
+  "price": 22000,
+  "capacity_gb": "6TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "Exos 7E10 Enterprise HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-n535n-512gb-m2-2280-sataiii-ssd-11665032530.webp",
+  "manufacturer": "Seagate",
+  "price": 24900,
+  "capacity_gb": "4TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "Blue SN580 M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/oscoo-on900-256gb-m2-2280-internal-11741431687.webp",
+  "manufacturer": "Western Digital",
+  "price": 25000,
+  "capacity_gb": "2TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "T-Create Classic C47 SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/oscoo-on901-256gb-m2-2280-nvme-pcie-gen3x4-11751959275.webp",
+  "manufacturer": "TEAM",
+  "price": 25000,
+  "capacity_gb": "2TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "XTL-200 SATAIII SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/miphi-mp100-512gb-25-inch-sataiii-internal-ssd-11741511877.webp",
+  "manufacturer": "OCPC",
+  "price": 25000,
+  "capacity_gb": "4TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "N300 NAS HDD",
+  "manufacturer": "Toshiba",
+  "price": 25500,
+  "capacity_gb": "6TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "X300 Performance HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-nv2000-512gb-m2-2280-pcie-30-x4-nvme-11665058833.webp",
+  "manufacturer": "Toshiba",
+  "price": 26400,
+  "capacity_gb": "6TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "MG10-D Enterprise HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/patriot-p300-512gb-m2-2280-pcie-gen3-11619259494.webp",
+  "manufacturer": "Toshiba",
+  "price": 26500,
+  "capacity_gb": "6TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "T-Force G70 Pro SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-n930e-pro-512gb-m2-2280-pcie-30-x4-nvme-11665051922.webp",
+  "manufacturer": "TEAM",
+  "price": 29000,
+  "capacity_gb": "2TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "Purple Surveillance HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/oscoo-on1000-256gb-m2-2280-nvme-pcie-gen4x4-11744537728.webp",
+  "manufacturer": "Western Digital",
+  "price": 29500,
+  "capacity_gb": "8TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "X300 Performance HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-n930es-512gb-m2-2242-pcie-30-x2-nvme-11665056009.webp",
+  "manufacturer": "Toshiba",
+  "price": 29500,
+  "capacity_gb": "8TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "MG10-D Enterprise HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-nv5000-n-500gb-m2-2280-nvme-ssd-11752834285.webp",
+  "manufacturer": "Toshiba",
+  "price": 30500,
+  "capacity_gb": "8TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "SkyHawk Surveillance HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/adata-su650-512gb-25-inch-sataiii-ssd-11706091755.webp",
+  "manufacturer": "Seagate",
+  "price": 32000,
+  "capacity_gb": "8TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "P400 M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/ocpc-mbl-401-512gb-m2-2280-pcie-gen4-internal-11726923641.webp",
+  "manufacturer": "Patriot",
+  "price": 32000,
+  "capacity_gb": "2TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "N300 NAS HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/transcend-115s-500gb-m2-2280-m-key-pcie-gen3x4-11689836039.webp",
+  "manufacturer": "Toshiba",
+  "price": 35000,
+  "capacity_gb": "8TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "Barracuda Compute HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/transcend-112s-512gb-m2-2280-ssd-drive-11641890002.webp",
+  "manufacturer": "Seagate",
+  "price": 35000,
+  "capacity_gb": "8TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "Exos 7E10 Enterprise HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-gen4-4000e-500gb-m2-2280-internal-ssd-11723795289.webp",
+  "manufacturer": "Seagate",
+  "price": 38500,
+  "capacity_gb": "6TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "T-Force GE PRO SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/western-digital-black-n750-250gb-m2-2280-pcie-11723192330.webp",
+  "manufacturer": "TEAM",
+  "price": 38500,
+  "capacity_gb": "2TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "Purple Surveillance HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/apacer-as2280p4-512gb-m2-2280-nvme-pcie-gen3-x4-11615630449.webp",
+  "manufacturer": "Western Digital",
+  "price": 42000,
+  "capacity_gb": "10TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "T-Force Cardea A440 SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/apacer-as2280q4-500gb-m2-2280-nvme-pcie-gen4-x4-11663837318.webp",
+  "manufacturer": "TEAM",
+  "price": 42000,
+  "capacity_gb": "2TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "N300 NAS HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/transcend-ssd225s-500gb-25-inch-sataiii-ssd-11723103837.webp",
+  "manufacturer": "Toshiba",
+  "price": 45000,
+  "capacity_gb": "10TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "Black SN850X M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-nv5000-500gb-m2-2280-pcie-gen4x4-nvme-ssd-11752834824.webp",
+  "manufacturer": "Western Digital",
+  "price": 48000,
+  "capacity_gb": "2TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "Barracuda Compute HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/twinmos-alphapro-512gb-m2-2280-pcie-30-x4-nvme-11723187369.webp",
+  "manufacturer": "Seagate",
+  "price": 48000,
+  "capacity_gb": "12TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "Blue SN580 M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/western-digital-green-sn350-500gb-m2-2280-11701231157.webp",
+  "manufacturer": "Western Digital",
+  "price": 48000,
+  "capacity_gb": "4TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "IronWolf NAS HDD",
+  "manufacturer": "Seagate",
+  "price": 55000,
+  "capacity_gb": "10TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "T-Force Cardea Z5 SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-n5m-1tb-m2-2242-sataiii-11664974570.webp",
+  "manufacturer": "TEAM",
+  "price": 55000,
+  "capacity_gb": "2TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "P400 M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-n950e-pro-500gb-m2-2280-pcie-30-x4-nvme-11665059539.webp",
+  "manufacturer": "Patriot",
+  "price": 58000,
+  "capacity_gb": "4TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "Purple Surveillance HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/adata-xpg-gammix-s60-blade-512gb-m2-2280-nvme-11752486743.webp",
+  "manufacturer": "Western Digital",
+  "price": 60000,
+  "capacity_gb": "12TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "Barracuda Compute HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/oscoo-os001-512gb-25-inch-sataiii-blue-internal-11744540475.webp",
+  "manufacturer": "Seagate",
+  "price": 62000,
+  "capacity_gb": "16TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "N300 NAS HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/oscoo-os002-512gb-25-inch-sataiii-11741429114.webp",
+  "manufacturer": "Toshiba",
+  "price": 65000,
+  "capacity_gb": "12TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "Exos 7E10 Enterprise HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/corsair-mp600-gs-500gb-m2-2280-pcie-gen-40-x-4-11694082249.webp",
+  "manufacturer": "Seagate",
+  "price": 68000,
+  "capacity_gb": "10TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "MG10-D Enterprise HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/apacer-as2280q4u-512gb-m2-2280-nvme-pcie-gen4-x4-11704973225.webp",
+  "manufacturer": "Toshiba",
+  "price": 72000,
+  "capacity_gb": "16TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "T-Force GE PRO SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/miphi-mp700g4-512gb-m2-2280-internal-ssd-11741513582.webp",
+  "manufacturer": "TEAM",
+  "price": 75000,
+  "capacity_gb": "4TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "Barracuda Compute HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/team-mp33-pro-512gb-m2-2280-nvme-pcie-gen-30-x4-11720695088.webp",
+  "manufacturer": "Seagate",
+  "price": 78000,
+  "capacity_gb": "18TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "SkyHawk Surveillance HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/patriot-vp4300-lite-500gb-m2-2280-pcie-gen4-x4-11728910024.webp",
+  "manufacturer": "Seagate",
+  "price": 80000,
+  "capacity_gb": "16TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "IronWolf NAS HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/oscoo-on900-512gb-m2-2280-internal-11741431738.webp",
+  "manufacturer": "Seagate",
+  "price": 85000,
+  "capacity_gb": "14TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "Purple Surveillance HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/oscoo-on901-512gb-m2-2280-nvme-pcie-gen3x4-11748855994.webp",
+  "manufacturer": "Western Digital",
+  "price": 88000,
+  "capacity_gb": "14TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "Black SN850X M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/team-mp44l-500gb-m2-2280-nvme-pcie-gen-4-x4-ssd-11677058157.webp",
+  "manufacturer": "Western Digital",
+  "price": 95000,
+  "capacity_gb": "4TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "P400 M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/seagate-barracuda-960gb-25-inch-sataiii-internal-11741576992.webp",
+  "manufacturer": "Patriot",
+  "price": 105000,
+  "capacity_gb": "8TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "IronWolf Pro NAS HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/transcend-245s-500gb-m2-2280-m-key-pcie-gen4x4-11698238883.webp",
+  "manufacturer": "Seagate",
+  "price": 110000,
+  "capacity_gb": "18TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "MG10-D Enterprise HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/redragon-rm-110-1tb-25-inch-sataiii-internal-11709984787.webp",
+  "manufacturer": "Toshiba",
+  "price": 115000,
+  "capacity_gb": "18TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "Purple Surveillance HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/kingston-nv3-500gb-m2-2280-internal-ssd-11727416693.webp",
+  "manufacturer": "Western Digital",
+  "price": 120000,
+  "capacity_gb": "18TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "Exos X18 Enterprise HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/oscoo-on1000-512gb-m2-2280-nvme-pcie-gen4x4-11744537803.webp",
+  "manufacturer": "Seagate",
+  "price": 130000,
+  "capacity_gb": "18TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "SkyHawk AI Surveillance HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/kingston-kc3000-512gb-m2-2280-ssd-11723100280.webp",
+  "manufacturer": "Seagate",
+  "price": 150000,
+  "capacity_gb": "20TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "N300 NAS HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-nv5000-1tb-m2-2280-pcie-gen4x4-nvme-ssd-11752834487.webp",
+  "manufacturer": "Toshiba",
+  "price": 155000,
+  "capacity_gb": "20TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "Purple Surveillance HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/adata-xpg-gammix-s70-blade-512gb-m2-2280-nvme-11758114133.webp",
+  "manufacturer": "Western Digital",
+  "price": 160000,
+  "capacity_gb": "20TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "Black SN850X M.2 NVMe SSD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/netac-sa500-1tb-25-inch-sataiii-internal-ssd-11691670487.webp",
+  "manufacturer": "Western Digital",
+  "price": 180000,
+  "capacity_gb": "8TB",
+  "storage_type": "SSD"
+ },
+ {
+  "name": "Blue Compute HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/patriot-p210-1tb-25-inch-sataiii-ssd-11723194838.webp",
+  "manufacturer": "Western Digital",
+  "price": 180000,
+  "capacity_gb": "24TB",
+  "storage_type": "HDD"
+ },
+ {
+  "name": "IronWolf Pro NAS HDD",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-gen4-4000e-1tb-m2-2280-pcie-40-x4-nvme-11732534149.webp",
+  "manufacturer": "Seagate",
+  "price": 220000,
+  "capacity_gb": "24TB",
+  "storage_type": "HDD"
+ }
+]
