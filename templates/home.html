@@ -42,7 +42,7 @@
         </div>
 
     {% else %}
-        <p>Please <a href="{% url 'login' %}">login</a> or <a href="{% url 'register' %}">register</a> to start creating your PC builds.</p>
+        <p>Please <a href="{% url 'users:login' %}">login</a> or <a href="{% url 'users:register' %}">register</a> to start creating your PC builds.</p>
     {% endif %}
 {% endblock %}
 

@@ -138,6 +138,8 @@ def workbench_view(request, build_id):
     # The PSU calculator already uses the correct approach, so it stays the same.
     psu_recommendation = calculate_psu_wattage(components_in_build)
 
+    total_price = build.calculate_total_price()
+
     context = {
         'build': build,
         'scaffold': scaffold,
@@ -145,6 +147,7 @@ def workbench_view(request, build_id):
         'bottleneck_level': bottleneck_level,
         'bottleneck_message': bottleneck_message,
         'psu_recommendation': psu_recommendation,
+        'total_price': total_price,
     }
 
     return render(request, 'builds/workbench.html', context)
@@ -231,10 +234,13 @@ def update_build_status(request, build_id):
     # The PSU calculator was already correct, so it stays the same.
     psu_recommendation = calculate_psu_wattage(components_in_build)
 
+    total_price = build.calculate_total_price()
+
     context = {
         'bottleneck_level': bottleneck_level,
         'bottleneck_message': bottleneck_message,
         'psu_recommendation': psu_recommendation,
+        'total_price': total_price,
     }
     
     return render(request, 'builds/partials/system_status.html', context)

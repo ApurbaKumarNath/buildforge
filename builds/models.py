@@ -5,6 +5,7 @@
 from django.db import models
 # This allows us to easily reference our CustomUser model from settings.py
 from django.conf import settings
+from django.db.models import Sum, F, DecimalField
 
 # This model represents a single PC build created by a user.
 class Build(models.Model):
@@ -22,6 +23,30 @@ class Build(models.Model):
     # We use the 'through' parameter to specify a custom intermediate table.
     # We need this because we want to store extra data on the relationship (the 'quantity').
     components = models.ManyToManyField('catalog.Component', through='BuildComponent')
+
+    def __str__(self):
+        return f"'{self.name}' by {self.user.username}"
+    
+    def calculate_total_price(self):
+        """
+        Calculates the total price of all components in the build.
+        This is a highly efficient way to do it with a single database query.
+        """
+        # self.buildcomponent_set.all() gets all the BuildComponent items related to this build.
+        # .aggregate() is a powerful Django function for performing calculations on a queryset.
+        # Sum() is the aggregation function we want to use.
+        # F('component__price') refers to the 'price' field on the related 'component' model.
+        # F('quantity') refers to the 'quantity' field on the BuildComponent model itself.
+        # We multiply them together for each item.
+        # output_field=DecimalField() ensures the result is treated as a decimal, preventing errors.
+        total = self.buildcomponent_set.aggregate(
+            total_price=Sum(F('component__price') * F('quantity'), output_field=DecimalField())
+        )['total_price']
+
+        # The aggregate function returns a dictionary, e.g., {'total_price': 1250.50}.
+        # If the build is empty, the result will be None, so we return 0.00 instead.
+        return total or 0.00
+    # ========================
 
     def __str__(self):
         return f"'{self.name}' by {self.user.username}"
@@ -63,5 +88,6 @@ class WishlistItem(models.Model):
 
     def __str__(self):
         return f"{self.user.username} wants {self.component.name}"
+
 
 #_____________________________________________________________________________________________________________________________
