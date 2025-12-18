@@ -22,7 +22,8 @@
   {
     "name": "AMD Ryzen 5 3400G",
     "manufacturer": "AMD",
-    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-5-5500-am4-socket-processor-11695009442.webp",
+
+    "image": "https://www.ryans.com/storage/products/small/single-amd-ryzen-5-3400g-37ghz-42ghz-4-core-11726292787.webp",
     "price": 8800,
     "performance_tier": "Entry",
     "core_count": 4,
@@ -32,7 +33,7 @@
   {
     "name": "AMD Ryzen 5 5500",
     "manufacturer": "AMD",
-    "image": "https://www.ryans.com/storage/products/small/intel-10th-gen-comet-lake-core-i3-10100-11722762632.webp",
+    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-5-5500-am4-socket-processor-11695009442.webp",
     "price": 8800,
     "performance_tier": "Entry",
     "core_count": 6,
@@ -62,7 +63,7 @@
   {
     "name": "Intel Core i3 10105",
     "manufacturer": "Intel",
-    "image": "https://www.ryans.com/storage/products/small/intel-core-i3-14th-gen-raptor-lake-14100f-up-to-11705400992.webp",
+    "image": "https://www.ryans.com/storage/products/small/bundle-with-pc-intel-10th-gen-comet-lake-core-11629972351.webp",
     "price": 10900,
     "performance_tier": "Mid",
     "core_count": 4,
@@ -72,27 +73,18 @@
   {
     "name": "Intel Core i3 14100F",
     "manufacturer": "Intel",
-    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-threadripper-1900x-38-40ghz-8-core-16-11545290962.webp",
+    "image": "https://www.ryans.com/storage/products/small/intel-core-i3-14th-gen-raptor-lake-14100f-up-to-11705400992.webp",
     "price": 11800,
     "performance_tier": "Mid",
     "core_count": 4,
     "clock_speed": "Up to 4.70 GHz",
     "socket": "LGA1700"
   },
-  {
-    "name": "AMD Ryzen Threadripper 1900X",
-    "manufacturer": "AMD",
-    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-5-5600-35ghz-44ghz-6-core-35mb-cache-11722761528.webp",
-    "price": 12000,
-    "performance_tier": "Mid",
-    "core_count": 8,
-    "clock_speed": "3.80 GHz - 4.00 GHz",
-    "socket": "TR4"
-  },
+
   {
     "name": "AMD Ryzen 5 5600",
     "manufacturer": "AMD",
-    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-5-5600x-desktop-processor-oemtray-11722752309.webp",
+    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-5-5600-35ghz-44ghz-6-core-35mb-cache-11722761528.webp",
     "price": 12400,
     "performance_tier": "Mid",
     "core_count": 6,
@@ -102,7 +94,7 @@
   {
     "name": "AMD Ryzen 5 5600X",
     "manufacturer": "AMD",
-    "image": "https://www.ryans.com/storage/products/small/intel-10th-gen-comet-lake-core-i5-10500-processor-11759811248.webp",
+    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-5-5600x-desktop-processor-oemtray-11722752309.webp",
     "price": 13500,
     "performance_tier": "Mid",
     "core_count": 6,
@@ -112,7 +104,7 @@
   {
     "name": "AMD Ryzen 5 5600G",
     "manufacturer": "AMD",
-    "image": "https://www.ryans.com/storage/products/small/intel-10th-gen-core-i5-10400-processor-oemtray-11722924770.webp",
+    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-5-5600g-desktop-processor-oemtray-11719218356.webp",
     "price": 14500,
     "performance_tier": "Mid",
     "core_count": 6,
@@ -122,7 +114,7 @@
   {
     "name": "Intel Core i5 10500",
     "manufacturer": "Intel",
-    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-5-5600gt-processor-11727259017.webp",
+    "image": "https://www.ryans.com/storage/products/small/intel-10th-gen-core-i5-10400-processor-oemtray-11722924770.webp",
     "price": 14500,
     "performance_tier": "Mid",
     "core_count": 6,
@@ -142,7 +134,7 @@
   {
     "name": "Intel Core i5 11400F",
     "manufacturer": "Intel",
-    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-5-5600g-desktop-processor-oemtray-11719218356.webp",
+    "image": "https://www.ryans.com/storage/products/small/intel-10th-gen-core-i5-10400-processor-oemtray-11722924770.webp",
     "price": 14500,
     "performance_tier": "Mid",
     "core_count": 6,
@@ -152,7 +144,7 @@
   {
     "name": "Intel Core i5 10400",
     "manufacturer": "Intel",
-    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-5-8400f-42ghz-47ghz-6-core-processor-11736854240.webp",
+    "image": "https://www.ryans.com/storage/products/small/intel-11th-gen-core-i5-11400-processor-11722925781.webp",
     "price": 15500,
     "performance_tier": "Mid",
     "core_count": 6,
@@ -162,7 +154,7 @@
   {
     "name": "AMD Ryzen 5 5600GT",
     "manufacturer": "AMD",
-    "image": "https://www.ryans.com/storage/products/small/intel-11th-gen-core-i5-11400-processor-11722925781.webp",
+    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-5-8400f-42ghz-47ghz-6-core-processor-11736854240.webp",
     "price": 15900,
     "performance_tier": "Mid",
     "core_count": 6,
@@ -182,7 +174,7 @@
   {
     "name": "Intel Core i5 11400",
     "manufacturer": "Intel",
-    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-7-5700x-34ghz-46ghz-8-core-36mb-cache-11722755480.webp",
+    "image": "https://www.ryans.com/storage/products/small/intel-11th-gen-core-i5-11400-processor-11722925781.webp",
     "price": 16500,
     "performance_tier": "Mid",
     "core_count": 6,
@@ -252,7 +244,7 @@
   {
     "name": "AMD Ryzen 7 5700G",
     "manufacturer": "AMD",
-    "image": "https://www.ryans.com/storage/products/small/intel-12th-gen-alder-lake-core-i5-12400-processor-11670825224.webp",
+    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-5-8500g-35ghz-50ghz-6-core-22mb-cache-11710829363.webp",
     "price": 20200,
     "performance_tier": "High",
     "core_count": 8,
@@ -262,7 +254,7 @@
   {
     "name": "AMD Ryzen 5 8500G",
     "manufacturer": "AMD",
-    "image": "https://www.ryans.com/storage/products/small/bundle-with-pc-intel-12th-gen-alder-lake-core-11649230962.webp",
+    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-5-8500g-35ghz-50ghz-6-core-22mb-cache-11710829363.webp",
     "price": 20500,
     "performance_tier": "High",
     "core_count": 6,
@@ -292,7 +284,7 @@
   {
     "name": "AMD Ryzen 5 7600X",
     "manufacturer": "AMD",
-    "image": "https://www.ryans.com/storage/products/small/intel-core-ultra-5-225-series-2-formerly-arrow-11753966606.webp",
+    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-5-8500g-35ghz-50ghz-6-core-22mb-cache-11710829363.webp",
     "price": 22500,
     "performance_tier": "High",
     "core_count": 6,
@@ -302,7 +294,7 @@
   {
     "name": "Intel Core Ultra 5 225",
     "manufacturer": "Intel",
-    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-7-7700-38ghz-53ghz-8-core-40mb-cache-11696328242.webp",
+    "image": "https://www.ryans.com/storage/products/small/intel-core-ultra-5-225-series-2-formerly-arrow-11755349263.webp",
     "price": 25000,
     "performance_tier": "High",
     "core_count": 10,
@@ -312,7 +304,7 @@
   {
     "name": "AMD Ryzen 7 7700",
     "manufacturer": "AMD",
-    "image": "https://www.ryans.com/storage/products/small/intel-core-i5-14th-gen-raptor-lake-refresh-14600k-11724303035.webp",
+    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-7-7700-38ghz-53ghz-8-core-40mb-cache-11696328242.webp",
     "price": 27500,
     "performance_tier": "High",
     "core_count": 8,
@@ -372,7 +364,7 @@
   {
     "name": "Intel Core i7 12700K",
     "manufacturer": "Intel",
-    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-9-5900x-37ghz-48ghz-12-core-70mb-11724301875.webp",
+    "image": "https://www.ryans.com/storage/products/small/bundle-with-pc-intel-12th-gen-core-i7-12700k-11635852671.webp",
     "price": 32500,
     "performance_tier": "High",
     "core_count": 12,
@@ -392,7 +384,7 @@
   {
     "name": "Intel Core i5 14600K",
     "manufacturer": "Intel",
-    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-7-8700g-42ghz-51ghz-processor-with-11730959099.webp",
+    "image": "https://www.ryans.com/storage/products/small/bundle-with-pc-intel-12th-gen-core-i7-12700k-11635852671.webp",
     "price": 35000,
     "performance_tier": "High",
     "core_count": 14,
@@ -402,7 +394,7 @@
   {
     "name": "AMD Ryzen 5 7600X3D",
     "manufacturer": "AMD",
-    "image": "https://www.ryans.com/storage/products/small/bundle-with-pc-intel-12th-gen-core-i7-12700k-11635852671.webp",
+    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-5-7600x3d-41ghz-47ghz-6-core-102mb-11732174661.webp",
     "price": 35200,
     "performance_tier": "High",
     "core_count": 6,
@@ -452,7 +444,7 @@
   {
     "name": "AMD Ryzen 7 7800X3D",
     "manufacturer": "AMD",
-    "image": "https://www.ryans.com/storage/products/small/intel-core-ultra-7-265k-series-2-formerly-arrow-11736944101.webp",
+    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-5-7600x3d-41ghz-47ghz-6-core-102mb-11732174661.webp",
     "price": 43500,
     "performance_tier": "High",
     "core_count": 8,
@@ -472,7 +464,7 @@
   {
     "name": "Intel Core Ultra 7 245K",
     "manufacturer": "Intel",
-    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-9-9900x-44ghz-56ghz-processor-11725713937.webp",
+    "image": "https://www.ryans.com/storage/products/small/intel-arrow-lake-s-core-ultra-9-285k-processor-11729746549.webp",
     "price": 48000,
     "performance_tier": "High",
     "core_count": 16,
@@ -512,7 +504,7 @@
   {
     "name": "Intel Core i9 14900",
     "manufacturer": "Intel",
-    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-9-9950x-43ghz-57ghz-6-core-processor-11727415201.webp",
+    "image": "https://www.ryans.com/storage/products/small/intel-12th-gen-alder-lake-core-i7-12700k-11711599982.webp",
     "price": 62000,
     "performance_tier": "High",
     "core_count": 24,
@@ -542,7 +534,7 @@
   {
     "name": "AMD Ryzen 9 9900X3D",
     "manufacturer": "AMD",
-    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-9-7950x3d-amd-am5-socket-processor-11714021502.webp",
+    "image": "https://www.ryans.com/storage/products/small/amd-ryzen-9-9950x-43ghz-57ghz-6-core-processor-11727415201.webp",
     "price": 71200,
     "performance_tier": "High",
     "core_count": 12,
@@ -562,7 +554,7 @@
   {
     "name": "Intel Core Ultra 9 265K",
     "manufacturer": "Intel",
-    "image": "https://www.ryans.com/storage/products/small/intel-raptor-lake-xeon-e-2478-280ghz-520ghz-8-11755693407.webp",
+    "image": "https://www.ryans.com/storage/products/small/intel-arrow-lake-s-core-ultra-9-285k-processor-11729746549.webp",
     "price": 75000,
     "performance_tier": "High",
     "core_count": 24,
