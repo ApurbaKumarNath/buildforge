@@ -3,900 +3,1000 @@
   "name": "A320M-S2H",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/afox-b450d4-ma5-v2-ddr4-amd-11752398814.webp",
   "manufacturer": "Gigabyte",
-  "price": 7500,
+  "tdp": 40,
+  "price": "7500",
   "socket": "AM4",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "GA-A320M-H",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/maxsun-challenger-b450m-ddr4-amd-motherboard-61729752869.webp",
   "manufacturer": "Gigabyte",
-  "price": 7600,
+  "tdp": 40,
+  "price": "7600",
   "socket": "AM4",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "AFOX IH510D4-MA6-V2",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/afox-ih510d4-ma6-v2-ddr4-intel-11703408756.webp",
   "manufacturer": "AFOX",
-  "price": 7900,
+  "tdp": 40,
+  "price": "7900",
   "socket": "LGA1200",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "PRIME A320M-K",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-a520m-a-pro-ddr4-amd-am4-socket-11600156215.webp",
   "manufacturer": "ASUS",
-  "price": 7900,
+  "tdp": 40,
+  "price": "7900",
   "socket": "AM4",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "PRIME A520M-R",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/afox-ih610d4-ma5-v4-ddr4-intel-11729599316.webp",
   "manufacturer": "ASUS",
-  "price": 8500,
+  "tdp": 40,
+  "price": "8500",
   "socket": "AM4",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "B450M-A PRO MAX II",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-b450m-a-pro-max-ii-ddr4-amd-am4-socket-11720702286.webp",
   "manufacturer": "MSI",
-  "price": 8500,
+  "tdp": 40,
+  "price": "8500",
   "socket": "AM4",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "GA-H81M-H DDR3",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-prime-a520m-r-ddr4-amd-am4-socket-11753966826.webp",
   "manufacturer": "Gigabyte",
-  "price": 8800,
+  "tdp": 40,
+  "price": "8800",
   "socket": "LGA1150",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "MSI H310M PRO-VDH",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/biostar-h610mhp-ddr4-11675839832.webp",
   "manufacturer": "MSI",
-  "price": 8800,
+  "tdp": 40,
+  "price": "8800",
   "socket": "LGA1151",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "B450M K (2.0) DDR4",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-h310m-pro-vdh-ddr4-8th-gen-lga1151-socket-21550131736.webp",
   "manufacturer": "Gigabyte",
-  "price": 8900,
+  "tdp": 40,
+  "price": "8900",
   "socket": "AM4",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "PRIME H510M-K R2.0",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-ga-h81m-h-ddr3-intel-11690447232.webp",
   "manufacturer": "ASUS",
-  "price": 8900,
+  "tdp": 40,
+  "price": "8900",
   "socket": "LGA1200",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "BIOSTAR H610MH",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-ga-h81m-h-m2-ddr3-intel-11701862752.webp",
   "manufacturer": "BIOSTAR",
-  "price": 9200,
+  "tdp": 40,
+  "price": "9200",
   "socket": "LGA1700",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "GA-H110M-M.2",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-b450m-k-20-ddr4-amd-11730522339.webp",
   "manufacturer": "Gigabyte",
-  "price": 9400,
+  "tdp": 40,
+  "price": "9400",
   "socket": "LGA1151",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "GA-H110M-S2PH",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/afox-b550-ma-v2-ddr4-amd-11723635844.webp",
   "manufacturer": "Gigabyte",
-  "price": 9500,
+  "tdp": 40,
+  "price": "9500",
   "socket": "LGA1151",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "PRO H610M-B",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-ga-h110m-m2-ddr4-6th7th-gen-lga1151-21548644179.webp",
   "manufacturer": "MSI",
-  "price": 9500,
+  "tdp": 40,
+  "price": "9500",
   "socket": "LGA1700",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "B450M GAMING",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-ga-h110m-s2ph-ddr4-6th7th-genlga1151-11545213943.webp",
   "manufacturer": "Gigabyte",
-  "price": 9500,
+  "tdp": 40,
+  "price": "9500",
   "socket": "AM4",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "Gigabyte H310M M.2 2.0",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-h310m-m2-20-ddr4-8th9th-gen-lga1151-11595937209.webp",
   "manufacturer": "Gigabyte",
-  "price": 9600,
+  "tdp": 40,
+  "price": "9600",
   "socket": "LGA1151",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "H510M PLUS II DDR4",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-h510m-plus-ii-ddr4-10th11th-gen-intel-11758543490.webp",
   "manufacturer": "MSI",
-  "price": 9700,
+  "tdp": 40,
+  "price": "9700",
   "socket": "LGA1200",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "PRIME H610M-E D4",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-pro-h610m-e-ddr4-intel-11677924101.webp",
   "manufacturer": "ASUS",
-  "price": 9800,
+  "tdp": 40,
+  "price": "9800",
   "socket": "LGA1700",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "PRIME H610M-K D4-R2.0",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-pro-h610m-s-ddr4-intel-11715255645.webp",
   "manufacturer": "ASUS",
-  "price": 9900,
+  "tdp": 40,
+  "price": "9900",
   "socket": "LGA1700",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "PRO H610M-E DDR4",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-h510m-k-v2-ddr4-intel-11725433200.webp",
   "manufacturer": "MSI",
-  "price": 9900,
+  "tdp": 40,
+  "price": "9900",
   "socket": "LGA1700",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "H470M H",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/afox-b760d4-ma-v4-ddr4-intel-11732538630.webp",
   "manufacturer": "Gigabyte",
-  "price": 9900,
+  "tdp": 40,
+  "price": "9900",
   "socket": "LGA1200",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "ASRock H610M-HDV\/M.2",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/afox-b760d5-ma-v4-ddr5-intel-11732538683.webp",
   "manufacturer": "ASRock",
-  "price": 10100,
+  "tdp": 40,
+  "price": "10100",
   "socket": "LGA1700",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "H610M S2P DDR4",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-prime-h610m-f-d4-r20-ddr4-intel-11730115372.webp",
   "manufacturer": "Gigabyte",
-  "price": 10200,
+  "tdp": 40,
+  "price": "10200",
   "socket": "LGA1700",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "PRIME H610M-CS D4",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-prime-j4005i-c-ddr4-mini-itx-motherboard-41625477187.webp",
   "manufacturer": "ASUS",
-  "price": 10400,
+  "tdp": 40,
+  "price": "10400",
   "socket": "LGA1700",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "H610M S2H V2",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/maxsun-ms-h610m-666-wi-fi-6-motherboard-51729753365.webp",
   "manufacturer": "Gigabyte",
-  "price": 10400,
+  "tdp": 40,
+  "price": "10400",
   "socket": "LGA1700",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "H610M K (2.0) DDR4",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-a520m-ds3h-v2-ddr4-amd-11694513536.webp",
   "manufacturer": "Gigabyte",
-  "price": 10500,
+  "tdp": 40,
+  "price": "10500",
   "socket": "LGA1700",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "H610M H V3 DDR4",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-prime-h510m-f-r30-h470-chipset-ddr4-intel-11728214915.webp",
   "manufacturer": "Gigabyte",
-  "price": 10500,
+  "tdp": 40,
+  "price": "10500",
   "socket": "LGA1700",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "PRO H610M-G DDR5",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-prime-h610m-cs-d4-ddr4-intel-11713262915.webp",
   "manufacturer": "MSI",
-  "price": 11000,
+  "tdp": 40,
+  "price": "11000",
   "socket": "LGA1700",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "A620M-H DDR5",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-h610m-k-v2-20-ddr4-intel-11726048304.webp",
   "manufacturer": "Gigabyte",
-  "price": 11000,
+  "tdp": 40,
+  "price": "11000",
   "socket": "AM5",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "B550M-A PRO DDR4",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-h610m-h-v3-ddr4-intel-11711601527.webp",
   "manufacturer": "MSI",
-  "price": 11200,
+  "tdp": 40,
+  "price": "11200",
   "socket": "AM4",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "Challenger A620A 2.5G D5",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-prime-h610m-r-d4-ddr4-12th13th14th-gen-11757940403.webp",
   "manufacturer": "MAXSUN",
-  "price": 11200,
+  "tdp": 40,
+  "price": "11200",
   "socket": "AM5",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "PRIME H610M-CS D5",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-pro-h610m-e-ddr5-intel-11692795688.webp",
   "manufacturer": "ASUS",
-  "price": 11300,
+  "tdp": 40,
+  "price": "11300",
   "socket": "LGA1700",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "PRO A620M-E DDR5",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-b450m-ds3h-v3-ddr4-amd-11734246893.webp",
   "manufacturer": "MSI",
-  "price": 11500,
+  "tdp": 40,
+  "price": "11500",
   "socket": "AM5",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "B450 AORUS M",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-pro-h610m-g-ddr4-12th-gen-intel-lga1700-11649052244.webp",
   "manufacturer": "Gigabyte",
-  "price": 11500,
+  "tdp": 60,
+  "price": "11500",
   "socket": "AM4",
   "form_factor": "Micro-ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "PRO Q570M-C\/CSM",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-h610m-k-v2-ddr5-intel-11726048503.webp",
   "manufacturer": "ASUS",
-  "price": 11900,
+  "tdp": 40,
+  "price": "11900",
   "socket": "LGA1200",
   "form_factor": "Micro-ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "PRIME A620M-K DDR5",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-pro-h610m-g-ddr5-intel-11691903958.webp",
   "manufacturer": "ASUS",
-  "price": 11950,
+  "tdp": 60,
+  "price": "11950",
   "socket": "AM5",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "Challenger B550M",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-h610m-h-v2-ddr5-intel-11724848803.webp",
   "manufacturer": "MAXSUN",
-  "price": 12000,
+  "tdp": 40,
+  "price": "12000",
   "socket": "AM4",
   "form_factor": "Micro-ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "PRIME H470-PLUS",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-b550m-a-pro-ddr4-amd-am4-socket-11611915858.webp",
   "manufacturer": "ASUS",
-  "price": 12000,
+  "tdp": 40,
+  "price": "12000",
   "socket": "LGA1200",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "TUF GAMING A520M-PLUS II",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/maxsun-ms-h610m-666-wi-fi-6-ddr5-12th13th14th-11745919372.webp",
   "manufacturer": "ASUS",
-  "price": 12800,
+  "tdp": 60,
+  "price": "12800",
   "socket": "AM4",
   "form_factor": "Micro-ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "PRIME B760M-K D4",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/maxsun-challenger-a620a-25g-ddr5-amd-am5-socket-11745920009.webp",
   "manufacturer": "ASUS",
-  "price": 13500,
+  "tdp": 60,
+  "price": "13500",
   "socket": "LGA1700",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "PRIME B760M-F DDR5",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-prime-a520m-a-ii-ddr4-amd-11685451996.webp",
   "manufacturer": "ASUS",
-  "price": 14700,
+  "tdp": 60,
+  "price": "14700",
   "socket": "LGA1700",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "B550 GAMING X V2",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-pro-a620m-e-ddr5-amd-11683979595.webp",
   "manufacturer": "Gigabyte",
-  "price": 15500,
+  "tdp": 60,
+  "price": "15500",
   "socket": "AM4",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "BIOSTAR B650M-SILVER",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/biostar-b760mx2-e-ddr5-11701603838.webp",
   "manufacturer": "BIOSTAR",
-  "price": 17500,
+  "tdp": 60,
+  "price": "17500",
   "socket": "AM5",
   "form_factor": "Micro-ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "PRO B760-P WIFI DDR4",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-a620m-h-ddr5-amd-am5-socket-11722498571.webp",
   "manufacturer": "MSI",
-  "price": 17500,
+  "tdp": 60,
+  "price": "17500",
   "socket": "LGA1700",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "Battle-AX B760M-PLUS D5 V20",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-prime-h610m-cs-ddr5-intel-11715775420.webp",
   "manufacturer": "Colorful",
-  "price": 17700,
+  "tdp": 60,
+  "price": "17700",
   "socket": "LGA1700",
   "form_factor": "Micro-ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "ASRock B650M PG LIGHTNING",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-pro-b650m-e-ddr5-amd-motherboard-11725858826.webp",
   "manufacturer": "ASRock",
-  "price": 18500,
+  "tdp": 60,
+  "price": "18500",
   "socket": "AM5",
   "form_factor": "Micro-ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "MAG B550M MORTAR WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-b550m-k-ddr4-amd-11690375990.webp",
   "manufacturer": "MSI",
-  "price": 18500,
+  "tdp": 60,
+  "price": "18500",
   "socket": "AM4",
   "form_factor": "Micro-ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "B760M AORUS ELITE AX",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/maxsun-challenger-b760m-n-d5-intel-motherboard-51729753245.webp",
   "manufacturer": "Gigabyte",
-  "price": 18500,
+  "tdp": 60,
+  "price": "18500",
   "socket": "LGA1700",
   "form_factor": "Micro-ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "PRIME B650M-A WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-pro-q570m-ccsm-ddr4-10th11th-gen-intel-11760441478.webp",
   "manufacturer": "ASUS",
-  "price": 18500,
+  "tdp": 60,
+  "price": "18500",
   "socket": "AM5",
   "form_factor": "Micro-ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "TUF GAMING B550-PLUS WIFI II",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-prime-a620m-k-ddr5-amd-am5-socket-11724155577.webp",
   "manufacturer": "ASUS",
-  "price": 18900,
+  "tdp": 60,
+  "price": "18900",
   "socket": "AM4",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "B840M DS3H DDR5",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-b450m-ds3h-wi-fi-ddr4-am4-socket-amd-11649586639.webp",
   "manufacturer": "Gigabyte",
-  "price": 19000,
+  "tdp": 60,
+  "price": "19000",
   "socket": "AM5",
   "form_factor": "Micro-ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "PRIME B650-PLUS",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-h810m-h-ddr5-intel-core-ultra-lga1851-11745923265.webp",
   "manufacturer": "ASUS",
-  "price": 19000,
+  "tdp": 60,
+  "price": "19000",
   "socket": "AM5",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "B650M-AYW WIFI6",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-tuf-gaming-a520m-plus-ii-ddr4-amd-am4-socket-11663677381.webp",
   "manufacturer": "ASUS",
-  "price": 19500,
+  "tdp": 60,
+  "price": "19500",
   "socket": "AM5",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "TUF GAMING B760M-PLUS WIFI D5",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/maxsun-b760m-gaming-gank-wi-fi-6e-ddr5-intel-71729750658.webp",
   "manufacturer": "ASUS",
-  "price": 19500,
+  "tdp": 60,
+  "price": "19500",
   "socket": "LGA1700",
   "form_factor": "Micro-ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "PRO B760M-A WIFI DDR4",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/afox-b650d5-ma-v2-ddr5-amd-11752398694.webp",
   "manufacturer": "MSI",
-  "price": 19600,
+  "tdp": 60,
+  "price": "19600",
   "socket": "LGA1700",
   "form_factor": "Micro-ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "B840M GAMING X AX",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-pro-b760m-e-ddr5-intel-11704705153.webp",
   "manufacturer": "Gigabyte",
-  "price": 20000,
+  "tdp": 60,
+  "price": "20000",
   "socket": "AM5",
   "form_factor": "Micro-ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "B650M GAMING X AX DDR5",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-pro-b650m-b-ddr5-amd-11704285211.webp",
   "manufacturer": "Gigabyte",
-  "price": 20500,
+  "tdp": 60,
+  "price": "20500",
   "socket": "AM5",
   "form_factor": "Micro-ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "B840M GAMING PRO WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-b760m-k-v2-ddr4-12th13th14th-gen-intel-11734250727.webp",
   "manufacturer": "MSI",
-  "price": 20500,
+  "tdp": 60,
+  "price": "20500",
   "socket": "AM5",
   "form_factor": "Micro-ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "PRO B650-S WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-b760m-h-ddr4-12th13th-gen-intel-lga1700-11689070262.webp",
   "manufacturer": "MSI",
-  "price": 21000,
+  "tdp": 60,
+  "price": "21000",
   "socket": "AM5",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "MPG B550 GAMING EDGE WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-b650m-h-ddr5-amd-am5-socket-11722498361.webp",
   "manufacturer": "MSI",
-  "price": 21000,
+  "tdp": 60,
+  "price": "21000",
   "socket": "AM4",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "B760M GAMING X AX DDR5",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-b650m-s2h-ddr5-amd-11697283715.webp",
   "manufacturer": "Gigabyte",
-  "price": 21500,
+  "tdp": 60,
+  "price": "21500",
   "socket": "LGA1700",
   "form_factor": "Micro-ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "MAG B760M MORTAR WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-b550m-pro-vdh-amd-11634809544.webp",
   "manufacturer": "MSI",
-  "price": 22000,
+  "tdp": 60,
+  "price": "22000",
   "socket": "LGA1700",
   "form_factor": "Micro-ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "B850M FORCE WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-prime-b760m-f-ddr5-intel-11726141542.webp",
   "manufacturer": "Gigabyte",
-  "price": 22500,
+  "tdp": 60,
+  "price": "22500",
   "socket": "AM5",
   "form_factor": "Micro-ATX",
-  "ram_slots": 2
+  "ram_slots": "2"
  },
  {
   "name": "B760 GAMING X AX",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-prime-b760m-k-d4-ddr4-intel-11728215156.webp",
   "manufacturer": "Gigabyte",
-  "price": 22500,
+  "tdp": 60,
+  "price": "22500",
   "socket": "LGA1700",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "PRO B650-VC WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-b650m-k-ddr5-amd-11693719685.webp",
   "manufacturer": "MSI",
-  "price": 23000,
+  "tdp": 60,
+  "price": "23000",
   "socket": "AM5",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "MAG B650M MORTAR WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-pro-b760m-p-ddr5-12th13th-gen-intel-lga1700-11687006596.webp",
   "manufacturer": "MSI",
-  "price": 23500,
+  "tdp": 60,
+  "price": "23500",
   "socket": "AM5",
   "form_factor": "Micro-ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "TUF GAMING B650-PLUS WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-b760m-e-ddr5-intel-11730367185.webp",
   "manufacturer": "ASUS",
-  "price": 24000,
+  "tdp": 60,
+  "price": "24000",
   "socket": "AM5",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "B650 GAMING PLUS WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-pro-b840m-b-ddr5-amd-am5-socket-11760269397.webp",
   "manufacturer": "MSI",
-  "price": 24500,
+  "tdp": 60,
+  "price": "24500",
   "socket": "AM5",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "B860M GAMING X AX",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-b550m-pro-vdh-wifi-ddr4-amd-am4-socket-11599302228.webp",
   "manufacturer": "Gigabyte",
-  "price": 25000,
+  "tdp": 60,
+  "price": "25000",
   "socket": "LGA1851",
   "form_factor": "Micro-ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "MAG B650 TOMAHAWK WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-pro-b650m-p-ddr5-amd-11689491127.webp",
   "manufacturer": "MSI",
-  "price": 25500,
+  "tdp": 60,
+  "price": "25500",
   "socket": "AM5",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "PRO B850M-A WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/maxsun-b760m-gaming-ace-wi-fi-6e-ddr5-intel-61729752753.webp",
   "manufacturer": "MSI",
-  "price": 25500,
+  "tdp": 60,
+  "price": "25500",
   "socket": "AM5",
   "form_factor": "Micro-ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "PRIME B860M-A WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-ex-b650m-v7-ddr5-amd-71730006270.webp",
   "manufacturer": "ASUS",
-  "price": 26000,
+  "tdp": 60,
+  "price": "26000",
   "socket": "LGA1851",
   "form_factor": "Micro-ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "B650 GAMING X AX",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-prime-b650m-a-ii-ddr5-amd-am5-socket-11724155683.webp",
   "manufacturer": "Gigabyte",
-  "price": 26000,
+  "tdp": 60,
+  "price": "26000",
   "socket": "AM5",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "B650 AORUS ELITE AX V2",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/maxsun-terminator-b760m-gkd5-ice-white-ddr5-intel-11731484562.webp",
   "manufacturer": "Gigabyte",
-  "price": 28000,
+  "tdp": 60,
+  "price": "28000",
   "socket": "AM5",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "PRO B850-P WIFI7",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-b550m-gaming-x-wi-fi-6-ddr4-am4-socket-11748339790.webp",
   "manufacturer": "MSI",
-  "price": 28200,
+  "tdp": 60,
+  "price": "28200",
   "socket": "AM5",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "MPG B850 EDGE WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-pro-b760m-c-csm-ddr5-11683634772.webp",
   "manufacturer": "MSI",
-  "price": 30000,
+  "tdp": 60,
+  "price": "30000",
   "socket": "AM5",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "PRIME Z790-P WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-pro-h810m-b-ddr5-intel-core-ultra-lga1851-11749624893.webp",
   "manufacturer": "ASUS",
-  "price": 31000,
+  "tdp": 80,
+  "price": "31000",
   "socket": "LGA1700",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "MAG B860 TOMAHAWK WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-prime-h610i-plus-ddr5-12th13th14th-gen-11720340784.webp",
   "manufacturer": "MSI",
-  "price": 31000,
+  "tdp": 60,
+  "price": "31000",
   "socket": "LGA1851",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "ROG STRIX B650-A GAMING WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-b760m-d3hp-ddr5-intel-11730367484.webp",
   "manufacturer": "ASUS",
-  "price": 31500,
+  "tdp": 80,
+  "price": "31500",
   "socket": "AM5",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "B650 AERO G",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-b650m-gaming-wi-fi-5-ddr5-amd-11730291277.webp",
   "manufacturer": "Gigabyte",
-  "price": 32000,
+  "tdp": 80,
+  "price": "32000",
   "socket": "AM5",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "PRO Z790-P WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-b860m-d2h-ddr5-intel-core-ultra-lga1851-31760693450.webp",
   "manufacturer": "MSI",
-  "price": 34000,
+  "tdp": 80,
+  "price": "34000",
   "socket": "LGA1700",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "PRIME X870-P WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-prime-b760m-f-wi-fi-6-ddr5-12th13th14th-11757505693.webp",
   "manufacturer": "ASUS",
-  "price": 35000,
+  "tdp": 80,
+  "price": "35000",
   "socket": "AM5",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "MAG Z790 TOMAHAWK WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/colorful-battle-ax-b760m-plus-d5-v20-ddr5-11697548599.webp",
   "manufacturer": "MSI",
-  "price": 36000,
+  "tdp": 80,
+  "price": "36000",
   "socket": "LGA1700",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "Z790 AORUS ELITE AX",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-b650m-d3hp-ddr5-amd-11711701188.webp",
   "manufacturer": "Gigabyte",
-  "price": 38000,
+  "tdp": 80,
+  "price": "38000",
   "socket": "LGA1700",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "PRO Z890-S WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-b550-eagle-wi-fi-6-ddr4-am4-socket-amd-11748339688.webp",
   "manufacturer": "MSI",
-  "price": 38000,
+  "tdp": 80,
+  "price": "38000",
   "socket": "LGA1851",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "ROG STRIX B650E-F GAMING WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-b840m-eagle-wi-fi-6-ddr5-amd-gaming-11760788206.webp",
   "manufacturer": "ASUS",
-  "price": 38500,
+  "tdp": 80,
+  "price": "38500",
   "socket": "AM5",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "MAG X870 TOMAHAWK WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-b650m-gaming-wi-fi-6e-amd-am5-11715255913.webp",
   "manufacturer": "MSI",
-  "price": 39000,
+  "tdp": 80,
+  "price": "39000",
   "socket": "AM5",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "PRIME Z790-A WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-tuf-gaming-b550m-plus-ii-wi-fi-6-ddr4-amd-11756789639.webp",
   "manufacturer": "ASUS",
-  "price": 39000,
+  "tdp": 80,
+  "price": "39000",
   "socket": "LGA1700",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "Z890 AORUS ELITE X WIFI7",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-pro-h810i-wi-fi-7-ddr5-intel-core-ultra-11758543611.webp",
   "manufacturer": "Gigabyte",
-  "price": 42000,
+  "tdp": 80,
+  "price": "42000",
   "socket": "LGA1851",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "PRO Z890-P",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-b650m-d3hp-ax-wi-fi-6e-ddr5-11711701062.webp",
   "manufacturer": "MSI",
-  "price": 42000,
+  "tdp": 80,
+  "price": "42000",
   "socket": "LGA1851",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "PRO Z890-A WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-b840m-ds3h-ddr5-amd-am5-socket-11760693649.webp",
   "manufacturer": "MSI",
-  "price": 45000,
+  "tdp": 80,
+  "price": "45000",
   "socket": "LGA1851",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "PRIME Z890-A WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-b760m-bomber-wi-fi-6e-ddr5-intel-11689486405.webp",
   "manufacturer": "ASUS",
-  "price": 45000,
+  "tdp": 80,
+  "price": "45000",
   "socket": "LGA1851",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "X870 AORUS ELITE AX",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-b760m-gaming-plus-wi-fi-6e-intel-21704705105.webp",
   "manufacturer": "Gigabyte",
-  "price": 45000,
+  "tdp": 80,
+  "price": "45000",
   "socket": "AM5",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "ROG STRIX Z790-H GAMING WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-b760m-d3hp-wi-fi-6-ddr5-12th13th14th-11748339891.webp",
   "manufacturer": "ASUS",
-  "price": 48000,
+  "tdp": 80,
+  "price": "48000",
   "socket": "LGA1700",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "ROG STRIX X870E-E GAMING",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-b760m-gaming-ddr4-intel-11723631926.webp",
   "manufacturer": "ASUS",
-  "price": 55000,
+  "tdp": 80,
+  "price": "55000",
   "socket": "AM5",
   "form_factor": "E-ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "MAG Z790 CARBON WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-b760m-ayw-wi-fi-6-ddr5-intel-11729335811.webp",
   "manufacturer": "MSI",
-  "price": 55000,
+  "tdp": 80,
+  "price": "55000",
   "socket": "LGA1700",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "Z890 AORUS PRO X",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-tuf-gaming-a620m-plus-wi-fi-6-ddr5-amd-am5-11694085974.webp",
   "manufacturer": "Gigabyte",
-  "price": 55000,
+  "tdp": 80,
+  "price": "55000",
   "socket": "LGA1851",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "ROG CROSSHAIR X870E HERO",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-b650m-ayw-wi-fi-6-ddr5-amd-11736940569.webp",
   "manufacturer": "ASUS",
-  "price": 62000,
+  "tdp": 80,
+  "price": "62000",
   "socket": "AM5",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "AORUS Z790 MASTER",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-b760m-gaming-ax-10-wi-fi-6e-ddr5-11748349834.webp",
   "manufacturer": "Gigabyte",
-  "price": 68000,
+  "tdp": 80,
+  "price": "68000",
   "socket": "LGA1700",
   "form_factor": "E-ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  },
  {
   "name": "ROG STRIX Z890-E GAMING WIFI",
   "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-b840m-gaming-wi-fi-6e-ddr5-amd-am5-socket-11756118850.webp",
   "manufacturer": "ASUS",
-  "price": 75000,
+  "tdp": 80,
+  "price": "75000",
   "socket": "LGA1851",
   "form_factor": "ATX",
-  "ram_slots": 4
+  "ram_slots": "4"
  }
 ]

@@ -1,839 +1,922 @@
 [
-  {
-    "name": "AFOX GeForce GT 240 1GB GDDR3",
-    "image": "https://www.ryans.com/storage/products/small/afox-geforce-gt-240-1gb-gddr3-graphics-card-11736685726.webp",
-    "manufacturer": "AFOX",
-    "price": 3900,
-    "performance_tier": "Entry",
-    "vram_gb": "1GB",
-    "gpu_clock_speed": "N/A"
-  },
-  {
-    "name": "AFOX GeForce GT 710 2GB DDR3",
-    "image": "https://www.ryans.com/storage/products/small/afox-radeon-r7-350-2gb-gddr5-single-fan-graphics-11736489083.webp",
-    "manufacturer": "AFOX",
-    "price": 4500,
-    "performance_tier": "Entry",
-    "vram_gb": "2GB",
-    "gpu_clock_speed": "954 MHz"
-  },
-  {
-    "name": "Manli GeForce GT 730 4GB DDR3",
-    "image": "https://www.ryans.com/storage/products/small/asus-geforce-gt-730-2gb-gddr5-graphics-card-11720956404.webp",
-    "manufacturer": "Manli",
-    "price": 6000,
-    "performance_tier": "Entry",
-    "vram_gb": "4GB",
-    "gpu_clock_speed": "902 MHz"
-  },
-  {
-    "name": "ZOTAC GeForce GT 730 4GB DDR3",
-    "image": "https://www.ryans.com/storage/products/small/peladn-amd-radeon-kaitian-rx-580-8gd5-gaming-8gb-11763211789.webp",
-    "manufacturer": "ZOTAC",
-    "price": 6200,
-    "performance_tier": "Entry",
-    "vram_gb": "4GB",
-    "gpu_clock_speed": "902 MHz"
-  },
-  {
-    "name": "AFOX GeForce GT 1030 2GB DDR4",
-    "image": "https://www.ryans.com/storage/products/small/manli-nebula-geforce-rtx-3050-twin-cooler-v2-11757048549.webp",
-    "manufacturer": "AFOX",
-    "price": 6500,
-    "performance_tier": "Entry",
-    "vram_gb": "2GB",
-    "gpu_clock_speed": "1468 MHz"
-  },
-  {
-    "name": "Gigabyte GeForce GT 730 2GB GDDR5",
-    "image": "https://www.ryans.com/storage/products/small/zotac-gaming-geforce-rtx-3050-twin-edge-oc-6gb-11731416196.webp",
-    "manufacturer": "Gigabyte",
-    "price": 7000,
-    "performance_tier": "Entry",
-    "vram_gb": "2GB",
-    "gpu_clock_speed": "902 MHz"
-  },
-  {
-    "name": "MSI GeForce GT 1030 2GB DDR5",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-geforce-rtx-3050-oc-low-profile-6g-6gb-11723706680.webp",
-    "manufacturer": "MSI",
-    "price": 7500,
-    "performance_tier": "Entry",
-    "vram_gb": "2GB",
-    "gpu_clock_speed": "1518 MHz"
-  },
-  {
-    "name": "AFOX Radeon R7 350 2GB GDDR5",
-    "image": "https://www.ryans.com/storage/products/small/asus-dual-geforce-rtx-3050-6gb-gddr6-graphics-11729337596.webp",
-    "manufacturer": "AFOX",
-    "price": 8500,
-    "performance_tier": "Entry",
-    "vram_gb": "2GB",
-    "gpu_clock_speed": "N/A"
-  },
-  {
-    "name": "PELADN AMD Radeon RX 580 8G",
-    "image": "https://www.ryans.com/storage/products/small/gunnir-intel-arc-b570-index-10g-black-10gb-gddr6-11740658030.webp",
-    "manufacturer": "PELADN",
-    "price": 16500,
-    "performance_tier": "Entry",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "1340 MHz"
-  },
-  {
-    "name": "Gigabyte GeForce GTX 1650 D6 4G",
-    "image": "https://www.ryans.com/storage/products/small/maxsun-intel-arc-b570-milestone-10g-10gb-gddr6-11745921125.webp",
-    "manufacturer": "Gigabyte",
-    "price": 18000,
-    "performance_tier": "Entry",
-    "vram_gb": "4GB",
-    "gpu_clock_speed": "1665 MHz"
-  },
-  {
-    "name": "AFOX Radeon RX 6500 XT 4GB",
-    "image": "https://www.ryans.com/storage/products/small/manli-nebula-geforce-rtx-5050-twin-cooler-8gb-11753707127.webp",
-    "manufacturer": "AFOX",
-    "price": 18500,
-    "performance_tier": "Entry",
-    "vram_gb": "4GB",
-    "gpu_clock_speed": "2815 MHz"
-  },
-  {
-    "name": "ASUS Phoenix GeForce GTX 1650 4GB",
-    "image": "https://www.ryans.com/storage/products/small/powercolor-fighter-amd-radeon-rx-7600-8gb-gddr6-11741429200.webp",
-    "manufacturer": "ASUS",
-    "price": 18500,
-    "performance_tier": "Entry",
-    "vram_gb": "4GB",
-    "gpu_clock_speed": "1665 MHz"
-  },
-  {
-    "name": "Manli NEBULA GeForce RTX 3050 6GB",
-    "image": "https://www.ryans.com/storage/products/small/zotac-gaming-geforce-rtx-5050-twin-edge-8gb-gddr6-11754731440.webp",
-    "manufacturer": "Manli",
-    "price": 23800,
-    "performance_tier": "Mid",
-    "vram_gb": "6GB",
-    "gpu_clock_speed": "1777 MHz"
-  },
-  {
-    "name": "ZOTAC Gaming GeForce RTX 3050 OC 6G",
-    "image": "https://www.ryans.com/storage/products/small/msi-geforce-rtx-5050-8g-shadow-2x-oc-8gb-gddr6-11754729675.webp",
-    "manufacturer": "ZOTAC",
-    "price": 24000,
-    "performance_tier": "Mid",
-    "vram_gb": "6GB",
-    "gpu_clock_speed": "1807 MHz"
-  },
-  {
-    "name": "PNY GeForce GTX 1660 SUPER 6GB",
-    "image": "https://www.ryans.com/storage/products/small/zotac-gaming-geforce-rtx-5050-solo-8gb-gddr6-11754731357.webp",
-    "manufacturer": "PNY",
-    "price": 25000,
-    "performance_tier": "Mid",
-    "vram_gb": "6GB",
-    "gpu_clock_speed": "1785 MHz"
-  },
-  {
-    "name": "MSI GeForce GTX 1660 SUPER VENTUS XS 6G",
-    "image": "https://www.ryans.com/storage/products/small/zotac-gaming-geforce-rtx-5050-twin-edge-oc-8gb-11754731566.webp",
-    "manufacturer": "MSI",
-    "price": 26000,
-    "performance_tier": "Mid",
-    "vram_gb": "6GB",
-    "gpu_clock_speed": "1785 MHz"
-  },
-  {
-    "name": "Gigabyte GeForce RTX 3050 Low Profile 6G",
-    "image": "https://www.ryans.com/storage/products/small/msi-geforce-rtx-5050-8g-ventus-2x-oc-8gb-gddr6-11754729762.webp",
-    "manufacturer": "Gigabyte",
-    "price": 26200,
-    "performance_tier": "Mid",
-    "vram_gb": "6GB",
-    "gpu_clock_speed": "1777 MHz"
-  },
-  {
-    "name": "Gigabyte GeForce GTX 1660 SUPER OC 6G",
-    "image": "https://www.ryans.com/storage/products/small/maxsun-intel-arc-b580-icraft-12g-12gb-gddr6-white-11745921489.webp",
-    "manufacturer": "Gigabyte",
-    "price": 27000,
-    "performance_tier": "Mid",
-    "vram_gb": "6GB",
-    "gpu_clock_speed": "1815 MHz"
-  },
-  {
-    "name": "ASUS Dual GeForce RTX 3050 6GB",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-geforce-rtx-5050-oc-low-profile-8g-8gb-11756202354.webp",
-    "manufacturer": "ASUS",
-    "price": 28200,
-    "performance_tier": "Mid",
-    "vram_gb": "6GB",
-    "gpu_clock_speed": "1807 MHz"
-  },
-  {
-    "name": "ASUS TUF Gaming GeForce GTX 1660 Ti 6GB",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-geforce-rtx-5050-windforce-oc-8g-8gb-11756204681.webp",
-    "manufacturer": "ASUS",
-    "price": 30000,
-    "performance_tier": "Mid",
-    "vram_gb": "6GB",
-    "gpu_clock_speed": "1815 MHz"
-  },
-  {
-    "name": "GUNNIR Intel Arc B570 Index 10G",
-    "image": "https://www.ryans.com/storage/products/small/asus-dual-geforce-rtx-5050-8gb-gddr6-graphics-11757505881.webp",
-    "manufacturer": "GUNNIR",
-    "price": 32800,
-    "performance_tier": "Mid",
-    "vram_gb": "10GB",
-    "gpu_clock_speed": "2000 MHz"
-  },
-  {
-    "name": "Manli GeForce RTX 3060 12GB",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-geforce-rtx-5050-gaming-oc-8g-8gb-gddr6-11756203541.webp",
-    "manufacturer": "Manli",
-    "price": 33000,
-    "performance_tier": "Mid",
-    "vram_gb": "12GB",
-    "gpu_clock_speed": "1777 MHz"
-  },
-  {
-    "name": "ZOTAC Gaming GeForce RTX 3060 12GB",
-    "image": "https://www.ryans.com/storage/products/small/zotac-gaming-geforce-rtx-5060-solo-8gb-gddr7-11748518934.webp",
-    "manufacturer": "ZOTAC",
-    "price": 34500,
-    "performance_tier": "Mid",
-    "vram_gb": "12GB",
-    "gpu_clock_speed": "1777 MHz"
-  },
-  {
-    "name": "ZOTAC Gaming GeForce RTX 2060 6GB",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-geforce-rtx-5060-oc-low-profile-8g-8gb-11756197960.webp",
-    "manufacturer": "ZOTAC",
-    "price": 35000,
-    "performance_tier": "Mid",
-    "vram_gb": "6GB",
-    "gpu_clock_speed": "1680 MHz"
-  },
-  {
-    "name": "Gigabyte GeForce RTX 3060 Windforce OC 12G",
-    "image": "https://www.ryans.com/storage/products/small/manli-polar-fox-geforce-rtx-5060-oc-twin-cooler-11753773139.webp",
-    "manufacturer": "Gigabyte",
-    "price": 36000,
-    "performance_tier": "Mid",
-    "vram_gb": "12GB",
-    "gpu_clock_speed": "1777 MHz"
-  },
-  {
-    "name": "Gigabyte GeForce RTX 2060 D6 6G",
-    "image": "https://www.ryans.com/storage/products/small/zotac-gaming-geforce-rtx-5060-twin-edge-oc-white-11754731639.webp",
-    "manufacturer": "Gigabyte",
-    "price": 36000,
-    "performance_tier": "Mid",
-    "vram_gb": "6GB",
-    "gpu_clock_speed": "1680 MHz"
-  },
-  {
-    "name": "Manli NEBULA GeForce RTX 5050 8GB",
-    "image": "https://www.ryans.com/storage/products/small/powercolor-reaper-amd-radeon-rx-9060-xt-8gb-gddr6-11749892965.webp",
-    "manufacturer": "Manli",
-    "price": 37000,
-    "performance_tier": "Mid",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "2100 MHz"
-  },
-  {
-    "name": "PowerColor Fighter AMD Radeon RX 7600 8GB",
-    "image": "https://www.ryans.com/storage/products/small/asus-dual-geforce-rtx-5060-oc-edition-8gb-gddr7-11760591979.webp",
-    "manufacturer": "PowerColor",
-    "price": 37500,
-    "performance_tier": "Mid",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "2625 MHz"
-  },
-  {
-    "name": "ASUS Dual GeForce RTX 3060 V2 12GB",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-geforce-rtx-5060-eagle-oc-ice-8g-white-11753964937.webp",
-    "manufacturer": "ASUS",
-    "price": 37500,
-    "performance_tier": "Mid",
-    "vram_gb": "12GB",
-    "gpu_clock_speed": "1807 MHz"
-  },
-  {
-    "name": "ASUS Dual GeForce RTX 2060 V2 6GB",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-geforce-rtx-5060-windforce-max-oc-8g-8gb-11756197490.webp",
-    "manufacturer": "ASUS",
-    "price": 37500,
-    "performance_tier": "Mid",
-    "vram_gb": "6GB",
-    "gpu_clock_speed": "1710 MHz"
-  },
-  {
-    "name": "ZOTAC GAMING GeForce RTX 4060 8GB",
-    "image": "https://www.ryans.com/storage/products/small/asus-dual-geforce-rtx-5060-white-oc-edition-8gb-11760592044.webp",
-    "manufacturer": "ZOTAC",
-    "price": 41000,
-    "performance_tier": "High",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "2460 MHz"
-  },
-  {
-    "name": "Manli GeForce RTX 3060 Ti 8GB",
-    "image": "https://www.ryans.com/storage/products/small/msi-geforce-rtx-5060-ti-8g-shadow-2x-oc-plus-8gb-11749733217.webp",
-    "manufacturer": "Manli",
-    "price": 42000,
-    "performance_tier": "High",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "1665 MHz"
-  },
-  {
-    "name": "MSI GeForce RTX 4060 VENTUS 2X 8G",
-    "image": "https://www.ryans.com/storage/products/small/powercolor-hellhound-amd-radeon-rx-9060-xt-8gb-11749907780.webp",
-    "manufacturer": "MSI",
-    "price": 42500,
-    "performance_tier": "High",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "2490 MHz"
-  },
-  {
-    "name": "Gigabyte GeForce RTX 4060 OC 8GB",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-geforce-rtx-5060-eagle-max-oc-8g-8gb-11756200263.webp",
-    "manufacturer": "Gigabyte",
-    "price": 43000,
-    "performance_tier": "High",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "2505 MHz"
-  },
-  {
-    "name": "ZOTAC Gaming GeForce RTX 3060 Ti 8GB",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-geforce-rtx-5060-gaming-oc-8g-black-8gb-11753961876.webp",
-    "manufacturer": "ZOTAC",
-    "price": 43500,
-    "performance_tier": "High",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "1665 MHz"
-  },
-  {
-    "name": "ASUS Dual GeForce RTX 4060 OC 8GB",
-    "image": "https://www.ryans.com/storage/products/small/msi-geforce-rtx-5060-8g-ventus-2x-oc-white-8gb-11751195014.webp",
-    "manufacturer": "ASUS",
-    "price": 44000,
-    "performance_tier": "High",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "2505 MHz"
-  },
-  {
-    "name": "Gigabyte GeForce RTX 3060 Ti Eagle OC 8G",
-    "image": "https://www.ryans.com/storage/products/small/msi-geforce-rtx-5060-ti-8g-ventus-2x-oc-plus-8gb-11749732003.webp",
-    "manufacturer": "Gigabyte",
-    "price": 45000,
-    "performance_tier": "High",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "1695 MHz"
-  },
-  {
-    "name": "PNY GeForce RTX 2070 SUPER 8GB",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-geforce-rtx-5060-eagle-oc-8g-black-8gb-11753965081.webp",
-    "manufacturer": "PNY",
-    "price": 45000,
-    "performance_tier": "High",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "1770 MHz"
-  },
-  {
-    "name": "PowerColor Hellhound AMD Radeon RX 6700 XT 12GB",
-    "image": "https://www.ryans.com/storage/products/small/msi-geforce-rtx-5060-8g-inspire-2x-oc-8gb-gddr7-11749790420.webp",
-    "manufacturer": "PowerColor",
-    "price": 45000,
-    "performance_tier": "High",
-    "vram_gb": "12GB",
-    "gpu_clock_speed": "2622 MHz"
-  },
-  {
-    "name": "Sapphire Pulse AMD Radeon RX 7600 XT 16GB",
-    "image": "https://www.ryans.com/storage/products/small/asus-prime-geforce-rtx-5060-oc-edition-8gb-gddr7-11760592150.webp",
-    "manufacturer": "Sapphire",
-    "price": 45500,
-    "performance_tier": "High",
-    "vram_gb": "16GB",
-    "gpu_clock_speed": "2810 MHz"
-  },
-  {
-    "name": "ASUS Dual GeForce RTX 3060 Ti V2 8GB",
-    "image": "https://www.ryans.com/storage/products/small/manli-nebula-geforce-rtx-5060-ti-twin-cooler-11753773582.webp",
-    "manufacturer": "ASUS",
-    "price": 47000,
-    "performance_tier": "High",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "1710 MHz"
-  },
-  {
-    "name": "MSI GeForce RTX 2070 SUPER VENTUS 8G",
-    "image": "https://www.ryans.com/storage/products/small/msi-geforce-rtx-5060-8g-gaming-oc-8gb-gddr7-11749790305.webp",
-    "manufacturer": "MSI",
-    "price": 47000,
-    "performance_tier": "High",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "1770 MHz"
-  },
-  {
-    "name": "Sapphire Pulse AMD Radeon RX 6750 XT 12GB",
-    "image": "https://www.ryans.com/storage/products/small/zotac-gaming-geforce-rtx-5060-ti-twin-edge-oc-8gb-11747485827.webp",
-    "manufacturer": "Sapphire",
-    "price": 50000,
-    "performance_tier": "High",
-    "vram_gb": "12GB",
-    "gpu_clock_speed": "2600 MHz"
-  },
-  {
-    "name": "Gigabyte GeForce RTX 4060 Ti Eagle 8G",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-aorus-geforce-rtx-5060-elite-8g-8gb-11756198507.webp",
-    "manufacturer": "Gigabyte",
-    "price": 52000,
-    "performance_tier": "High",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "2535 MHz"
-  },
-  {
-    "name": "ZOTAC RTX 4060 Ti Twin Edge 8GB",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-radeon-rx-9060-xt-gaming-oc-8g-8gb-gddr6-11756201025.webp",
-    "manufacturer": "ZOTAC",
-    "price": 53500,
-    "performance_tier": "High",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "2535 MHz"
-  },
-  {
-    "name": "ASUS Dual GeForce RTX 4060 Ti OC 8GB",
-    "image": "https://www.ryans.com/storage/products/small/powercolor-hellhound-spectral-white-amd-radeon-rx-11753775684.webp",
-    "manufacturer": "ASUS",
-    "price": 55000,
-    "performance_tier": "High",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "2550 MHz"
-  },
-  {
-    "name": "Manli GeForce RTX 3070 8GB",
-    "image": "https://www.ryans.com/storage/products/small/pny-geforce-rtx-5060-ti-dual-fan-16gb-gddr7-11759145056.webp",
-    "manufacturer": "Manli",
-    "price": 55000,
-    "performance_tier": "High",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "1725 MHz"
-  },
-  {
-    "name": "Gigabyte Radeon RX 6800 Gaming OC 16G",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-geforce-rtx-5060-ti-windforce-8g-8gb-11751195280.webp",
-    "manufacturer": "Gigabyte",
-    "price": 55000,
-    "performance_tier": "High",
-    "vram_gb": "16GB",
-    "gpu_clock_speed": "2155 MHz"
-  },
-  {
-    "name": "Sapphire NITRO+ AMD Radeon RX 7700 XT 12GB",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-geforce-rtx-5060-ti-eagle-oc-8g-black-11753962088.webp",
-    "manufacturer": "Sapphire",
-    "price": 55000,
-    "performance_tier": "High",
-    "vram_gb": "12GB",
-    "gpu_clock_speed": "2544 MHz"
-  },
-  {
-    "name": "ZOTAC Gaming GeForce RTX 3070 8GB",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-geforce-rtx-5060-ti-windforce-oc-8g-11753962001.webp",
-    "manufacturer": "ZOTAC",
-    "price": 56500,
-    "performance_tier": "High",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "1725 MHz"
-  },
-  {
-    "name": "Gigabyte GeForce RTX 3070 Gaming OC 8G",
-    "image": "https://www.ryans.com/storage/products/small/asus-dual-geforce-rtx-5060-ti-oc-edition-8gb-11757930523.webp",
-    "manufacturer": "Gigabyte",
-    "price": 58000,
-    "performance_tier": "High",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "1770 MHz"
-  },
-  {
-    "name": "ASUS Dual GeForce RTX 3070 V2 8GB",
-    "image": "https://www.ryans.com/storage/products/small/msi-geforce-rtx-5060-ti-8g-inspire-2x-oc-8gb-11749733134.webp",
-    "manufacturer": "ASUS",
-    "price": 60000,
-    "performance_tier": "High",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "1740 MHz"
-  },
-  {
-    "name": "Gigabyte GeForce RTX 2080 SUPER 8G",
-    "image": "https://www.ryans.com/storage/products/small/msi-geforce-rtx-5060-ti-8g-gaming-oc-8gb-gddr7-11746952793.webp",
-    "manufacturer": "Gigabyte",
-    "price": 60000,
-    "performance_tier": "High",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "1815 MHz"
-  },
-  {
-    "name": "ASUS Dual GeForce RTX 2080 SUPER 8GB",
-    "image": "https://www.ryans.com/storage/products/small/powercolor-fighter-amd-radeon-rx-7700-xt-12gb-11749907185.webp",
-    "manufacturer": "ASUS",
-    "price": 62000,
-    "performance_tier": "High",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "1830 MHz"
-  },
-  {
-    "name": "ASUS TUF Gaming AMD Radeon RX 6800 XT 16GB",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-geforce-rtx-5060-ti-eagle-oc-ice-8g-8gb-11751195411.webp",
-    "manufacturer": "ASUS",
-    "price": 65000,
-    "performance_tier": "High",
-    "vram_gb": "16GB",
-    "gpu_clock_speed": "2250 MHz"
-  },
-  {
-    "name": "Gigabyte Radeon RX 7800 XT Gaming OC 16G",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-geforce-rtx-5060-ti-gaming-oc-8g-8gb-11751195512.webp",
-    "manufacturer": "Gigabyte",
-    "price": 65000,
-    "performance_tier": "High",
-    "vram_gb": "16GB",
-    "gpu_clock_speed": "2565 MHz"
-  },
-  {
-    "name": "Manli GeForce RTX 3070 Ti 8GB",
-    "image": "https://www.ryans.com/storage/products/small/powercolor-amd-radeon-rx-7800-xt-16gb-gddr6-black-11741427646.webp",
-    "manufacturer": "Manli",
-    "price": 68000,
-    "performance_tier": "High",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "1770 MHz"
-  },
-  {
-    "name": "ZOTAC Gaming GeForce RTX 3070 Ti 8GB",
-    "image": "https://www.ryans.com/storage/products/small/zotac-gaming-geforce-rtx-5060-ti-amp-16gb-gddr7-11746275297.webp",
-    "manufacturer": "ZOTAC",
-    "price": 69500,
-    "performance_tier": "High",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "1770 MHz"
-  },
-  {
-    "name": "Gigabyte GeForce RTX 3070 Ti Eagle OC 8G",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-geforce-rtx-5060-ti-windforce-oc-16g-11748520386.webp",
-    "manufacturer": "Gigabyte",
-    "price": 71000,
-    "performance_tier": "High",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "1785 MHz"
-  },
-  {
-    "name": "PNY VERTO GeForce RTX 4070 12GB",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-geforce-rtx-5060-ti-windforce-max-oc-16g-11756203433.webp",
-    "manufacturer": "PNY",
-    "price": 73000,
-    "performance_tier": "High",
-    "vram_gb": "12GB",
-    "gpu_clock_speed": "2475 MHz"
-  },
-  {
-    "name": "ASUS TUF Gaming GeForce RTX 3070 Ti 8GB",
-    "image": "https://www.ryans.com/storage/products/small/powercolor-hellhound-sakura-amd-radeon-rx-7800-xt-11741578317.webp",
-    "manufacturer": "ASUS",
-    "price": 73000,
-    "performance_tier": "High",
-    "vram_gb": "8GB",
-    "gpu_clock_speed": "1770 MHz"
-  },
-  {
-    "name": "MSI GeForce RTX 4070 VENTUS 2X 12G",
-    "image": "https://www.ryans.com/storage/products/small/msi-geforce-rtx-5060-ti-16g-ventus-2x-oc-plus-11746952689.webp",
-    "manufacturer": "MSI",
-    "price": 74500,
-    "performance_tier": "High",
-    "vram_gb": "12GB",
-    "gpu_clock_speed": "2505 MHz"
-  },
-  {
-    "name": "Gigabyte GeForce RTX 4070 Windforce OC 12G",
-    "image": "https://www.ryans.com/storage/products/small/powercolor-hellhound-spectral-white-amd-radeon-rx-11741432015.webp",
-    "manufacturer": "Gigabyte",
-    "price": 75000,
-    "performance_tier": "High",
-    "vram_gb": "12GB",
-    "gpu_clock_speed": "2505 MHz"
-  },
-  {
-    "name": "PowerColor Red Dragon AMD Radeon RX 6900 XT 16GB",
-    "image": "https://www.ryans.com/storage/products/small/msi-geforce-rtx-5060-ti-16g-shadow-2x-oc-plus-11751286982.webp",
-    "manufacturer": "PowerColor",
-    "price": 75000,
-    "performance_tier": "High",
-    "vram_gb": "16GB",
-    "gpu_clock_speed": "2340 MHz"
-  },
-  {
-    "name": "ASUS Dual GeForce RTX 4070 OC 12GB",
-    "image": "https://www.ryans.com/storage/products/small/zotac-gaming-geforce-rtx-5070-twin-edge-12gb-11747543625.webp",
-    "manufacturer": "ASUS",
-    "price": 78000,
-    "performance_tier": "High",
-    "vram_gb": "12GB",
-    "gpu_clock_speed": "2520 MHz"
-  },
-  {
-    "name": "Manli GeForce RTX 3080 10GB",
-    "image": "https://www.ryans.com/storage/products/small/zotac-gaming-geforce-rtx-5070-solid-12gb-gddr7-11751714916.webp",
-    "manufacturer": "Manli",
-    "price": 85000,
-    "performance_tier": "High",
-    "vram_gb": "10GB",
-    "gpu_clock_speed": "1710 MHz"
-  },
-  {
-    "name": "ZOTAC Gaming GeForce RTX 3080 10GB",
-    "image": "https://www.ryans.com/storage/products/small/sapphire-pulse-amd-radeon-rx-9070-gaming-16gb-11741502883.webp",
-    "manufacturer": "ZOTAC",
-    "price": 88000,
-    "performance_tier": "High",
-    "vram_gb": "10GB",
-    "gpu_clock_speed": "1710 MHz"
-  },
-  {
-    "name": "Gigabyte GeForce RTX 3080 Gaming OC 10G",
-    "image": "https://www.ryans.com/storage/products/small/sapphire-pure-amd-radeon-rx-9070-gaming-oc-16gb-11752579872.webp",
-    "manufacturer": "Gigabyte",
-    "price": 90000,
-    "performance_tier": "High",
-    "vram_gb": "10GB",
-    "gpu_clock_speed": "1800 MHz"
-  },
-  {
-    "name": "PNY GeForce RTX 2080 Ti 11GB",
-    "image": "https://www.ryans.com/storage/products/small/msi-geforce-rtx-5070-12g-shadow-2x-oc-12gb-gddr7-11745408430.webp",
-    "manufacturer": "PNY",
-    "price": 90000,
-    "performance_tier": "High",
-    "vram_gb": "11GB",
-    "gpu_clock_speed": "1545 MHz"
-  },
-  {
-    "name": "ASUS TUF Gaming GeForce RTX 3080 10GB",
-    "image": "https://www.ryans.com/storage/products/small/zotac-gaming-geforce-rtx-5070-amp-white-edition-11746276318.webp",
-    "manufacturer": "ASUS",
-    "price": 92000,
-    "performance_tier": "High",
-    "vram_gb": "10GB",
-    "gpu_clock_speed": "1815 MHz"
-  },
-  {
-    "name": "MSI GeForce RTX 2080 Ti VENTUS 11G",
-    "image": "https://www.ryans.com/storage/products/small/sapphire-nitro-amd-radeon-rx-6950-xt-pure-gaming-11659528872.webp",
-    "manufacturer": "MSI",
-    "price": 95000,
-    "performance_tier": "High",
-    "vram_gb": "11GB",
-    "gpu_clock_speed": "1575 MHz"
-  },
-  {
-    "name": "ASUS TUF Gaming AMD Radeon RX 7900 XT 20GB",
-    "image": "https://www.ryans.com/storage/products/small/sapphire-nitro-amd-radeon-rx-9070-xt-16gb-gddr6-11747829164.webp",
-    "manufacturer": "ASUS",
-    "price": 95000,
-    "performance_tier": "High",
-    "vram_gb": "20GB",
-    "gpu_clock_speed": "2500 MHz"
-  },
-  {
-    "name": "Manli GeForce RTX 4070 Ti 12GB",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-geforce-rtx-5070-eagle-oc-sff-12g-12gb-11748613797.webp",
-    "manufacturer": "Manli",
-    "price": 98000,
-    "performance_tier": "High",
-    "vram_gb": "12GB",
-    "gpu_clock_speed": "2610 MHz"
-  },
-  {
-    "name": "Gigabyte GeForce RTX 2080 Ti Gaming OC 11G",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-geforce-rtx-5070-gaming-oc-12g-12gb-11744537455.webp",
-    "manufacturer": "Gigabyte",
-    "price": 100000,
-    "performance_tier": "High",
-    "vram_gb": "11GB",
-    "gpu_clock_speed": "1650 MHz"
-  },
-  {
-    "name": "ZOTAC Gaming GeForce RTX 4070 Ti 12GB",
-    "image": "https://www.ryans.com/storage/products/small/asus-tuf-gaming-geforce-rtx-5070-oc-edition-12gb-11755603707.webp",
-    "manufacturer": "ZOTAC",
-    "price": 102000,
-    "performance_tier": "High",
-    "vram_gb": "12GB",
-    "gpu_clock_speed": "2610 MHz"
-  },
-  {
-    "name": "Gigabyte GeForce RTX 4070 Ti OC 12G",
-    "image": "https://www.ryans.com/storage/products/small/pny-geforce-rtx-5070-ti-argb-epic-x-oc-triple-fan-11760339632.webp",
-    "manufacturer": "Gigabyte",
-    "price": 104000,
-    "performance_tier": "High",
-    "vram_gb": "12GB",
-    "gpu_clock_speed": "2625 MHz"
-  },
-  {
-    "name": "Manli GeForce RTX 3080 Ti 12GB",
-    "image": "https://www.ryans.com/storage/products/small/zotac-gaming-geforce-rtx-5070-ti-amp-extreme-11741770944.webp",
-    "manufacturer": "Manli",
-    "price": 110000,
-    "performance_tier": "High",
-    "vram_gb": "12GB",
-    "gpu_clock_speed": "1665 MHz"
-  },
-  {
-    "name": "ZOTAC Gaming GeForce RTX 3080 Ti 12GB",
-    "image": "https://www.ryans.com/storage/products/small/zotac-gaming-geforce-rtx-5070-ti-amp-extreme-11752578579.webp",
-    "manufacturer": "ZOTAC",
-    "price": 115000,
-    "performance_tier": "High",
-    "vram_gb": "12GB",
-    "gpu_clock_speed": "1665 MHz"
-  },
-  {
-    "name": "Sapphire NITRO+ AMD Radeon RX 7900 XTX 24GB",
-    "image": "https://www.ryans.com/storage/products/small/asus-tuf-gaming-geforce-rtx-4070-ti-super-btf-oc-11724567930.webp",
-    "manufacturer": "Sapphire",
-    "price": 115000,
-    "performance_tier": "High",
-    "vram_gb": "24GB",
-    "gpu_clock_speed": "2615 MHz"
-  },
-  {
-    "name": "Gigabyte GeForce RTX 3080 Ti Gaming OC 12G",
-    "image": "https://www.ryans.com/storage/products/small/manli-polar-fox-v2-geforce-rtx-5080-oc-triple-11753707580.webp",
-    "manufacturer": "Gigabyte",
-    "price": 120000,
-    "performance_tier": "High",
-    "vram_gb": "12GB",
-    "gpu_clock_speed": "1770 MHz"
-  },
-  {
-    "name": "ASUS TUF Gaming GeForce RTX 3080 Ti 12GB",
-    "image": "https://www.ryans.com/storage/products/small/zotac-gaming-geforce-rtx-5080-amp-extreme-11741769819.webp",
-    "manufacturer": "ASUS",
-    "price": 125000,
-    "performance_tier": "High",
-    "vram_gb": "12GB",
-    "gpu_clock_speed": "1785 MHz"
-  },
-  {
-    "name": "PNY VERTO GeForce RTX 4080 16GB",
-    "image": "https://www.ryans.com/storage/products/small/asus-prime-geforce-rtx-5080-oc-edition-16gb-gddr7-11741170028.webp",
-    "manufacturer": "PNY",
-    "price": 150000,
-    "performance_tier": "High",
-    "vram_gb": "16GB",
-    "gpu_clock_speed": "2505 MHz"
-  },
-  {
-    "name": "MSI GeForce RTX 4080 VENTUS 3X 16G",
-    "image": "https://www.ryans.com/storage/products/small/msi-geforce-rtx-5080-16g-inspire-3x-oc-16gb-gddr7-11741170075.webp",
-    "manufacturer": "MSI",
-    "price": 155000,
-    "performance_tier": "High",
-    "vram_gb": "16GB",
-    "gpu_clock_speed": "2520 MHz"
-  },
-  {
-    "name": "Gigabyte GeForce RTX 4080 Gaming OC 16G",
-    "image": "https://www.ryans.com/storage/products/small/msi-geforce-rtx-5080-16g-expert-oc-16gb-gddr7-11754730271.webp",
-    "manufacturer": "Gigabyte",
-    "price": 160000,
-    "performance_tier": "High",
-    "vram_gb": "16GB",
-    "gpu_clock_speed": "2535 MHz"
-  },
-  {
-    "name": "Manli GeForce RTX 3090 24GB",
-    "image": "https://www.ryans.com/storage/products/small/msi-geforce-rtx-5080-16g-ventus-3x-oc-white-16gb-11754729996.webp",
-    "manufacturer": "Manli",
-    "price": 160000,
-    "performance_tier": "High",
-    "vram_gb": "24GB",
-    "gpu_clock_speed": "1695 MHz"
-  },
-  {
-    "name": "ASUS TUF Gaming GeForce RTX 4080 16GB",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-geforce-rtx-5080-gaming-oc-16g-16gb-11741586637.webp",
-    "manufacturer": "ASUS",
-    "price": 165000,
-    "performance_tier": "High",
-    "vram_gb": "16GB",
-    "gpu_clock_speed": "2535 MHz"
-  },
-  {
-    "name": "ZOTAC Gaming GeForce RTX 3090 24GB",
-    "image": "https://www.ryans.com/storage/products/small/msi-geforce-rtx-5090-32g-gaming-trio-oc-32gb-11738413051.webp",
-    "manufacturer": "ZOTAC",
-    "price": 170000,
-    "performance_tier": "High",
-    "vram_gb": "24GB",
-    "gpu_clock_speed": "1695 MHz"
-  },
-  {
-    "name": "Gigabyte GeForce RTX 3090 Gaming OC 24G",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-geforce-rtx-5090-windforce-oc-32g-black-11753962192.webp",
-    "manufacturer": "Gigabyte",
-    "price": 180000,
-    "performance_tier": "High",
-    "vram_gb": "24GB",
-    "gpu_clock_speed": "1755 MHz"
-  },
-  {
-    "name": "ASUS TUF Gaming GeForce RTX 3090 OC 24GB",
-    "image": "https://www.ryans.com/storage/products/small/msi-geforce-rtx-5090-32g-vanguard-soc-32gb-gddr7-11742527680.webp",
-    "manufacturer": "ASUS",
-    "price": 190000,
-    "performance_tier": "High",
-    "vram_gb": "24GB",
-    "gpu_clock_speed": "1785 MHz"
-  },
-  {
-    "name": "PNY VERTO GeForce RTX 4090 24GB",
-    "image": "https://www.ryans.com/storage/products/small/manli-gallardo-geforce-rtx-5090-oc-triple-cooler-11753707844.webp",
-    "manufacturer": "PNY",
-    "price": 240000,
-    "performance_tier": "High",
-    "vram_gb": "24GB",
-    "gpu_clock_speed": "2520 MHz"
-  },
-  {
-    "name": "MSI GeForce RTX 4090 Gaming X Trio 24G",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-geforce-rtx-5090-gaming-oc-32g-32gb-11741589193.webp",
-    "manufacturer": "MSI",
-    "price": 255000,
-    "performance_tier": "High",
-    "vram_gb": "24GB",
-    "gpu_clock_speed": "2580 MHz"
-  },
-  {
-    "name": "Gigabyte GeForce RTX 4090 Gaming OC 24G",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-geforce-rtx-5090-master-32g-32gb-gddr7-11748613929.webp",
-    "manufacturer": "Gigabyte",
-    "price": 260000,
-    "performance_tier": "High",
-    "vram_gb": "24GB",
-    "gpu_clock_speed": "2535 MHz"
-  },
-  {
-    "name": "ASUS TUF Gaming GeForce RTX 4090 OC 24GB",
-    "image": "https://www.ryans.com/storage/products/small/gigabyte-aorus-geforce-rtx-5090-xtreme-waterforce-11756204245.webp",
-    "manufacturer": "ASUS",
-    "price": 270000,
-    "performance_tier": "High",
-    "vram_gb": "24GB",
-    "gpu_clock_speed": "2550 MHz"
-  }
+ {
+  "name": "AFOX GeForce GT 240 1GB GDDR3",
+  "manufacturer": "AFOX",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/afox-geforce-gt-240-1gb-gddr3-graphics-card-11736685726.webp",
+  "tdp": 75,
+  "price": "3900",
+  "performance_tier": "Entry",
+  "vram_gb": "1GB",
+  "gpu_clock_speed": "N\/A"
+ },
+ {
+  "name": "AFOX GeForce GT 710 2GB DDR3",
+  "manufacturer": "AFOX",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/afox-radeon-r7-350-2gb-gddr5-single-fan-graphics-11736489083.webp",
+  "tdp": 75,
+  "price": "4500",
+  "performance_tier": "Entry",
+  "vram_gb": "2GB",
+  "gpu_clock_speed": "954 MHz"
+ },
+ {
+  "name": "Manli GeForce GT 730 4GB DDR3",
+  "manufacturer": "Manli",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-geforce-gt-730-2gb-gddr5-graphics-card-11720956404.webp",
+  "tdp": 75,
+  "price": "6000",
+  "performance_tier": "Entry",
+  "vram_gb": "4GB",
+  "gpu_clock_speed": "902 MHz"
+ },
+ {
+  "name": "ZOTAC GeForce GT 730 4GB DDR3",
+  "manufacturer": "ZOTAC",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/peladn-amd-radeon-kaitian-rx-580-8gd5-gaming-8gb-11763211789.webp",
+  "tdp": 75,
+  "price": "6200",
+  "performance_tier": "Entry",
+  "vram_gb": "4GB",
+  "gpu_clock_speed": "902 MHz"
+ },
+ {
+  "name": "AFOX GeForce GT 1030 2GB DDR4",
+  "manufacturer": "AFOX",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/manli-nebula-geforce-rtx-3050-twin-cooler-v2-11757048549.webp",
+  "tdp": 75,
+  "price": "6500",
+  "performance_tier": "Entry",
+  "vram_gb": "2GB",
+  "gpu_clock_speed": "1468 MHz"
+ },
+ {
+  "name": "Gigabyte GeForce GT 730 2GB GDDR5",
+  "manufacturer": "Gigabyte",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/zotac-gaming-geforce-rtx-3050-twin-edge-oc-6gb-11731416196.webp",
+  "tdp": 75,
+  "price": "7000",
+  "performance_tier": "Entry",
+  "vram_gb": "2GB",
+  "gpu_clock_speed": "902 MHz"
+ },
+ {
+  "name": "MSI GeForce GT 1030 2GB DDR5",
+  "manufacturer": "MSI",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-geforce-rtx-3050-oc-low-profile-6g-6gb-11723706680.webp",
+  "tdp": 75,
+  "price": "7500",
+  "performance_tier": "Entry",
+  "vram_gb": "2GB",
+  "gpu_clock_speed": "1518 MHz"
+ },
+ {
+  "name": "AFOX Radeon R7 350 2GB GDDR5",
+  "manufacturer": "AFOX",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-dual-geforce-rtx-3050-6gb-gddr6-graphics-11729337596.webp",
+  "tdp": 75,
+  "price": "8500",
+  "performance_tier": "Entry",
+  "vram_gb": "2GB",
+  "gpu_clock_speed": "N\/A"
+ },
+ {
+  "name": "PELADN AMD Radeon RX 580 8G",
+  "manufacturer": "PELADN",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gunnir-intel-arc-b570-index-10g-black-10gb-gddr6-11740658030.webp",
+  "tdp": 75,
+  "price": "16500",
+  "performance_tier": "Entry",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "1340 MHz"
+ },
+ {
+  "name": "Gigabyte GeForce GTX 1650 D6 4G",
+  "manufacturer": "Gigabyte",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/maxsun-intel-arc-b570-milestone-10g-10gb-gddr6-11745921125.webp",
+  "tdp": 75,
+  "price": "18000",
+  "performance_tier": "Entry",
+  "vram_gb": "4GB",
+  "gpu_clock_speed": "1665 MHz"
+ },
+ {
+  "name": "AFOX Radeon RX 6500 XT 4GB",
+  "manufacturer": "AFOX",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/manli-nebula-geforce-rtx-5050-twin-cooler-8gb-11753707127.webp",
+  "tdp": 75,
+  "price": "18500",
+  "performance_tier": "Entry",
+  "vram_gb": "4GB",
+  "gpu_clock_speed": "2815 MHz"
+ },
+ {
+  "name": "ASUS Phoenix GeForce GTX 1650 4GB",
+  "manufacturer": "ASUS",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/powercolor-fighter-amd-radeon-rx-7600-8gb-gddr6-11741429200.webp",
+  "tdp": 75,
+  "price": "18500",
+  "performance_tier": "Entry",
+  "vram_gb": "4GB",
+  "gpu_clock_speed": "1665 MHz"
+ },
+ {
+  "name": "Manli NEBULA GeForce RTX 3050 6GB",
+  "manufacturer": "Manli",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/zotac-gaming-geforce-rtx-5050-twin-edge-8gb-gddr6-11754731440.webp",
+  "tdp": 75,
+  "price": "23800",
+  "performance_tier": "Mid",
+  "vram_gb": "6GB",
+  "gpu_clock_speed": "1777 MHz"
+ },
+ {
+  "name": "ZOTAC Gaming GeForce RTX 3050 OC 6G",
+  "manufacturer": "ZOTAC",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-geforce-rtx-5050-8g-shadow-2x-oc-8gb-gddr6-11754729675.webp",
+  "tdp": 75,
+  "price": "24000",
+  "performance_tier": "Mid",
+  "vram_gb": "6GB",
+  "gpu_clock_speed": "1807 MHz"
+ },
+ {
+  "name": "PNY GeForce GTX 1660 SUPER 6GB",
+  "manufacturer": "PNY",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/zotac-gaming-geforce-rtx-5050-solo-8gb-gddr6-11754731357.webp",
+  "tdp": 75,
+  "price": "25000",
+  "performance_tier": "Mid",
+  "vram_gb": "6GB",
+  "gpu_clock_speed": "1785 MHz"
+ },
+ {
+  "name": "MSI GeForce GTX 1660 SUPER VENTUS XS 6G",
+  "manufacturer": "MSI",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/zotac-gaming-geforce-rtx-5050-twin-edge-oc-8gb-11754731566.webp",
+  "tdp": 75,
+  "price": "26000",
+  "performance_tier": "Mid",
+  "vram_gb": "6GB",
+  "gpu_clock_speed": "1785 MHz"
+ },
+ {
+  "name": "Gigabyte GeForce RTX 3050 Low Profile 6G",
+  "manufacturer": "Gigabyte",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-geforce-rtx-5050-8g-ventus-2x-oc-8gb-gddr6-11754729762.webp",
+  "tdp": 75,
+  "price": "26200",
+  "performance_tier": "Mid",
+  "vram_gb": "6GB",
+  "gpu_clock_speed": "1777 MHz"
+ },
+ {
+  "name": "Gigabyte GeForce GTX 1660 SUPER OC 6G",
+  "manufacturer": "Gigabyte",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/maxsun-intel-arc-b580-icraft-12g-12gb-gddr6-white-11745921489.webp",
+  "tdp": 75,
+  "price": "27000",
+  "performance_tier": "Mid",
+  "vram_gb": "6GB",
+  "gpu_clock_speed": "1815 MHz"
+ },
+ {
+  "name": "ASUS Dual GeForce RTX 3050 6GB",
+  "manufacturer": "ASUS",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-geforce-rtx-5050-oc-low-profile-8g-8gb-11756202354.webp",
+  "tdp": 75,
+  "price": "28200",
+  "performance_tier": "Mid",
+  "vram_gb": "6GB",
+  "gpu_clock_speed": "1807 MHz"
+ },
+ {
+  "name": "ASUS TUF Gaming GeForce GTX 1660 Ti 6GB",
+  "manufacturer": "ASUS",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-geforce-rtx-5050-windforce-oc-8g-8gb-11756204681.webp",
+  "tdp": 75,
+  "price": "30000",
+  "performance_tier": "Mid",
+  "vram_gb": "6GB",
+  "gpu_clock_speed": "1815 MHz"
+ },
+ {
+  "name": "GUNNIR Intel Arc B570 Index 10G",
+  "manufacturer": "GUNNIR",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-dual-geforce-rtx-5050-8gb-gddr6-graphics-11757505881.webp",
+  "tdp": 150,
+  "price": "32800",
+  "performance_tier": "Mid",
+  "vram_gb": "10GB",
+  "gpu_clock_speed": "2000 MHz"
+ },
+ {
+  "name": "Manli GeForce RTX 3060 12GB",
+  "manufacturer": "Manli",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-geforce-rtx-5050-gaming-oc-8g-8gb-gddr6-11756203541.webp",
+  "tdp": 150,
+  "price": "33000",
+  "performance_tier": "Mid",
+  "vram_gb": "12GB",
+  "gpu_clock_speed": "1777 MHz"
+ },
+ {
+  "name": "ZOTAC Gaming GeForce RTX 3060 12GB",
+  "manufacturer": "ZOTAC",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/zotac-gaming-geforce-rtx-5060-solo-8gb-gddr7-11748518934.webp",
+  "tdp": 150,
+  "price": "34500",
+  "performance_tier": "Mid",
+  "vram_gb": "12GB",
+  "gpu_clock_speed": "1777 MHz"
+ },
+ {
+  "name": "ZOTAC Gaming GeForce RTX 2060 6GB",
+  "manufacturer": "ZOTAC",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-geforce-rtx-5060-oc-low-profile-8g-8gb-11756197960.webp",
+  "tdp": 150,
+  "price": "35000",
+  "performance_tier": "Mid",
+  "vram_gb": "6GB",
+  "gpu_clock_speed": "1680 MHz"
+ },
+ {
+  "name": "Gigabyte GeForce RTX 3060 Windforce OC 12G",
+  "manufacturer": "Gigabyte",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/manli-polar-fox-geforce-rtx-5060-oc-twin-cooler-11753773139.webp",
+  "tdp": 150,
+  "price": "36000",
+  "performance_tier": "Mid",
+  "vram_gb": "12GB",
+  "gpu_clock_speed": "1777 MHz"
+ },
+ {
+  "name": "Gigabyte GeForce RTX 2060 D6 6G",
+  "manufacturer": "Gigabyte",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/zotac-gaming-geforce-rtx-5060-twin-edge-oc-white-11754731639.webp",
+  "tdp": 150,
+  "price": "36000",
+  "performance_tier": "Mid",
+  "vram_gb": "6GB",
+  "gpu_clock_speed": "1680 MHz"
+ },
+ {
+  "name": "Manli NEBULA GeForce RTX 5050 8GB",
+  "manufacturer": "Manli",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/powercolor-reaper-amd-radeon-rx-9060-xt-8gb-gddr6-11749892965.webp",
+  "tdp": 150,
+  "price": "37000",
+  "performance_tier": "Mid",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "2100 MHz"
+ },
+ {
+  "name": "PowerColor Fighter AMD Radeon RX 7600 8GB",
+  "manufacturer": "PowerColor",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-dual-geforce-rtx-5060-oc-edition-8gb-gddr7-11760591979.webp",
+  "tdp": 150,
+  "price": "37500",
+  "performance_tier": "Mid",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "2625 MHz"
+ },
+ {
+  "name": "ASUS Dual GeForce RTX 3060 V2 12GB",
+  "manufacturer": "ASUS",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-geforce-rtx-5060-eagle-oc-ice-8g-white-11753964937.webp",
+  "tdp": 150,
+  "price": "37500",
+  "performance_tier": "Mid",
+  "vram_gb": "12GB",
+  "gpu_clock_speed": "1807 MHz"
+ },
+ {
+  "name": "ASUS Dual GeForce RTX 2060 V2 6GB",
+  "manufacturer": "ASUS",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-geforce-rtx-5060-windforce-max-oc-8g-8gb-11756197490.webp",
+  "tdp": 150,
+  "price": "37500",
+  "performance_tier": "Mid",
+  "vram_gb": "6GB",
+  "gpu_clock_speed": "1710 MHz"
+ },
+ {
+  "name": "ZOTAC GAMING GeForce RTX 4060 8GB",
+  "manufacturer": "ZOTAC",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-dual-geforce-rtx-5060-white-oc-edition-8gb-11760592044.webp",
+  "tdp": 150,
+  "price": "41000",
+  "performance_tier": "High",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "2460 MHz"
+ },
+ {
+  "name": "Manli GeForce RTX 3060 Ti 8GB",
+  "manufacturer": "Manli",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-geforce-rtx-5060-ti-8g-shadow-2x-oc-plus-8gb-11749733217.webp",
+  "tdp": 150,
+  "price": "42000",
+  "performance_tier": "High",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "1665 MHz"
+ },
+ {
+  "name": "MSI GeForce RTX 4060 VENTUS 2X 8G",
+  "manufacturer": "MSI",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/powercolor-hellhound-amd-radeon-rx-9060-xt-8gb-11749907780.webp",
+  "tdp": 150,
+  "price": "42500",
+  "performance_tier": "High",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "2490 MHz"
+ },
+ {
+  "name": "Gigabyte GeForce RTX 4060 OC 8GB",
+  "manufacturer": "Gigabyte",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-geforce-rtx-5060-eagle-max-oc-8g-8gb-11756200263.webp",
+  "tdp": 150,
+  "price": "43000",
+  "performance_tier": "High",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "2505 MHz"
+ },
+ {
+  "name": "ZOTAC Gaming GeForce RTX 3060 Ti 8GB",
+  "manufacturer": "ZOTAC",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-geforce-rtx-5060-gaming-oc-8g-black-8gb-11753961876.webp",
+  "tdp": 150,
+  "price": "43500",
+  "performance_tier": "High",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "1665 MHz"
+ },
+ {
+  "name": "ASUS Dual GeForce RTX 4060 OC 8GB",
+  "manufacturer": "ASUS",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-geforce-rtx-5060-8g-ventus-2x-oc-white-8gb-11751195014.webp",
+  "tdp": 150,
+  "price": "44000",
+  "performance_tier": "High",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "2505 MHz"
+ },
+ {
+  "name": "Gigabyte GeForce RTX 3060 Ti Eagle OC 8G",
+  "manufacturer": "Gigabyte",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-geforce-rtx-5060-ti-8g-ventus-2x-oc-plus-8gb-11749732003.webp",
+  "tdp": 150,
+  "price": "45000",
+  "performance_tier": "High",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "1695 MHz"
+ },
+ {
+  "name": "PNY GeForce RTX 2070 SUPER 8GB",
+  "manufacturer": "PNY",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-geforce-rtx-5060-eagle-oc-8g-black-8gb-11753965081.webp",
+  "tdp": 150,
+  "price": "45000",
+  "performance_tier": "High",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "1770 MHz"
+ },
+ {
+  "name": "PowerColor Hellhound AMD Radeon RX 6700 XT 12GB",
+  "manufacturer": "PowerColor",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-geforce-rtx-5060-8g-inspire-2x-oc-8gb-gddr7-11749790420.webp",
+  "tdp": 150,
+  "price": "45000",
+  "performance_tier": "High",
+  "vram_gb": "12GB",
+  "gpu_clock_speed": "2622 MHz"
+ },
+ {
+  "name": "Sapphire Pulse AMD Radeon RX 7600 XT 16GB",
+  "manufacturer": "Sapphire",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-prime-geforce-rtx-5060-oc-edition-8gb-gddr7-11760592150.webp",
+  "tdp": 150,
+  "price": "45500",
+  "performance_tier": "High",
+  "vram_gb": "16GB",
+  "gpu_clock_speed": "2810 MHz"
+ },
+ {
+  "name": "ASUS Dual GeForce RTX 3060 Ti V2 8GB",
+  "manufacturer": "ASUS",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/manli-nebula-geforce-rtx-5060-ti-twin-cooler-11753773582.webp",
+  "tdp": 150,
+  "price": "47000",
+  "performance_tier": "High",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "1710 MHz"
+ },
+ {
+  "name": "MSI GeForce RTX 2070 SUPER VENTUS 8G",
+  "manufacturer": "MSI",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-geforce-rtx-5060-8g-gaming-oc-8gb-gddr7-11749790305.webp",
+  "tdp": 150,
+  "price": "47000",
+  "performance_tier": "High",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "1770 MHz"
+ },
+ {
+  "name": "Sapphire Pulse AMD Radeon RX 6750 XT 12GB",
+  "manufacturer": "Sapphire",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/zotac-gaming-geforce-rtx-5060-ti-twin-edge-oc-8gb-11747485827.webp",
+  "tdp": 150,
+  "price": "50000",
+  "performance_tier": "High",
+  "vram_gb": "12GB",
+  "gpu_clock_speed": "2600 MHz"
+ },
+ {
+  "name": "Gigabyte GeForce RTX 4060 Ti Eagle 8G",
+  "manufacturer": "Gigabyte",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-aorus-geforce-rtx-5060-elite-8g-8gb-11756198507.webp",
+  "tdp": 150,
+  "price": "52000",
+  "performance_tier": "High",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "2535 MHz"
+ },
+ {
+  "name": "ZOTAC RTX 4060 Ti Twin Edge 8GB",
+  "manufacturer": "ZOTAC",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-radeon-rx-9060-xt-gaming-oc-8g-8gb-gddr6-11756201025.webp",
+  "tdp": 150,
+  "price": "53500",
+  "performance_tier": "High",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "2535 MHz"
+ },
+ {
+  "name": "ASUS Dual GeForce RTX 4060 Ti OC 8GB",
+  "manufacturer": "ASUS",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/powercolor-hellhound-spectral-white-amd-radeon-rx-11753775684.webp",
+  "tdp": 150,
+  "price": "55000",
+  "performance_tier": "High",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "2550 MHz"
+ },
+ {
+  "name": "Manli GeForce RTX 3070 8GB",
+  "manufacturer": "Manli",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/pny-geforce-rtx-5060-ti-dual-fan-16gb-gddr7-11759145056.webp",
+  "tdp": 275,
+  "price": "55000",
+  "performance_tier": "High",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "1725 MHz"
+ },
+ {
+  "name": "Gigabyte Radeon RX 6800 Gaming OC 16G",
+  "manufacturer": "Gigabyte",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-geforce-rtx-5060-ti-windforce-8g-8gb-11751195280.webp",
+  "tdp": 275,
+  "price": "55000",
+  "performance_tier": "High",
+  "vram_gb": "16GB",
+  "gpu_clock_speed": "2155 MHz"
+ },
+ {
+  "name": "Sapphire NITRO+ AMD Radeon RX 7700 XT 12GB",
+  "manufacturer": "Sapphire",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-geforce-rtx-5060-ti-eagle-oc-8g-black-11753962088.webp",
+  "tdp": 275,
+  "price": "55000",
+  "performance_tier": "High",
+  "vram_gb": "12GB",
+  "gpu_clock_speed": "2544 MHz"
+ },
+ {
+  "name": "ZOTAC Gaming GeForce RTX 3070 8GB",
+  "manufacturer": "ZOTAC",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-geforce-rtx-5060-ti-windforce-oc-8g-11753962001.webp",
+  "tdp": 275,
+  "price": "56500",
+  "performance_tier": "High",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "1725 MHz"
+ },
+ {
+  "name": "Gigabyte GeForce RTX 3070 Gaming OC 8G",
+  "manufacturer": "Gigabyte",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-dual-geforce-rtx-5060-ti-oc-edition-8gb-11757930523.webp",
+  "tdp": 275,
+  "price": "58000",
+  "performance_tier": "High",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "1770 MHz"
+ },
+ {
+  "name": "ASUS Dual GeForce RTX 3070 V2 8GB",
+  "manufacturer": "ASUS",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-geforce-rtx-5060-ti-8g-inspire-2x-oc-8gb-11749733134.webp",
+  "tdp": 275,
+  "price": "60000",
+  "performance_tier": "High",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "1740 MHz"
+ },
+ {
+  "name": "Gigabyte GeForce RTX 2080 SUPER 8G",
+  "manufacturer": "Gigabyte",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-geforce-rtx-5060-ti-8g-gaming-oc-8gb-gddr7-11746952793.webp",
+  "tdp": 275,
+  "price": "60000",
+  "performance_tier": "High",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "1815 MHz"
+ },
+ {
+  "name": "ASUS Dual GeForce RTX 2080 SUPER 8GB",
+  "manufacturer": "ASUS",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/powercolor-fighter-amd-radeon-rx-7700-xt-12gb-11749907185.webp",
+  "tdp": 275,
+  "price": "62000",
+  "performance_tier": "High",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "1830 MHz"
+ },
+ {
+  "name": "ASUS TUF Gaming AMD Radeon RX 6800 XT 16GB",
+  "manufacturer": "ASUS",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-geforce-rtx-5060-ti-eagle-oc-ice-8g-8gb-11751195411.webp",
+  "tdp": 275,
+  "price": "65000",
+  "performance_tier": "High",
+  "vram_gb": "16GB",
+  "gpu_clock_speed": "2250 MHz"
+ },
+ {
+  "name": "Gigabyte Radeon RX 7800 XT Gaming OC 16G",
+  "manufacturer": "Gigabyte",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-geforce-rtx-5060-ti-gaming-oc-8g-8gb-11751195512.webp",
+  "tdp": 275,
+  "price": "65000",
+  "performance_tier": "High",
+  "vram_gb": "16GB",
+  "gpu_clock_speed": "2565 MHz"
+ },
+ {
+  "name": "Manli GeForce RTX 3070 Ti 8GB",
+  "manufacturer": "Manli",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/powercolor-amd-radeon-rx-7800-xt-16gb-gddr6-black-11741427646.webp",
+  "tdp": 275,
+  "price": "68000",
+  "performance_tier": "High",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "1770 MHz"
+ },
+ {
+  "name": "ZOTAC Gaming GeForce RTX 3070 Ti 8GB",
+  "manufacturer": "ZOTAC",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/zotac-gaming-geforce-rtx-5060-ti-amp-16gb-gddr7-11746275297.webp",
+  "tdp": 275,
+  "price": "69500",
+  "performance_tier": "High",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "1770 MHz"
+ },
+ {
+  "name": "Gigabyte GeForce RTX 3070 Ti Eagle OC 8G",
+  "manufacturer": "Gigabyte",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-geforce-rtx-5060-ti-windforce-oc-16g-11748520386.webp",
+  "tdp": 275,
+  "price": "71000",
+  "performance_tier": "High",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "1785 MHz"
+ },
+ {
+  "name": "PNY VERTO GeForce RTX 4070 12GB",
+  "manufacturer": "PNY",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-geforce-rtx-5060-ti-windforce-max-oc-16g-11756203433.webp",
+  "tdp": 275,
+  "price": "73000",
+  "performance_tier": "High",
+  "vram_gb": "12GB",
+  "gpu_clock_speed": "2475 MHz"
+ },
+ {
+  "name": "ASUS TUF Gaming GeForce RTX 3070 Ti 8GB",
+  "manufacturer": "ASUS",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/powercolor-hellhound-sakura-amd-radeon-rx-7800-xt-11741578317.webp",
+  "tdp": 275,
+  "price": "73000",
+  "performance_tier": "High",
+  "vram_gb": "8GB",
+  "gpu_clock_speed": "1770 MHz"
+ },
+ {
+  "name": "MSI GeForce RTX 4070 VENTUS 2X 12G",
+  "manufacturer": "MSI",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-geforce-rtx-5060-ti-16g-ventus-2x-oc-plus-11746952689.webp",
+  "tdp": 275,
+  "price": "74500",
+  "performance_tier": "High",
+  "vram_gb": "12GB",
+  "gpu_clock_speed": "2505 MHz"
+ },
+ {
+  "name": "Gigabyte GeForce RTX 4070 Windforce OC 12G",
+  "manufacturer": "Gigabyte",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/powercolor-hellhound-spectral-white-amd-radeon-rx-11741432015.webp",
+  "tdp": 275,
+  "price": "75000",
+  "performance_tier": "High",
+  "vram_gb": "12GB",
+  "gpu_clock_speed": "2505 MHz"
+ },
+ {
+  "name": "PowerColor Red Dragon AMD Radeon RX 6900 XT 16GB",
+  "manufacturer": "PowerColor",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-geforce-rtx-5060-ti-16g-shadow-2x-oc-plus-11751286982.webp",
+  "tdp": 275,
+  "price": "75000",
+  "performance_tier": "High",
+  "vram_gb": "16GB",
+  "gpu_clock_speed": "2340 MHz"
+ },
+ {
+  "name": "ASUS Dual GeForce RTX 4070 OC 12GB",
+  "manufacturer": "ASUS",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/zotac-gaming-geforce-rtx-5070-twin-edge-12gb-11747543625.webp",
+  "tdp": 275,
+  "price": "78000",
+  "performance_tier": "High",
+  "vram_gb": "12GB",
+  "gpu_clock_speed": "2520 MHz"
+ },
+ {
+  "name": "Manli GeForce RTX 3080 10GB",
+  "manufacturer": "Manli",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/zotac-gaming-geforce-rtx-5070-solid-12gb-gddr7-11751714916.webp",
+  "tdp": 320,
+  "price": "85000",
+  "performance_tier": "High",
+  "vram_gb": "10GB",
+  "gpu_clock_speed": "1710 MHz"
+ },
+ {
+  "name": "ZOTAC Gaming GeForce RTX 3080 10GB",
+  "manufacturer": "ZOTAC",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/sapphire-pulse-amd-radeon-rx-9070-gaming-16gb-11741502883.webp",
+  "tdp": 320,
+  "price": "88000",
+  "performance_tier": "High",
+  "vram_gb": "10GB",
+  "gpu_clock_speed": "1710 MHz"
+ },
+ {
+  "name": "Gigabyte GeForce RTX 3080 Gaming OC 10G",
+  "manufacturer": "Gigabyte",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/sapphire-pure-amd-radeon-rx-9070-gaming-oc-16gb-11752579872.webp",
+  "tdp": 320,
+  "price": "90000",
+  "performance_tier": "High",
+  "vram_gb": "10GB",
+  "gpu_clock_speed": "1800 MHz"
+ },
+ {
+  "name": "PNY GeForce RTX 2080 Ti 11GB",
+  "manufacturer": "PNY",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-geforce-rtx-5070-12g-shadow-2x-oc-12gb-gddr7-11745408430.webp",
+  "tdp": 275,
+  "price": "90000",
+  "performance_tier": "High",
+  "vram_gb": "11GB",
+  "gpu_clock_speed": "1545 MHz"
+ },
+ {
+  "name": "ASUS TUF Gaming GeForce RTX 3080 10GB",
+  "manufacturer": "ASUS",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/zotac-gaming-geforce-rtx-5070-amp-white-edition-11746276318.webp",
+  "tdp": 275,
+  "price": "92000",
+  "performance_tier": "High",
+  "vram_gb": "10GB",
+  "gpu_clock_speed": "1815 MHz"
+ },
+ {
+  "name": "MSI GeForce RTX 2080 Ti VENTUS 11G",
+  "manufacturer": "MSI",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/sapphire-nitro-amd-radeon-rx-6950-xt-pure-gaming-11659528872.webp",
+  "tdp": 275,
+  "price": "95000",
+  "performance_tier": "High",
+  "vram_gb": "11GB",
+  "gpu_clock_speed": "1575 MHz"
+ },
+ {
+  "name": "ASUS TUF Gaming AMD Radeon RX 7900 XT 20GB",
+  "manufacturer": "ASUS",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/sapphire-nitro-amd-radeon-rx-9070-xt-16gb-gddr6-11747829164.webp",
+  "tdp": 275,
+  "price": "95000",
+  "performance_tier": "High",
+  "vram_gb": "20GB",
+  "gpu_clock_speed": "2500 MHz"
+ },
+ {
+  "name": "Manli GeForce RTX 4070 Ti 12GB",
+  "manufacturer": "Manli",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-geforce-rtx-5070-eagle-oc-sff-12g-12gb-11748613797.webp",
+  "tdp": 275,
+  "price": "98000",
+  "performance_tier": "High",
+  "vram_gb": "12GB",
+  "gpu_clock_speed": "2610 MHz"
+ },
+ {
+  "name": "Gigabyte GeForce RTX 2080 Ti Gaming OC 11G",
+  "manufacturer": "Gigabyte",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-geforce-rtx-5070-gaming-oc-12g-12gb-11744537455.webp",
+  "tdp": 275,
+  "price": "100000",
+  "performance_tier": "High",
+  "vram_gb": "11GB",
+  "gpu_clock_speed": "1650 MHz"
+ },
+ {
+  "name": "ZOTAC Gaming GeForce RTX 4070 Ti 12GB",
+  "manufacturer": "ZOTAC",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-tuf-gaming-geforce-rtx-5070-oc-edition-12gb-11755603707.webp",
+  "tdp": 275,
+  "price": "102000",
+  "performance_tier": "High",
+  "vram_gb": "12GB",
+  "gpu_clock_speed": "2610 MHz"
+ },
+ {
+  "name": "Gigabyte GeForce RTX 4070 Ti OC 12G",
+  "manufacturer": "Gigabyte",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/pny-geforce-rtx-5070-ti-argb-epic-x-oc-triple-fan-11760339632.webp",
+  "tdp": 275,
+  "price": "104000",
+  "performance_tier": "High",
+  "vram_gb": "12GB",
+  "gpu_clock_speed": "2625 MHz"
+ },
+ {
+  "name": "Manli GeForce RTX 3080 Ti 12GB",
+  "manufacturer": "Manli",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/zotac-gaming-geforce-rtx-5070-ti-amp-extreme-11741770944.webp",
+  "tdp": 320,
+  "price": "110000",
+  "performance_tier": "High",
+  "vram_gb": "12GB",
+  "gpu_clock_speed": "1665 MHz"
+ },
+ {
+  "name": "ZOTAC Gaming GeForce RTX 3080 Ti 12GB",
+  "manufacturer": "ZOTAC",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/zotac-gaming-geforce-rtx-5070-ti-amp-extreme-11752578579.webp",
+  "tdp": 320,
+  "price": "115000",
+  "performance_tier": "High",
+  "vram_gb": "12GB",
+  "gpu_clock_speed": "1665 MHz"
+ },
+ {
+  "name": "Gigabyte GeForce RTX 3080 Ti Gaming OC 12G",
+  "manufacturer": "Gigabyte",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/manli-polar-fox-v2-geforce-rtx-5080-oc-triple-11753707580.webp",
+  "tdp": 500,
+  "price": "120000",
+  "performance_tier": "High",
+  "vram_gb": "12GB",
+  "gpu_clock_speed": "1770 MHz"
+ },
+ {
+  "name": "ASUS TUF Gaming GeForce RTX 3080 Ti 12GB",
+  "manufacturer": "ASUS",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/zotac-gaming-geforce-rtx-5080-amp-extreme-11741769819.webp",
+  "tdp": 500,
+  "price": "125000",
+  "performance_tier": "High",
+  "vram_gb": "12GB",
+  "gpu_clock_speed": "1785 MHz"
+ },
+ {
+  "name": "PNY VERTO GeForce RTX 4080 16GB",
+  "manufacturer": "PNY",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/asus-prime-geforce-rtx-5080-oc-edition-16gb-gddr7-11741170028.webp",
+  "tdp": 500,
+  "price": "150000",
+  "performance_tier": "High",
+  "vram_gb": "16GB",
+  "gpu_clock_speed": "2505 MHz"
+ },
+ {
+  "name": "MSI GeForce RTX 4080 VENTUS 3X 16G",
+  "manufacturer": "MSI",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-geforce-rtx-5080-16g-inspire-3x-oc-16gb-gddr7-11741170075.webp",
+  "tdp": 500,
+  "price": "155000",
+  "performance_tier": "High",
+  "vram_gb": "16GB",
+  "gpu_clock_speed": "2520 MHz"
+ },
+ {
+  "name": "Gigabyte GeForce RTX 4080 Gaming OC 16G",
+  "manufacturer": "Gigabyte",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-geforce-rtx-5080-16g-expert-oc-16gb-gddr7-11754730271.webp",
+  "tdp": 500,
+  "price": "160000",
+  "performance_tier": "High",
+  "vram_gb": "16GB",
+  "gpu_clock_speed": "2535 MHz"
+ },
+ {
+  "name": "Manli GeForce RTX 3090 24GB",
+  "manufacturer": "Manli",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-geforce-rtx-5080-16g-ventus-3x-oc-white-16gb-11754729996.webp",
+  "tdp": 500,
+  "price": "160000",
+  "performance_tier": "High",
+  "vram_gb": "24GB",
+  "gpu_clock_speed": "1695 MHz"
+ },
+ {
+  "name": "ASUS TUF Gaming GeForce RTX 4080 16GB",
+  "manufacturer": "ASUS",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-geforce-rtx-5080-gaming-oc-16g-16gb-11741586637.webp",
+  "tdp": 500,
+  "price": "165000",
+  "performance_tier": "High",
+  "vram_gb": "16GB",
+  "gpu_clock_speed": "2535 MHz"
+ },
+ {
+  "name": "ZOTAC Gaming GeForce RTX 3090 24GB",
+  "manufacturer": "ZOTAC",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-geforce-rtx-5090-32g-gaming-trio-oc-32gb-11738413051.webp",
+  "tdp": 500,
+  "price": "170000",
+  "performance_tier": "High",
+  "vram_gb": "24GB",
+  "gpu_clock_speed": "1695 MHz"
+ },
+ {
+  "name": "Gigabyte GeForce RTX 3090 Gaming OC 24G",
+  "manufacturer": "Gigabyte",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-geforce-rtx-5090-windforce-oc-32g-black-11753962192.webp",
+  "tdp": 500,
+  "price": "180000",
+  "performance_tier": "High",
+  "vram_gb": "24GB",
+  "gpu_clock_speed": "1755 MHz"
+ },
+ {
+  "name": "ASUS TUF Gaming GeForce RTX 3090 OC 24GB",
+  "manufacturer": "ASUS",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-geforce-rtx-5090-32g-vanguard-soc-32gb-gddr7-11742527680.webp",
+  "tdp": 500,
+  "price": "190000",
+  "performance_tier": "High",
+  "vram_gb": "24GB",
+  "gpu_clock_speed": "1785 MHz"
+ },
+ {
+  "name": "PNY VERTO GeForce RTX 4090 24GB",
+  "manufacturer": "PNY",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/manli-gallardo-geforce-rtx-5090-oc-triple-cooler-11753707844.webp",
+  "tdp": 500,
+  "price": "240000",
+  "performance_tier": "High",
+  "vram_gb": "24GB",
+  "gpu_clock_speed": "2520 MHz"
+ },
+ {
+  "name": "MSI GeForce RTX 4090 Gaming X Trio 24G",
+  "manufacturer": "MSI",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-geforce-rtx-5090-gaming-oc-32g-32gb-11741589193.webp",
+  "tdp": 500,
+  "price": "255000",
+  "performance_tier": "High",
+  "vram_gb": "24GB",
+  "gpu_clock_speed": "2580 MHz"
+ },
+ {
+  "name": "Gigabyte GeForce RTX 4090 Gaming OC 24G",
+  "manufacturer": "Gigabyte",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-geforce-rtx-5090-master-32g-32gb-gddr7-11748613929.webp",
+  "tdp": 500,
+  "price": "260000",
+  "performance_tier": "High",
+  "vram_gb": "24GB",
+  "gpu_clock_speed": "2535 MHz"
+ },
+ {
+  "name": "ASUS TUF Gaming GeForce RTX 4090 OC 24GB",
+  "manufacturer": "ASUS",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-aorus-geforce-rtx-5090-xtreme-waterforce-11756204245.webp",
+  "tdp": 500,
+  "price": "270000",
+  "performance_tier": "High",
+  "vram_gb": "24GB",
+  "gpu_clock_speed": "2550 MHz"
+ }
 ]

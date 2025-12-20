@@ -51,26 +51,18 @@ def calculate_psu_wattage(components_in_build):
     """
     total_tdp = 0
     
-    # Heuristic TDP estimates (since we can't scrape this data reliably)
-    # This is a key part of your project's problem-solving!
-    tdp_estimates = {
-        'CPU': {'Entry': 65, 'Mid': 95, 'High': 125},
-        'GPU': {'Entry': 150, 'Mid': 250, 'High': 400},
-    }
-    
+   
     # Base power draw for other components
     base_power_others = 50  # Motherboard, RAM, fans, etc.
     total_tdp += base_power_others
 
     for item in components_in_build:
         component = item.component
-        # Find the specific subclass (CPU, GPU, etc.) to get its type
-        component_type = component.get_type()
         
-        if component_type in tdp_estimates:
-            tier = component.performance_tier or 'Entry'
-            estimated_tdp = tdp_estimates[component_type].get(tier, 0)
-            total_tdp += estimated_tdp * item.quantity
+        
+        if component.tdp:
+           
+            total_tdp += component.tdp * item.quantity
 
     if total_tdp <= base_power_others:
         return "Add a CPU and GPU to estimate wattage."

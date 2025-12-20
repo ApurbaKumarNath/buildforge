@@ -152,59 +152,67 @@ def workbench_view(request, build_id):
 
     return render(request, 'builds/workbench.html', context)
 
+# builds/views.py
+
 @login_required
 def add_component_to_build(request, build_id):
     if request.method == 'POST':
         build = get_object_or_404(Build, pk=build_id, user=request.user)
         component_id = request.POST.get('component_id')
-        component = get_object_or_404(Component, pk=component_id)
+        component_to_add = get_object_or_404(Component, pk=component_id)
 
-        component_type = component.get_type()
-        UNIQUE_COMPONENT_TYPES = ['CPU', 'Motherboard', 'GPU', 'PSU', 'Case']
-
-        if component_type in UNIQUE_COMPONENT_TYPES:
-            # This logic is for swapping a unique component like a CPU.
-            # It finds any existing component of the same type and deletes it.
-            BuildComponent.objects.filter(
-                build=build,
+        component_type = component_to_add.get_type()
+        
+        # --- Logic for Unique, Swappable Components ---
+        if component_type in ['CPU', 'Motherboard', 'GPU', 'PSU', 'Case']:
+            # Find if a component of the same type already exists.
+            # This is a much more direct and safer way to query.
+            existing_component_item = BuildComponent.objects.filter(
+                build=build, 
                 component__in=Component.objects.filter(**{f'{component_type.lower()}__isnull': False})
-            ).delete()
-            BuildComponent.objects.create(build=build, component=component, quantity=1)
-        else:
-            # This logic handles stackable items like RAM and Storage.
-            # 1. Find the motherboard to check slot limits (for RAM).
-            motherboard_item = BuildComponent.objects.filter(build=build, component__motherboard__isnull=False).first()
-            ram_slots_total = motherboard_item.component.motherboard.ram_slots if motherboard_item else 4
+            ).first()
+
+            # If one exists, delete it.
+            if existing_component_item:
+                existing_component_item.delete()
             
-            # 2. Count current sticks/drives.
+            # Create the new one.
+            BuildComponent.objects.create(build=build, component=component_to_add, quantity=1)
+
+        # --- Logic for Stackable Components (RAM, Storage) ---
+        else:
+            # Check if we are at the slot limit for this type.
+            limit = float('inf')  # Default to no limit
+            
+            # Get the current count of items of this type.
             current_items_count = BuildComponent.objects.filter(
                 build=build,
                 component__in=Component.objects.filter(**{f'{component_type.lower()}__isnull': False})
             ).aggregate(total_quantity=models.Sum('quantity'))['total_quantity'] or 0
 
-            # 3. Check limits before adding.
-            limit = float('inf') # Default to no limit
             if component_type == 'RAM':
-                limit = ram_slots_total
+                motherboard_item = BuildComponent.objects.filter(build=build, component__motherboard__isnull=False).first()
+                limit = motherboard_item.component.motherboard.ram_slots if motherboard_item else 4
             elif component_type == 'Storage':
-                # We defined this in our helper function, let's use it here too.
-                TOTAL_STORAGE_SLOTS = 2
+                TOTAL_STORAGE_SLOTS = 2 # As defined in your scaffold logic
                 limit = TOTAL_STORAGE_SLOTS
 
+            # Only add the component if we are not at the limit.
             if current_items_count < limit:
+                # Try to get the exact same component to increment its quantity.
                 build_component, created = BuildComponent.objects.get_or_create(
                     build=build,
-                    component=component,
+                    component=component_to_add,
                     defaults={'quantity': 1}
                 )
                 if not created:
                     build_component.quantity += 1
                     build_component.save()
         
-        # === THE SIMPLIFIED PART ===
-        # After any modification, just call the master helper function.
+        # --- This part remains the same ---
+        # After any modification, re-render the scaffold and send it back.
         scaffold = _get_build_scaffold(build)
-        context = {'scaffold': scaffold, 'build': build} # Pass build for the remove URL
+        context = {'scaffold': scaffold, 'build': build}
         
         html = render(request, 'builds/partials/scaffold_list.html', context)
         response = HttpResponse(html)
