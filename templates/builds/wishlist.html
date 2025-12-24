@@ -1,0 +1,121 @@
+<!-- templates/builds/wishlist.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    .page-header {
+        text-align: center;
+        margin-bottom: 2.5em;
+        padding: 2em 1em;
+        background-color: #f8f9fa;
+        border-radius: 12px;
+        border: 1px solid #dee2e6;
+    }
+    
+    /* Styles for the Table-based List View */
+    .wishlist-table {
+        width: 100%;
+        border-collapse: collapse;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        border-radius: 8px;
+        overflow: hidden; /* This makes the corners of the table rounded */
+    }
+    .wishlist-table th, .wishlist-table td {
+        padding: 1em;
+        text-align: left;
+        border-bottom: 1px solid #dee2e6;
+        vertical-align: middle; /* Aligns content in the middle of the cell */
+    }
+    .wishlist-table thead {
+        background-color: #f8f9fa;
+    }
+    .wishlist-table tbody tr:last-child td {
+        border-bottom: none; /* Removes the bottom border from the last item */
+    }
+    .wishlist-table .item-image-cell {
+        width: 100px; /* Fixed width for the image column */
+    }
+    .wishlist-table .item-image {
+        max-width: 80px;
+        max-height: 80px;
+        object-fit: contain;
+        display: block;
+    }
+    .wishlist-table .item-price {
+        font-weight: bold;
+        color: #28a745;
+        width: 15%;
+    }
+    .wishlist-table .item-actions {
+        text-align: right;
+        width: 15%;
+    }
+
+    .btn { 
+        text-decoration: none; 
+        padding: 0.6em 1.2em; 
+        border-radius: 5px; 
+        font-weight: bold; 
+        display: inline-block; 
+        text-align: center; 
+        border: none; 
+        cursor: pointer; 
+    }
+    .btn-danger { 
+        background-color: #dc3545; 
+        color: white; 
+    }
+</style>
+
+<div class="page-header">
+    <h1>Your Wishlist</h1>
+    <p>A collection of your favorite components for future builds and upgrades.</p>
+</div>
+
+{% if wishlist_items %}
+    <table class="wishlist-table">
+        <thead>
+            <tr>
+                <th colspan="2">Component</th>
+                <th>Manufacturer</th>
+                <th>Price</th>
+                <th style="text-align: right;">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in wishlist_items %}
+                <!-- The table row (tr) is the element we want to remove -->
+                <tr id="wishlist-item-{{ item.component.id }}">
+                    <td class="item-image-cell">
+                        {% if item.component.image %}
+                            <img src="{{ item.component.image }}" alt="{{ item.component.name }}" class="item-image">
+                        {% else %}
+                            <div style="width: 80px; height: 80px; background-color: #f0f0f0;"></div>
+                        {% endif %}
+                    </td>
+                    <td>
+                        <strong>{{ item.component.name }}</strong>
+                    </td>
+                    <td>{{ item.component.manufacturer }}</td>
+                    <td class="item-price">৳{{ item.component.price|floatformat:2 }}</td>
+                    <td class="item-actions">
+                        <button 
+                            class="btn btn-danger"
+                            hx-post="{% url 'builds:remove_from_wishlist' %}"
+                            hx-vals='{"component_id": "{{ item.component.id }}"}'
+                            hx-target="closest tr"
+                            hx-swap="outerHTML"
+                            hx-confirm="Are you sure you want to remove this item from your wishlist?"
+                            hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'>
+                            Remove
+                        </button>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p style="text-align: center; color: #6c757d; padding: 2em; background-color: #f8f9fa; border-radius: 8px;">Your wishlist is empty. Browse the catalog to add components!</p>
+{% endif %}
+
+{% endblock %}

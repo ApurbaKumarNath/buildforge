@@ -5,7 +5,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.http import Http404, HttpResponse, HttpResponseForbidden
-from .models import Build, BuildComponent
+from .models import Build, BuildComponent, WishlistItem
 from catalog.models import Component
 from django.shortcuts import get_object_or_404
 from .logic import detect_bottleneck, calculate_psu_wattage
@@ -534,4 +534,74 @@ def get_view_card(request, build_id):
     build = get_object_or_404(Build, pk=build_id, user=request.user)
     context = {'build': build, 'request': request}
     return render(request, 'builds/partials/build_card_view.html', context)
+
+@login_required
+def wishlist_view(request):
+    wishlist_items = WishlistItem.objects.filter(user=request.user).select_related('component')
+    context = {
+        'wishlist_items': wishlist_items
+    }
+    return render(request, 'builds/wishlist.html', context)
+
+@login_required
+def add_to_wishlist_view(request):
+    """
+    Handles the HTMX POST request to add a component to the user's wishlist.
+    """
+    # This view should only accept POST requests from our HTMX button.
+    if request.method == 'POST':
+        # Get the component ID from the POST data sent by the button.
+        component_id = request.POST.get('component_id')
+        component = get_object_or_404(Component, pk=component_id)
+
+        # Use get_or_create to add the item to the user's wishlist.
+        # This is a safe and efficient method that automatically prevents duplicates.
+        # It returns a tuple: (object, created)
+        # 'created' will be True if a new item was made, False if it already existed.
+        wishlist_item, created = WishlistItem.objects.get_or_create(
+            user=request.user,
+            component=component
+        )
+
+        if created:
+            # If a new item was successfully created, return a new button
+            # styled in green to give the user positive feedback.
+            return HttpResponse('<button class="btn" style="background-color: #28a745; color: white;" disabled>Added!</button>')
+        else:
+            # If the item was already in the wishlist, return a new button
+            # styled in yellow to inform the user.
+            return HttpResponse('<button class="btn" style="background-color: #ffc107; color: black;" disabled>Already Added</button>')
+    
+    # If someone tries to access this URL with a GET request, just send them home.
+    return redirect('home')
+
+@login_required
+def remove_from_wishlist_view(request):
+    """
+    Handles the HTMX POST request to remove a component from the user's wishlist.
+    """
+    # This view should only accept POST requests for security.
+    if request.method == 'POST':
+        # Get the component ID from the POST data sent by the button.
+        component_id = request.POST.get('component_id')
+        
+        # Find the specific WishlistItem to delete.
+        # We filter by BOTH the component and the current user. This is a crucial
+        # security check to ensure a user can only delete their own wishlist items.
+        item_to_delete = get_object_or_404(
+            WishlistItem,
+            user=request.user,
+            component_id=component_id
+        )
+        
+        # Perform the delete operation on the database.
+        item_to_delete.delete()
+        
+        # Return an empty response with a 200 OK status.
+        # This tells HTMX the operation was successful, and it can proceed with
+        # its hx-swap action (which is to delete the element from the page).
+        return HttpResponse(status=200)
+    
+    # If someone tries to access this URL with a GET request, just redirect them home.
+    return redirect('home')
 #_________________________________________________________________________________________________________________________

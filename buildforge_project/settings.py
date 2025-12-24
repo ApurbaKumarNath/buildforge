@@ -66,16 +66,17 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'buildforge_project.urls'
 
+# buildforge_project/settings.py
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        #_________________________________________________________________________________________________________________ (akn)
-
-        'DIRS': [os.path.join(BASE_DIR, 'templates')], # telling Django where to find project-wide templates.
-        #_________________________________________________________________________________________________________________
+        # Only list the project-level templates directory here.
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        # And ensure APP_DIRS is True. This is the standard way.
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
+                'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',

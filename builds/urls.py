@@ -35,6 +35,12 @@ urlpatterns = [
     path('edit-form/<int:build_id>/', views.get_build_edit_form, name='get_edit_form'),
     path('save-changes/<int:build_id>/', views.save_build_changes, name='save_build_changes'),
     path('view-card/<int:build_id>/', views.get_view_card, name='get_view_card'),
+
+    # This creates the URL /builds/wishlist/ and gives it the name 'wishlist'.
+    path('wishlist/', views.wishlist_view, name='wishlist'),
+    path('wishlist/add/', views.add_to_wishlist_view, name='add_to_wishlist'),
+    path('wishlist/remove/', views.remove_from_wishlist_view, name='remove_from_wishlist'),
+    
 ]
 
 #_________________________________________________________________________________________________________________________

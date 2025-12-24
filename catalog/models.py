@@ -12,7 +12,7 @@ from django.conf import settings
 class Component(models.Model):
     name = models.CharField(max_length=500)
     manufacturer = models.CharField(max_length=255)
-    image = models.ImageField(upload_to='components/',max_length=1500, null=True, blank=True)
+    image = models.URLField(max_length=1500, null=True, blank=True)
     tdp = models.PositiveIntegerField(null=True, blank=True, help_text="Thermal Design Power in Watts")
     price = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
 
@@ -149,5 +149,9 @@ class Review(models.Model):
         # Handle the case where user is None (deleted account)
         username = self.user.username if self.user else "Deleted User"
         return f"{self.rating} Stars for {self.component.name} by {username}"
+
+# builds/models.py
+
+
     
 #__________________________________________________________________________________________________________________________

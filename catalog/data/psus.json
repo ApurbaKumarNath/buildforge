@@ -1,471 +1,538 @@
 [
-  {
-    "name": "Antec Atom V450 450W",
-    "manufacturer": "Antec",
-    "price": 3200,
-    "wattage": 450,
-    "efficiency_rating": "80+"
-  },
-  {
-    "name": "Corsair CV450 450W",
-    "manufacturer": "Corsair",
-    "price": 4500,
-    "wattage": 450,
-    "efficiency_rating": "Bronze"
-  },
-  {
-    "name": "Cooler Master MWE 550 V2 550W",
-    "manufacturer": "Cooler Master",
-    "price": 5200,
-    "wattage": 550,
-    "efficiency_rating": "Bronze"
-  },
-  {
-    "name": "Gigabyte P550B 550W",
-    "manufacturer": "Gigabyte",
-    "price": 5500,
-    "wattage": 550,
-    "efficiency_rating": "Bronze"
-  },
-  {
-    "name": "DeepCool PK550D 550W",
-    "manufacturer": "DeepCool",
-    "price": 5400,
-    "wattage": 550,
-    "efficiency_rating": "Bronze"
-  },
-  {
-    "name": "Thermaltake Smart BX1 550W",
-    "manufacturer": "Thermaltake",
-    "price": 5800,
-    "wattage": 550,
-    "efficiency_rating": "Bronze"
-  },
-  {
-    "name": "MSI MAG A550BN 550W",
-    "manufacturer": "MSI",
-    "price": 5300,
-    "wattage": 550,
-    "efficiency_rating": "Bronze"
-  },
-  {
-    "name": "Corsair CV550 550W",
-    "manufacturer": "Corsair",
-    "price": 5600,
-    "wattage": 550,
-    "efficiency_rating": "Bronze"
-  },
-  {
-    "name": "Antec NeoECO Gold Zen 500W",
-    "manufacturer": "Antec",
-    "price": 6800,
-    "wattage": 500,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "Seasonic S12III 550W",
-    "manufacturer": "Seasonic",
-    "price": 6500,
-    "wattage": 550,
-    "efficiency_rating": "Bronze"
-  },
-  {
-    "name": "Cooler Master MWE 650 V2 650W",
-    "manufacturer": "Cooler Master",
-    "price": 6200,
-    "wattage": 650,
-    "efficiency_rating": "Bronze"
-  },
-  {
-    "name": "Corsair CV650 650W",
-    "manufacturer": "Corsair",
-    "price": 6800,
-    "wattage": 650,
-    "efficiency_rating": "Bronze"
-  },
-  {
-    "name": "Gigabyte P650B 650W",
-    "manufacturer": "Gigabyte",
-    "price": 6000,
-    "wattage": 650,
-    "efficiency_rating": "Bronze"
-  },
-  {
-    "name": "MSI MAG A650BN 650W",
-    "manufacturer": "MSI",
-    "price": 5800,
-    "wattage": 650,
-    "efficiency_rating": "Bronze"
-  },
-  {
-    "name": "DeepCool PK650D 650W",
-    "manufacturer": "DeepCool",
-    "price": 6400,
-    "wattage": 650,
-    "efficiency_rating": "Bronze"
-  },
-  {
-    "name": "Thermaltake Smart BX1 650W",
-    "manufacturer": "Thermaltake",
-    "price": 6900,
-    "wattage": 650,
-    "efficiency_rating": "Bronze"
-  },
-  {
-    "name": "Antec NeoECO Gold Zen 600W",
-    "manufacturer": "Antec",
-    "price": 7800,
-    "wattage": 600,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "be quiet! System Power 10 650W",
-    "manufacturer": "be quiet!",
-    "price": 7200,
-    "wattage": 650,
-    "efficiency_rating": "Bronze"
-  },
-  {
-    "name": "Seasonic S12III 650W",
-    "manufacturer": "Seasonic",
-    "price": 7500,
-    "wattage": 650,
-    "efficiency_rating": "Bronze"
-  },
-  {
-    "name": "FSP HV PRO 650W",
-    "manufacturer": "FSP",
-    "price": 6100,
-    "wattage": 650,
-    "efficiency_rating": "Bronze"
-  },
-  {
-    "name": "Corsair CX650M 650W Semi-Modular",
-    "manufacturer": "Corsair",
-    "price": 8200,
-    "wattage": 650,
-    "efficiency_rating": "Bronze"
-  },
-  {
-    "name": "Cooler Master MWE 750 V2 750W",
-    "manufacturer": "Cooler Master",
-    "price": 7500,
-    "wattage": 750,
-    "efficiency_rating": "Bronze"
-  },
-  {
-    "name": "Corsair CV750 750W",
-    "manufacturer": "Corsair",
-    "price": 8000,
-    "wattage": 750,
-    "efficiency_rating": "Bronze"
-  },
-  {
-    "name": "Gigabyte P750GM 750W Full Modular",
-    "manufacturer": "Gigabyte",
-    "price": 9500,
-    "wattage": 750,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "MSI MPG A750GF 750W Full Modular",
-    "manufacturer": "MSI",
-    "price": 10200,
-    "wattage": 750,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "DeepCool PQ750M 750W Full Modular",
-    "manufacturer": "DeepCool",
-    "price": 10500,
-    "wattage": 750,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "Thermaltake Toughpower GF1 750W Full Modular",
-    "manufacturer": "Thermaltake",
-    "price": 11000,
-    "wattage": 750,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "Antec HCG750 Gold 750W Full Modular",
-    "manufacturer": "Antec",
-    "price": 11500,
-    "wattage": 750,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "be quiet! Pure Power 12 M 750W Full Modular",
-    "manufacturer": "be quiet!",
-    "price": 11000,
-    "wattage": 750,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "Seasonic FOCUS Plus Gold 750W Full Modular",
-    "manufacturer": "Seasonic",
-    "price": 12500,
-    "wattage": 750,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "FSP Hydro G Pro 750W Full Modular",
-    "manufacturer": "FSP",
-    "price": 12000,
-    "wattage": 750,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "Corsair RM750e 750W Full Modular",
-    "manufacturer": "Corsair",
-    "price": 11800,
-    "wattage": 750,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "Cooler Master V750 Gold V2 750W Full Modular",
-    "manufacturer": "Cooler Master",
-    "price": 10800,
-    "wattage": 750,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "MSI MAG A850GL PCIE5 850W Full Modular",
-    "manufacturer": "MSI",
-    "price": 13500,
-    "wattage": 850,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "Gigabyte UD850GM 850W Full Modular",
-    "manufacturer": "Gigabyte",
-    "price": 12800,
-    "wattage": 850,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "DeepCool PQ850M 850W Full Modular",
-    "manufacturer": "DeepCool",
-    "price": 13000,
-    "wattage": 850,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "Corsair RM850e 850W Full Modular",
-    "manufacturer": "Corsair",
-    "price": 12800,
-    "wattage": 850,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "Thermaltake Toughpower GF3 850W Full Modular",
-    "manufacturer": "Thermaltake",
-    "price": 14500,
-    "wattage": 850,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "Antec HCG850 Gold 850W Full Modular",
-    "manufacturer": "Antec",
-    "price": 14000,
-    "wattage": 850,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "be quiet! Pure Power 12 M 850W Full Modular",
-    "manufacturer": "be quiet!",
-    "price": 13800,
-    "wattage": 850,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "Seasonic FOCUS Plus Gold 850W Full Modular",
-    "manufacturer": "Seasonic",
-    "price": 15000,
-    "wattage": 850,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "FSP Hydro G Pro 850W Full Modular",
-    "manufacturer": "FSP",
-    "price": 14200,
-    "wattage": 850,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "Cooler Master V850 Gold V2 850W Full Modular",
-    "manufacturer": "Cooler Master",
-    "price": 15000,
-    "wattage": 850,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "ASUS TUF Gaming 850W Gold Full Modular",
-    "manufacturer": "ASUS",
-    "price": 16000,
-    "wattage": 850,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "Corsair RM850x SHIFT 850W Full Modular",
-    "manufacturer": "Corsair",
-    "price": 17500,
-    "wattage": 850,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "Seasonic FOCUS PX-850 850W Full Modular",
-    "manufacturer": "Seasonic",
-    "price": 19000,
-    "wattage": 850,
-    "efficiency_rating": "Platinum"
-  },
-  {
-    "name": "be quiet! Straight Power 12 850W Full Modular",
-    "manufacturer": "be quiet!",
-    "price": 20000,
-    "wattage": 850,
-    "efficiency_rating": "Platinum"
-  },
-  {
-    "name": "ASUS ROG Strix 850G 850W Gold Full Modular",
-    "manufacturer": "ASUS",
-    "price": 21000,
-    "wattage": 850,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "MSI MPG A1000G PCIE5 1000W Full Modular",
-    "manufacturer": "MSI",
-    "price": 18500,
-    "wattage": 1000,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "Gigabyte UD1000GM PG5 1000W Full Modular",
-    "manufacturer": "Gigabyte",
-    "price": 17000,
-    "wattage": 1000,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "DeepCool PX1000G 1000W Full Modular",
-    "manufacturer": "DeepCool",
-    "price": 19500,
-    "wattage": 1000,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "Corsair RM1000e 1000W Full Modular",
-    "manufacturer": "Corsair",
-    "price": 20500,
-    "wattage": 1000,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "Thermaltake Toughpower GF3 1000W Full Modular",
-    "manufacturer": "Thermaltake",
-    "price": 21000,
-    "wattage": 1000,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "Antec Signature 1000W Titanium Full Modular",
-    "manufacturer": "Antec",
-    "price": 31000,
-    "wattage": 1000,
-    "efficiency_rating": "Titanium"
-  },
-  {
-    "name": "be quiet! Dark Power 13 1000W Full Modular",
-    "manufacturer": "be quiet!",
-    "price": 29000,
-    "wattage": 1000,
-    "efficiency_rating": "Titanium"
-  },
-  {
-    "name": "Seasonic PRIME TX-1000 1000W Full Modular",
-    "manufacturer": "Seasonic",
-    "price": 32000,
-    "wattage": 1000,
-    "efficiency_rating": "Titanium"
-  },
-  {
-    "name": "FSP Hydro Ti Pro 1000W Full Modular",
-    "manufacturer": "FSP",
-    "price": 30000,
-    "wattage": 1000,
-    "efficiency_rating": "Titanium"
-  },
-  {
-    "name": "ASUS ROG Thor 1000P2 1000W Platinum II",
-    "manufacturer": "ASUS",
-    "price": 35000,
-    "wattage": 1000,
-    "efficiency_rating": "Platinum"
-  },
-  {
-    "name": "Corsair AX1000 1000W Titanium Full Modular",
-    "manufacturer": "Corsair",
-    "price": 38000,
-    "wattage": 1000,
-    "efficiency_rating": "Titanium"
-  },
-  {
-    "name": "Cooler Master M2000 2000W Platinum",
-    "manufacturer": "Cooler Master",
-    "price": 45000,
-    "wattage": 2000,
-    "efficiency_rating": "Platinum"
-  },
-  {
-    "name": "Thermaltake Toughpower GF3 1200W Full Modular",
-    "manufacturer": "Thermaltake",
-    "price": 25000,
-    "wattage": 1200,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "Corsair RM1200x SHIFT 1200W Full Modular",
-    "manufacturer": "Corsair",
-    "price": 28000,
-    "wattage": 1200,
-    "efficiency_rating": "Gold"
-  },
-  {
-    "name": "ASUS ROG Thor 1200P2 1200W Platinum II",
-    "manufacturer": "ASUS",
-    "price": 42000,
-    "wattage": 1200,
-    "efficiency_rating": "Platinum"
-  },
-  {
-    "name": "be quiet! Dark Power Pro 13 1300W",
-    "manufacturer": "be quiet!",
-    "price": 45000,
-    "wattage": 1300,
-    "efficiency_rating": "Titanium"
-  },
-  {
-    "name": "Seasonic PRIME PX-1300 1300W Full Modular",
-    "manufacturer": "Seasonic",
-    "price": 40000,
-    "wattage": 1300,
-    "efficiency_rating": "Platinum"
-  },
-  {
-    "name": "Corsair AX1600i 1600W Digital ATX",
-    "manufacturer": "Corsair",
-    "price": 55000,
-    "wattage": 1600,
-    "efficiency_rating": "Titanium"
-  },
-  {
-    "name": "ASUS ROG Thor 1600T 1600W Titanium",
-    "manufacturer": "ASUS",
-    "price": 65000,
-    "wattage": 1600,
-    "efficiency_rating": "Titanium"
-  }
+ {
+  "name": "Antec Atom V450 450W",
+  "manufacturer": "Antec",
+  "price": "3200",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/value-top-s200i-real-200w-black-power-11739017834.webp",
+  "wattage": "450",
+  "efficiency_rating": "80+"
+ },
+ {
+  "name": "Corsair CV450 450W",
+  "manufacturer": "Corsair",
+  "price": "4500",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/safeway-ml-sw-atx16-550w-power-11639915071.webp",
+  "wattage": "450",
+  "efficiency_rating": "Bronze"
+ },
+ {
+  "name": "Cooler Master MWE 550 V2 550W",
+  "manufacturer": "Cooler Master",
+  "price": "5200",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/pc-power-ps-s-200-200w-atx-non-modular-black-11737809527.webp",
+  "wattage": "550",
+  "efficiency_rating": "Bronze"
+ },
+ {
+  "name": "Gigabyte P550B 550W",
+  "manufacturer": "Gigabyte",
+  "price": "5500",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/xtreme-xps450r-non-modular-real-200w-atx-power-11697007759.webp",
+  "wattage": "550",
+  "efficiency_rating": "Bronze"
+ },
+ {
+  "name": "DeepCool PK550D 550W",
+  "manufacturer": "DeepCool",
+  "price": "5400",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/pc-power-ps-s-230-230w-atx-non-modular-black-11758961815.webp",
+  "wattage": "550",
+  "efficiency_rating": "Bronze"
+ },
+ {
+  "name": "Thermaltake Smart BX1 550W",
+  "manufacturer": "Thermaltake",
+  "price": "5800",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/xtreme-xps550n-550w-power-11647499377.webp",
+  "wattage": "550",
+  "efficiency_rating": "Bronze"
+ },
+ {
+  "name": "MSI MAG A550BN 550W",
+  "manufacturer": "MSI",
+  "price": "5300",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/revenger-lite-power-350w-non-modular-white-power-11728996371.webp",
+  "wattage": "550",
+  "efficiency_rating": "Bronze"
+ },
+ {
+  "name": "Corsair CV550 550W",
+  "manufacturer": "Corsair",
+  "price": "5600",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/value-top-grid-300-real-300w-atx-non-modular-11756727842.webp",
+  "wattage": "550",
+  "efficiency_rating": "Bronze"
+ },
+ {
+  "name": "Antec NeoECO Gold Zen 500W",
+  "manufacturer": "Antec",
+  "price": "6800",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/huntkey-cp-series-cp3000-300w-atx-non-modular-11712224331.webp",
+  "wattage": "500",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "Seasonic S12III 550W",
+  "manufacturer": "Seasonic",
+  "price": "6500",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/value-top-grid-400-real-400w-atx-non-modular-11756727908.webp",
+  "wattage": "550",
+  "efficiency_rating": "Bronze"
+ },
+ {
+  "name": "Cooler Master MWE 650 V2 650W",
+  "manufacturer": "Cooler Master",
+  "price": "6200",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/xtreme-xps350r-350w-non-modular-black-power-11734097663.webp",
+  "wattage": "650",
+  "efficiency_rating": "Bronze"
+ },
+ {
+  "name": "Corsair CV650 650W",
+  "manufacturer": "Corsair",
+  "price": "6800",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/1st-player-ps-300fk-fk-30-300w-non-modular-11700911341.webp",
+  "wattage": "650",
+  "efficiency_rating": "Bronze"
+ },
+ {
+  "name": "Gigabyte P650B 650W",
+  "manufacturer": "Gigabyte",
+  "price": "6000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gamdias-aura-gp300-300w-non-modular-black-power-11761050605.webp",
+  "wattage": "650",
+  "efficiency_rating": "Bronze"
+ },
+ {
+  "name": "MSI MAG A650BN 650W",
+  "manufacturer": "MSI",
+  "price": "5800",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/pc-power-obsidian-ps-o-350-350w-non-modular-80-21739428701.webp",
+  "wattage": "650",
+  "efficiency_rating": "Bronze"
+ },
+ {
+  "name": "DeepCool PK650D 650W",
+  "manufacturer": "DeepCool",
+  "price": "6400",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/pc-power-pp-350w-wh-350w-non-modular-80-plus-11739187235.webp",
+  "wattage": "650",
+  "efficiency_rating": "Bronze"
+ },
+ {
+  "name": "Thermaltake Smart BX1 650W",
+  "manufacturer": "Thermaltake",
+  "price": "6900",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/value-top-neo-q450-450w-atx-non-modular-black-11729163672.webp",
+  "wattage": "650",
+  "efficiency_rating": "Bronze"
+ },
+ {
+  "name": "Antec NeoECO Gold Zen 600W",
+  "manufacturer": "Antec",
+  "price": "7800",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/thermaltake-w0422re-litepower-black-350w-non-11618201687.webp",
+  "wattage": "600",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "be quiet! System Power 10 650W",
+  "manufacturer": "be quiet!",
+  "price": "7200",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/1st-player-fk-400w-non-modular-power-supply-11719468269.webp",
+  "wattage": "650",
+  "efficiency_rating": "Bronze"
+ },
+ {
+  "name": "Seasonic S12III 650W",
+  "manufacturer": "Seasonic",
+  "price": "7500",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/pc-power-pp-400w-wh-400w-non-modular-80-plus-11739187428.webp",
+  "wattage": "650",
+  "efficiency_rating": "Bronze"
+ },
+ {
+  "name": "FSP HV PRO 650W",
+  "manufacturer": "FSP",
+  "price": "6100",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-mag-a300n-h-300w-non-modular-black-power-11754989575.webp",
+  "wattage": "650",
+  "efficiency_rating": "Bronze"
+ },
+ {
+  "name": "Corsair CX650M 650W Semi-Modular",
+  "manufacturer": "Corsair",
+  "price": "8200",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/antec-meta-series-v350-350w-non-modular-black-11681384881.webp",
+  "wattage": "650",
+  "efficiency_rating": "Bronze"
+ },
+ {
+  "name": "Cooler Master MWE 750 V2 750W",
+  "manufacturer": "Cooler Master",
+  "price": "7500",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gamdias-aura-gp450-pro-450w-non-modular-80-plus-11720426867.webp",
+  "wattage": "750",
+  "efficiency_rating": "Bronze"
+ },
+ {
+  "name": "Corsair CV750 750W",
+  "manufacturer": "Corsair",
+  "price": "8000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/value-top-neo-q550-550w-atx-non-modular-black-11729162686.webp",
+  "wattage": "750",
+  "efficiency_rating": "Bronze"
+ },
+ {
+  "name": "Gigabyte P750GM 750W Full Modular",
+  "manufacturer": "Gigabyte",
+  "price": "9500",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gamdias-aura-gp550-550w-non-modular-black-power-11758024111.webp",
+  "wattage": "750",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "MSI MPG A750GF 750W Full Modular",
+  "manufacturer": "MSI",
+  "price": "10200",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/value-top-neo-q450w-450w-atx-non-modular-white-11736859833.webp",
+  "wattage": "750",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "DeepCool PQ750M 750W Full Modular",
+  "manufacturer": "DeepCool",
+  "price": "10500",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/thermaltake-w0423re-litepower-black-450w-non-11618201229.webp",
+  "wattage": "750",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "Thermaltake Toughpower GF1 750W Full Modular",
+  "manufacturer": "Thermaltake",
+  "price": "11000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/antec-meta-series-v450-450w-non-modular-black-11681536347.webp",
+  "wattage": "750",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "Antec HCG750 Gold 750W Full Modular",
+  "manufacturer": "Antec",
+  "price": "11500",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/pc-power-obsidian-ps-o-500-b-500w-non-modular-21739429954.webp",
+  "wattage": "750",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "be quiet! Pure Power 12 M 750W Full Modular",
+  "manufacturer": "be quiet!",
+  "price": "11000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/huntkey-cp-series-cp5000-500w-atx-non-modular-11712223202.webp",
+  "wattage": "750",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "Seasonic FOCUS Plus Gold 750W Full Modular",
+  "manufacturer": "Seasonic",
+  "price": "12500",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/antec-meta-series-v550-550w-non-modular-black-11681537454.webp",
+  "wattage": "750",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "FSP Hydro G Pro 750W Full Modular",
+  "manufacturer": "FSP",
+  "price": "12000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/value-top-neo-q600-600w-atx-non-modular-black-11729165133.webp",
+  "wattage": "750",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "Corsair RM750e 750W Full Modular",
+  "manufacturer": "Corsair",
+  "price": "11800",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/value-top-neo-q550w-550w-atx-non-modular-white-11736926205.webp",
+  "wattage": "750",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "Cooler Master V750 Gold V2 750W Full Modular",
+  "manufacturer": "Cooler Master",
+  "price": "10800",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/bundle-with-pc-gigabyte-gp-p450b-450w-non-11601124646.webp",
+  "wattage": "750",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "MSI MAG A850GL PCIE5 850W Full Modular",
+  "manufacturer": "MSI",
+  "price": "13500",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/huntkey-cp-series-cp6000-600w-atx-non-modular-11712224478.webp",
+  "wattage": "850",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "Gigabyte UD850GM 850W Full Modular",
+  "manufacturer": "Gigabyte",
+  "price": "12800",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/value-top-neo-q650-650w-atx-non-modular-black-11729162831.webp",
+  "wattage": "850",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "DeepCool PQ850M 850W Full Modular",
+  "manufacturer": "DeepCool",
+  "price": "13000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/xigmatek-odin-500w-non-modular-80-plus-certified-11736340172.webp",
+  "wattage": "850",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "Corsair RM850e 850W Full Modular",
+  "manufacturer": "Corsair",
+  "price": "12800",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gamdias-helios-m1-450b-450w-atx-non-modular-black-11703671047.webp",
+  "wattage": "850",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "Thermaltake Toughpower GF3 850W Full Modular",
+  "manufacturer": "Thermaltake",
+  "price": "14500",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/montech-ap-550-550w-atx-non-modular-80-plus-white-11697897325.webp",
+  "wattage": "850",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "Antec HCG850 Gold 850W Full Modular",
+  "manufacturer": "Antec",
+  "price": "14000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/pc-power-vibranium-ps-v-650-b-650w-full-modular-11739430587.webp",
+  "wattage": "850",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "be quiet! Pure Power 12 M 850W Full Modular",
+  "manufacturer": "be quiet!",
+  "price": "13800",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/value-top-neo-q650w-650w-atx-non-modular-white-11729163162.webp",
+  "wattage": "850",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "Seasonic FOCUS Plus Gold 850W Full Modular",
+  "manufacturer": "Seasonic",
+  "price": "15000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/ocpc-energia-bz550-550w-non-modular-80-plus-11764219596.webp",
+  "wattage": "850",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "FSP Hydro G Pro 850W Full Modular",
+  "manufacturer": "FSP",
+  "price": "14200",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/montech-ap-650-650w-atx-non-modular-80-plus-white-11697897461.webp",
+  "wattage": "850",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "Cooler Master V850 Gold V2 850W Full Modular",
+  "manufacturer": "Cooler Master",
+  "price": "15000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/acer-emachines-ac550-550w-full-modular-80-plus-11765699658.webp",
+  "wattage": "850",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "ASUS TUF Gaming 850W Gold Full Modular",
+  "manufacturer": "ASUS",
+  "price": "16000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/value-top-ax700-700w-atx-non-modular-black-power-11729163291.webp",
+  "wattage": "850",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "Corsair RM850x SHIFT 850W Full Modular",
+  "manufacturer": "Corsair",
+  "price": "17500",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/antec-b-series-b550-550w-non-modular-80-plus-11758716090.webp",
+  "wattage": "850",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "Seasonic FOCUS PX-850 850W Full Modular",
+  "manufacturer": "Seasonic",
+  "price": "19000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gamdias-helios-m1-550b-550w-atx-non-modular-black-11703671684.webp",
+  "wattage": "850",
+  "efficiency_rating": "Platinum"
+ },
+ {
+  "name": "be quiet! Straight Power 12 850W Full Modular",
+  "manufacturer": "be quiet!",
+  "price": "20000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-p550ss-550w-non-modular-80-plus-silver-11740487089.webp",
+  "wattage": "850",
+  "efficiency_rating": "Platinum"
+ },
+ {
+  "name": "ASUS ROG Strix 850G 850W Gold Full Modular",
+  "manufacturer": "ASUS",
+  "price": "21000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/ocpc-energia-bz650-650w-non-modular-80-plus-11764219545.webp",
+  "wattage": "850",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "MSI MPG A1000G PCIE5 1000W Full Modular",
+  "manufacturer": "MSI",
+  "price": "18500",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/corsair-cx-series-cx550-550w-80-plus-bronze-11706013988.webp",
+  "wattage": "1000",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "Gigabyte UD1000GM PG5 1000W Full Modular",
+  "manufacturer": "Gigabyte",
+  "price": "17000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/1st-player-ps-600ax-dk60-600w-full-modular-80-11700908956.webp",
+  "wattage": "1000",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "DeepCool PX1000G 1000W Full Modular",
+  "manufacturer": "DeepCool",
+  "price": "19500",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/deepcool-pl550d-atx30-550w-non-modular-80-plus-11720787159.webp",
+  "wattage": "1000",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "Corsair RM1000e 1000W Full Modular",
+  "manufacturer": "Corsair",
+  "price": "20500",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/acer-emachines-ac650-650w-full-modular-80-plus-11724732987.webp",
+  "wattage": "1000",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "Thermaltake Toughpower GF3 1000W Full Modular",
+  "manufacturer": "Thermaltake",
+  "price": "21000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/huntkey-gs800-prime-800w-atx-non-modular-black-11712313366.webp",
+  "wattage": "1000",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "Antec Signature 1000W Titanium Full Modular",
+  "manufacturer": "Antec",
+  "price": "31000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/antec-b-series-b650-650w-non-modular-80-plus-11758716184.webp",
+  "wattage": "1000",
+  "efficiency_rating": "Titanium"
+ },
+ {
+  "name": "be quiet! Dark Power 13 1000W Full Modular",
+  "manufacturer": "be quiet!",
+  "price": "29000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/cougar-atlas-600-600w-non-modular-80-plus-bronze-11745672798.webp",
+  "wattage": "1000",
+  "efficiency_rating": "Titanium"
+ },
+ {
+  "name": "Seasonic PRIME TX-1000 1000W Full Modular",
+  "manufacturer": "Seasonic",
+  "price": "32000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/ocpc-energia-bz750-750w-non-modular-80-plus-11764219491.webp",
+  "wattage": "1000",
+  "efficiency_rating": "Titanium"
+ },
+ {
+  "name": "FSP Hydro Ti Pro 1000W Full Modular",
+  "manufacturer": "FSP",
+  "price": "30000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/montech-beta-650-650w-non-modular-80-plus-bronze-11704363174.webp",
+  "wattage": "1000",
+  "efficiency_rating": "Titanium"
+ },
+ {
+  "name": "ASUS ROG Thor 1000P2 1000W Platinum II",
+  "manufacturer": "ASUS",
+  "price": "35000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/montech-ap750-750w-atx-non-modular-80-plus-white-11713598804.webp",
+  "wattage": "1000",
+  "efficiency_rating": "Platinum"
+ },
+ {
+  "name": "Corsair AX1000 1000W Titanium Full Modular",
+  "manufacturer": "Corsair",
+  "price": "38000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-p650ss-650w-non-modular-80-plus-silver-11726144983.webp",
+  "wattage": "1000",
+  "efficiency_rating": "Titanium"
+ },
+ {
+  "name": "Cooler Master M2000 2000W Platinum",
+  "manufacturer": "Cooler Master",
+  "price": "45000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/acer-emachines-ac650w-650w-full-modular-white-11733555240.webp",
+  "wattage": "2000",
+  "efficiency_rating": "Platinum"
+ },
+ {
+  "name": "Thermaltake Toughpower GF3 1200W Full Modular",
+  "manufacturer": "Thermaltake",
+  "price": "25000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/gigabyte-p650ss-ice-650w-non-modular-80-plus-11745238110.webp",
+  "wattage": "1200",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "Corsair RM1200x SHIFT 1200W Full Modular",
+  "manufacturer": "Corsair",
+  "price": "28000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/1st-player-dk-premium-80-800w-non-modular-80-11746684196.webp",
+  "wattage": "1200",
+  "efficiency_rating": "Gold"
+ },
+ {
+  "name": "ASUS ROG Thor 1200P2 1200W Platinum II",
+  "manufacturer": "ASUS",
+  "price": "42000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/bundle-with-pc-silverstone-strideplus-st55f-pb-11609144138.webp",
+  "wattage": "1200",
+  "efficiency_rating": "Platinum"
+ },
+ {
+  "name": "be quiet! Dark Power Pro 13 1300W",
+  "manufacturer": "be quiet!",
+  "price": "45000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/corsair-cx-series-cx650-650w-80-plus-bronze-11720354610.webp",
+  "wattage": "1300",
+  "efficiency_rating": "Titanium"
+ },
+ {
+  "name": "Seasonic PRIME PX-1300 1300W Full Modular",
+  "manufacturer": "Seasonic",
+  "price": "40000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/msi-mag-series-a650bn-650w-atx-non-modular-power-21725521177.webp",
+  "wattage": "1300",
+  "efficiency_rating": "Platinum"
+ },
+ {
+  "name": "Corsair AX1600i 1600W Digital ATX",
+  "manufacturer": "Corsair",
+  "price": "55000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/cougar-atlas650-650w-atx-non-modular-80-plus-11736397367.webp",
+  "wattage": "1600",
+  "efficiency_rating": "Titanium"
+ },
+ {
+  "name": "ASUS ROG Thor 1600T 1600W Titanium",
+  "manufacturer": "ASUS",
+  "price": "65000",
+  "image": "https:\/\/www.ryans.com\/storage\/products\/small\/1st-player-ack-bronze-atx-31-750w-pg5-non-11757392102.webp",
+  "wattage": "1600",
+  "efficiency_rating": "Titanium"
+ }
 ]

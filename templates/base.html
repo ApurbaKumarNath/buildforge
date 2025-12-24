@@ -74,7 +74,7 @@
 
         <div class="nav-center nav-links">
             <!-- These links are visible to everyone -->
-            <a href="#">Catalog</a>
+            <a href="{% url 'catalog:chooser' %}">Catalog</a>
             <a href="{% url 'builds:guides' %}">Guides</a>
             <a href="#">Marketplace</a>
         </div>
@@ -84,7 +84,7 @@
             {% if user.is_authenticated %}
                 <div class="nav-links">
                     <!-- These links are only for logged-in users -->
-                    <a href="#">Wishlist</a>
+                    <a href="{% url 'builds:wishlist' %}">Wishlist</a>
                 </div>
                 <div class="nav-user">
                     <span>Hello, {{ user.username }}!</span>
