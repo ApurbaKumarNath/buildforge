@@ -4,15 +4,16 @@
 
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
-from django.http import Http404
+from django.http import Http404, HttpResponse, HttpResponseForbidden
 from .models import Build, BuildComponent
 from catalog.models import Component
 from django.shortcuts import get_object_or_404
 from .logic import detect_bottleneck, calculate_psu_wattage
-from django.db.models import Q
-from django.http import HttpResponse
+from django.db.models import Q, Sum, F, DecimalField, CharField
 from django.db import models
 from .forms import BuildForm
+from django.db.models.functions import Cast
+from django.utils import timezone
 
 # This is the view for our new homepage.
 def home_view(request):
@@ -41,7 +42,23 @@ def home_view(request):
     # This part runs for a normal GET request (just visiting the page).
     builds = None
     if request.user.is_authenticated:
-        builds = Build.objects.filter(user=request.user).order_by('-date_created')
+        # Start with the base queryset for the current user
+        builds = Build.objects.filter(user=request.user)
+
+        # === THIS IS THE NEW SEARCH LOGIC ===
+        # Check if a search query 'q' is in the GET parameters
+        search_query = request.GET.get('q', None)
+        if search_query:
+            # If a query exists, filter the builds queryset further.
+            # Q objects allow for OR conditions.
+            # This searches for the query in both the name and description fields.
+            builds = builds.filter(
+                Q(name__icontains=search_query) | Q(description__icontains=search_query)
+            )
+        # ====================================
+
+        # Always order the final result
+        builds = builds.order_by('-date_created')
     
     # We create an empty instance of the form to display on the page.
     form = BuildForm()
@@ -49,6 +66,7 @@ def home_view(request):
     context = {
         'builds': builds,
         'form': form, # Add the form to the context
+        'request': request, # Pass the request object for the partial template
     }
     return render(request, 'home.html', context)
 
@@ -152,7 +170,134 @@ def workbench_view(request, build_id):
 
     return render(request, 'builds/workbench.html', context)
 
-# builds/views.py
+# This is the new view for the public share page.
+# Notice there is NO @login_required decorator. This page is accessible to everyone.
+def share_build_view(request, build_id):
+    # We use get_object_or_404 to fetch the build. If a build with this ID
+    # doesn't exist, it will automatically show a "Page Not Found" error.
+    # CRUCIALLY, we are NOT checking if build.user == request.user.
+    build = get_object_or_404(Build, pk=build_id)
+
+    # We use the same powerful _get_build_scaffold helper function.
+    # This is a great example of code reuse (DRY principle).
+    scaffold = _get_build_scaffold(build)
+    
+    # We also need to fetch all the components to pass to the PSU calculator.
+    components_in_build = BuildComponent.objects.filter(build=build)
+
+    # --- Perform the same calculations as the workbench ---
+    # This ensures the public view shows the same intelligence.
+    cpu_item = scaffold['CPU']
+    gpu_item = scaffold['GPU']
+    bottleneck_level, bottleneck_message = detect_bottleneck(cpu_item, gpu_item)
+    psu_recommendation = calculate_psu_wattage(components_in_build)
+    total_price = build.calculate_total_price()
+
+    # We package up all the data into a context dictionary.
+    context = {
+        'build': build,
+        'scaffold': scaffold,
+        'bottleneck_level': bottleneck_level,
+        'bottleneck_message': bottleneck_message,
+        'psu_recommendation': psu_recommendation,
+        'total_price': total_price,
+    }
+
+    # We will render a NEW template called 'share_build.html'.
+    return render(request, 'builds/share_build.html', context)
+
+# This is the new view for the public guides page.
+# It does not require a login.
+def guides_view(request):
+    # Step 1: Annotate to create the 'total_price' field.
+    all_guides = Build.objects.filter(user__is_staff=True).annotate(
+        total_price=Sum(
+            F('components__price') * F('buildcomponent__quantity'),
+            output_field=DecimalField()
+        )
+    )
+
+    # Step 2: Apply a single, universal filter if a search query exists.
+    search_query = request.GET.get('q', None)
+    if search_query:
+        # We need to tell Cast what kind of text field to use.
+        # This is the robust way to do it.
+        all_guides = all_guides.annotate(
+            total_price_str=Cast('total_price', output_field=CharField())
+        ).filter(
+            Q(name__icontains=search_query) |
+            Q(description__icontains=search_query) |
+            # Now we filter on the new annotated string field.
+            Q(total_price_str__icontains=search_query)
+        )
+
+    # Step 3: Order the final, filtered queryset.
+    guide_builds = all_guides.order_by('total_price')
+
+    context = {
+        'guide_builds': guide_builds,
+        'request': request,
+    }
+    
+    if request.htmx:
+        return render(request, 'builds/partials/guides_list.html', context)
+    
+    return render(request, 'builds/guides.html', context)
+
+# This view must be protected. Only logged-in users can clone builds.
+@login_required
+def clone_build_view(request, build_id):
+    # This action should only be performed via a POST request for security.
+    if request.method == 'POST':
+        # Step 1: Get the original build we want to clone.
+        original_build = get_object_or_404(Build, pk=build_id)
+
+        # Step 2: Create a brand new Build instance from scratch.
+        # This is more explicit and safer than copying the object.
+        new_build = Build.objects.create(
+            user=request.user, # Assign to the current logged-in user
+            name=f"Copy of {original_build.name}",
+            description=original_build.description
+        )
+        # The date_created is handled automatically by the model.
+
+        # Step 3: Get all the component entries from the original build.
+        original_components = original_build.buildcomponent_set.all()
+
+        # Step 4: Loop through the original components and create a new one for each.
+        # This is the most reliable way to ensure correct creation.
+        for item in original_components:
+            BuildComponent.objects.create(
+                build=new_build,          # Link to our new build
+                component=item.component, # Link to the SAME component
+                quantity=item.quantity    # Copy the quantity
+            )
+
+        # Step 5: Redirect the user to their new workbench.
+        return redirect('builds:workbench', build_id=new_build.id)
+
+    # If someone tries to access this URL with a GET request, just send them home.
+    return redirect('home')
+
+@login_required
+def delete_build_view(request, build_id):
+    # This action must be a POST request for security.
+    if request.method == 'POST':
+        # Find the build to delete, ensuring it belongs to the current user.
+        # This is the same critical security check as in the workbench.
+        build_to_delete = get_object_or_404(Build, pk=build_id, user=request.user)
+        
+        # Perform the delete operation.
+        build_to_delete.delete()
+        
+        # For an HTMX request, we should return an empty response with a 200 OK status.
+        # This tells HTMX the operation was successful, and it can proceed with
+        # swapping/removing the target element.
+        return HttpResponse(status=200)
+
+    # If a user tries to access this URL via GET, it's not allowed.
+    # We return a "Forbidden" error.
+    return HttpResponseForbidden()
 
 @login_required
 def add_component_to_build(request, build_id):
@@ -178,6 +323,41 @@ def add_component_to_build(request, build_id):
             
             # Create the new one.
             BuildComponent.objects.create(build=build, component=component_to_add, quantity=1)
+
+            if component_type == 'Motherboard':
+                # Get the new motherboard's slot count.
+                new_ram_slot_limit = component_to_add.motherboard.ram_slots
+
+                # Get all RAM items currently in the build.
+                ram_items_in_build = BuildComponent.objects.filter(
+                    build=build,
+                    component__ram__isnull=False
+                )
+
+                # Calculate the total number of RAM sticks (sum of quantities).
+                total_ram_sticks = ram_items_in_build.aggregate(
+                    total=models.Sum('quantity')
+                )['total'] or 0
+
+                # If we have more sticks than the new limit, we must remove them.
+                if total_ram_sticks > new_ram_slot_limit:
+                    sticks_to_remove = total_ram_sticks - new_ram_slot_limit
+                    
+                    # We remove sticks one by one, starting from the last ones added
+                    # (or by any consistent order).
+                    for ram_item in ram_items_in_build.order_by('-id'):
+                        if sticks_to_remove <= 0:
+                            break # We've removed enough.
+                        
+                        if ram_item.quantity <= sticks_to_remove:
+                            # If we need to remove more sticks than this item has, delete it entirely.
+                            sticks_to_remove -= ram_item.quantity
+                            ram_item.delete()
+                        else:
+                            # If this item has more sticks than we need to remove, just decrease quantity.
+                            ram_item.quantity -= sticks_to_remove
+                            ram_item.save()
+                            sticks_to_remove = 0
 
         # --- Logic for Stackable Components (RAM, Storage) ---
         else:
@@ -323,4 +503,35 @@ def search_components(request, build_id):
 
     # Render and return the partial template containing ONLY the list.
     return render(request, 'builds/partials/available_components_list.html', context)
+
+@login_required
+def get_build_edit_form(request, build_id):
+    build = get_object_or_404(Build, pk=build_id, user=request.user)
+    # Create a form instance pre-filled with the build's current data
+    form = BuildForm(instance=build)
+    context = {'build': build, 'form': form}
+    # Return the edit form partial
+    return render(request, 'builds/partials/build_card_edit.html', context)
+
+@login_required
+def save_build_changes(request, build_id):
+    build = get_object_or_404(Build, pk=build_id, user=request.user)
+    if request.method == 'POST':
+        # Create a form instance with the submitted data AND the original build instance
+        form = BuildForm(request.POST, instance=build)
+        if form.is_valid():
+            form.save() # Save the changes to the database
+            # After saving, return the "view" partial with the updated data
+            context = {'build': build, 'request': request} # Pass request for the absolute URL
+            return render(request, 'builds/partials/build_card_view.html', context)
+    # If form is not valid, return the edit form again with errors
+    context = {'build': build, 'form': form}
+    return render(request, 'builds/partials/build_card_edit.html', context)
+
+@login_required
+def get_view_card(request, build_id):
+    """A simple view to handle the 'Cancel' action by returning the view partial."""
+    build = get_object_or_404(Build, pk=build_id, user=request.user)
+    context = {'build': build, 'request': request}
+    return render(request, 'builds/partials/build_card_view.html', context)
 #_________________________________________________________________________________________________________________________

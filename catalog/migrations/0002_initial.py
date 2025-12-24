@@ -10,14 +10,18 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
+        ('catalog', '0001_initial'),
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('marketplace', '0001_initial'),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='marketplacelisting',
-            name='seller',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL),
+            model_name='review',
+            name='user',
+            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to=settings.AUTH_USER_MODEL),
+        ),
+        migrations.AlterUniqueTogether(
+            name='review',
+            unique_together={('user', 'component')},
         ),
     ]

@@ -1,0 +1,29 @@
+<!-- templates/builds/partials/guides_list.html akn -->
+
+<div class="guides-grid">
+    {% for build in guide_builds %}
+        <div class="card">
+            <div class="card-header">
+                <h3>{{ build.name }}</h3>
+                <span class="price-tag">৳{{ build.total_price|floatformat:2 }}</span>
+            </div>
+
+            <p>{{ build.description|default:"No description provided." }}</p>
+
+            <div class="card-actions">
+                <a href="{% url 'builds:share_build' build.id %}" class="btn btn-secondary">View Parts</a>
+                <button 
+                    class="btn btn-secondary" 
+                    onclick="copyToClipboard('{{ request.scheme }}://{{ request.get_host }}{% url 'builds:share_build' build.id %}', this)">
+                    Copy Link
+                </button>
+                <form action="{% url 'builds:clone_build' build.id %}" method="post" style="margin: 0;">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-primary">Clone to My Workshop</button>
+                </form>
+            </div>
+        </div>
+    {% empty %}
+        <p style="text-align: center; color: #6c757d;">No guides found matching your search criteria.</p>
+    {% endfor %}
+</div>

@@ -1,0 +1,90 @@
+<!-- templates/builds/guides.html akn -->
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    .page-header {
+        text-align: center;
+        margin-bottom: 2.5em;
+        padding: 2em 1em;
+        background-color: #f8f9fa;
+        border-radius: 12px;
+        border: 1px solid #dee2e6;
+    }
+    .guides-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* Start with a single column layout */
+        gap: 1.5em;
+    }
+    .card {
+        background: #fff;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        padding: 1.5em;
+        display: flex;
+        flex-direction: column;
+    }
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+    }
+    .card-header h3 {
+        margin: 0;
+    }
+    .price-tag {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #28a745; /* Green for price */
+    }
+    .card p {
+        color: #6c757d;
+        flex-grow: 1;
+        line-height: 1.6;
+    }
+    .card-actions {
+        margin-top: 1em;
+        display: flex;
+        gap: 1em;
+    }
+    .btn {
+        text-decoration: none;
+        padding: 0.6em 1.2em;
+        border-radius: 5px;
+        font-weight: bold;
+        display: inline-block;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+    }
+    .btn-primary { background-color: #007bff; color: white; }
+    .btn-secondary { background-color: #6c757d; color: white; }
+</style>
+
+<div class="page-header">
+    <h1>Curated Build Guides</h1>
+    <p>Get started with one of our expert--curated builds, optimized for performance and value.</p>
+</div>
+
+<div style="margin-bottom: 2em;">
+    <input type="search" 
+       name="q"
+       class="form-control"
+       placeholder="Search by name, description, or budget (e.g., 50000)..."
+       style="width: 100%; padding: 0.75em; border-radius: 5px; border: 1px solid #ced4da; box-sizing: border-box;"
+       hx-get="{% url 'builds:guides' %}"
+       hx-trigger="keyup changed delay:300ms, search"
+       hx-target="#guides-list-container"
+       hx-swap="innerHTML">
+</div>
+
+<div id="guides-list-container">
+    <!-- Include the new partial for the initial page load -->
+    {% include 'builds/partials/guides_list.html' %}
+</div>
+
+{% endblock %}

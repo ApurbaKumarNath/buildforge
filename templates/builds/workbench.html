@@ -4,8 +4,20 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h2>Workbench: {{ build.name }}</h2>
-    <p>{{ build.description }}</p>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1em;">
+        <div>
+            <h2 style="margin-bottom: 0.25em;">Workbench: {{ build.name }}</h2>
+            <p style="margin-top: 0;">{{ build.description }}</p>
+        </div>
+        <div>
+            <!-- This is the exact same button logic from the dashboard -->
+            <button 
+                class="btn btn-secondary" 
+                onclick="copyToClipboard('{{ request.scheme }}://{{ request.get_host }}{% url 'builds:share_build' build.id %}', this)">
+                Copy Share Link
+            </button>
+        </div>
+    </div>
 
     <!-- SYSTEM STATUS PANEL -->
     <!-- hx-trigger="load, componentAdded from:body" is powerful. It tells this div to update itself under two conditions:

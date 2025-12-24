@@ -481,8 +481,7 @@
   "performance_tier": "High",
   "core_count": "20",
   "clock_speed": "2.10 GHz - 5.40 GHz",
-  "socket": "LGA1700",
-  "Column14": 105
+  "socket": "LGA1700"
  },
  {
   "name": "AMD Ryzen 7 7800X3D",

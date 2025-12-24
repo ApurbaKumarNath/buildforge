@@ -1,0 +1,68 @@
+<!-- templates/builds/share_build.html akn -->
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- Header Section -->
+    <div style="padding: 1em; background-color: #f8f9fa; border-radius: 8px; margin-bottom: 2em; text-align: center;">
+        <h2>{{ build.name }}</h2>
+        <p><em>A shared build by {{ build.user.username }}</em></p>
+        <p>{{ build.description }}</p>
+    </div>
+
+    <!-- Intelligence Panel -->
+    <!-- We include the same system status partial. It's perfectly reusable. -->
+    {% include 'builds/partials/system_status.html' %}
+
+    <hr>
+
+    <!-- Components List -->
+    <div>
+        <h3>Component List</h3>
+        <table border="1" style="width:100%; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th style="padding: 8px; text-align: left;">Slot</th>
+                    <th style="padding: 8px; text-align: left;">Component</th>
+                    <th style="padding: 8px; text-align: left;">Manufacturer</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- We include our NEW read-only partial here -->
+                {% include 'builds/partials/scaffold_list_readonly.html' %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Action Section: Clone or Sign Up -->
+    <div id="clone-section" style="text-align: center; margin-top: 2em; padding: 1.5em; background-color: #e9ecef; border-radius: 8px;">
+        
+        <!-- This is the core logic. We check if the user is authenticated. -->
+        {% if user.is_authenticated %}
+            
+            <!-- If they are logged in, show the clone form/button -->
+            <h4>Like this build?</h4>
+            <p>Add it to your personal workshop to customize it.</p>
+            
+            <!-- This form will send a POST request to our clone_build_view -->
+            <form action="{% url 'builds:clone_build' build.id %}" method="post">
+                <!-- Django's security token is required for all POST forms -->
+                {% csrf_token %}
+                <button type="submit" style="padding: 10px 20px; font-size: 1.1em; color: #fff; background-color: #28a745; border: none; border-radius: 5px; cursor: pointer;">
+                    Clone to My Workshop
+                </button>
+            </form>
+
+        {% else %}
+
+            <!-- If they are logged out, show a call to action -->
+            <h4>Want to build this yourself?</h4>
+            <p>
+                <a href="{% url 'users:login' %}">Log in</a> or 
+                <a href="{% url 'users:register' %}">create an account</a> 
+                to save and customize this build.
+            </p>
+
+        {% endif %}
+    </div>
+
+{% endblock %}

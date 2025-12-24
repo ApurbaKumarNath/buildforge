@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 from builds import views as build_views
 
+
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -32,6 +33,7 @@ urlpatterns = [
     path('builds/', include('builds.urls')), # URL starting with 'builds/' will be handled by our builds.urls file.
 
     path('', build_views.home_view, name='home'), # This is the home page.
+
 ]
 
 # necessary configuration to serve media files during development (akn)

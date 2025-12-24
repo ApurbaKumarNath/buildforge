@@ -9,7 +9,7 @@
     <div style="padding: 10px; border-radius: 4px; background: #d4edda; color: #155724; margin-bottom: 10px;">
         <strong>💰 Estimated Total Price:</strong> 
         <!-- The floatformat:2 filter ensures it's always displayed with two decimal places -->
-        <span style="font-weight: bold; font-size: 1.2em;">${{ total_price|floatformat:2 }}</span>
+        <span style="font-weight: bold; font-size: 1.2em;">৳{{ total_price|floatformat:2 }}</span>
     </div>
     
     <div style="margin-bottom: 10px; padding: 10px; border-radius: 4px; background: {% if bottleneck_level == 'major' %}#f8d7da{% elif bottleneck_level == 'minor' %}#fff3cd{% elif bottleneck_level == 'good' %}#d4edda{% else %}#e2e3e5{% endif %};">

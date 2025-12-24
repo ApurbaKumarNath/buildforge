@@ -1,0 +1,32 @@
+<!-- templates/builds/partials/build_card_view.html akn -->
+<div class="build-card-content">
+    <h3>{{ build.name }}</h3>
+    <p>{{ build.description|default:"No description."|truncatewords:15 }}</p>
+</div>
+<div class="build-card-actions">
+    <a href="{% url 'builds:workbench' build.id %}" class="btn btn-primary">Workbench</a>
+    <button 
+        class="btn btn-secondary" 
+        onclick="copyToClipboard('{{ request.scheme }}://{{ request.get_host }}{% url 'builds:share_build' build.id %}', this)">
+        Copy Link
+    </button>
+    <!-- The "Edit" button now triggers an HTMX request to get the edit form -->
+    <button 
+        class="btn btn-secondary" 
+        style="background-color: #ffc107; color: black;"
+        hx-get="{% url 'builds:get_edit_form' build.id %}"
+        hx-target="closest .card"
+        hx-swap="innerHTML">
+        Edit
+    </button>
+    <button 
+        class="btn btn-secondary" 
+        style="background-color: #dc3545;"
+        hx-post="{% url 'builds:delete_build' build.id %}"
+        hx-target="closest .card"
+        hx-swap="delete"
+        hx-confirm="Are you sure you want to permanently delete '{{ build.name }}'?"
+        hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'>
+        Delete
+    </button>
+</div>

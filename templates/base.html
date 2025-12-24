@@ -13,30 +13,88 @@
     <!-- Simple CSS for now, you can replace this with a proper CSS file later -->
     <style>
         body { font-family: sans-serif; margin: 0; background-color: #f4f4f4; color: #333; }
+
         nav { background-color: #2c3e50; color: white; padding: 1em; display: flex; justify-content: space-between; align-items: center; }
         nav a { color: white; text-decoration: none; padding: 0 1em; font-weight: bold; }
         nav .brand a { font-size: 1.5em; }
+
+        nav {
+            background-color: #ffffff;
+            color: #333;
+            padding: 0 2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Vertically center items */
+            border-bottom: 1px solid #dee2e6;
+            height: 60px;
+        }
+        .nav-left, .nav-right, .nav-center {
+            display: flex;
+            align-items: center;
+            gap: 1.5em; /* Space between links */
+        }
+        .nav-brand a {
+            font-weight: bold;
+            font-size: 1.5em;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #495057;
+            font-weight: 500;
+            padding: 5px 0;
+            border-bottom: 2px solid transparent;
+            transition: color 0.2s, border-bottom-color 0.2s;
+        }
+        .nav-links a:hover {
+            color: #0056b3;
+            border-bottom-color: #0056b3;
+        }
+        .nav-user span {
+            color: #6c757d;
+        }
+        .nav-user a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
         .main-content { padding: 2em; max-width: 1200px; margin: auto; }
         h1, h2, h3 { color: #2c3e50; }
     </style>
 </head>
 <body>
     <nav>
-        <div class="brand">
-            <!-- This URL tag is correct and points to the 'home' name in your project urls.py -->
-            <a href="{% url 'home' %}">BuildForge</a>
+        <div class="nav-left">
+            <div class="nav-brand">
+                <a href="{% url 'home' %}">BuildForge</a>
+            </div>
         </div>
-        <div>
-            <!-- This is powerful Django template logic! -->
-            <!-- It checks if the user is logged in. -->
+
+        <div class="nav-center nav-links">
+            <!-- These links are visible to everyone -->
+            <a href="#">Catalog</a>
+            <a href="{% url 'builds:guides' %}">Guides</a>
+            <a href="#">Marketplace</a>
+        </div>
+
+        <div class="nav-right">
+            <!-- This logic checks if the user is logged in -->
             {% if user.is_authenticated %}
-                <span>Hello, {{ user.username }}!</span>
-                <!-- This URL tag is correct and points to the 'logout' name in users/urls.py -->
-                <a href="{% url 'users:logout' %}">Logout</a>
+                <div class="nav-links">
+                    <!-- These links are only for logged-in users -->
+                    <a href="#">Wishlist</a>
+                </div>
+                <div class="nav-user">
+                    <span>Hello, {{ user.username }}!</span>
+                    <a href="{% url 'users:logout' %}" style="margin-left: 1em;">Logout</a>
+                </div>
             {% else %}
-                <!-- These URL tags are correct -->
-                <a href="{% url 'users:login' %}">Login</a>
-                <a href="{% url 'users:register' %}">Register</a>
+                <div class="nav-user">
+                    <a href="{% url 'users:login' %}">Login</a>
+                    <a href="{% url 'users:register' %}" style="margin-left: 1em;">Register</a>
+                </div>
             {% endif %}
         </div>
     </nav>
@@ -46,6 +104,27 @@
         {% block content %}
         {% endblock %}
     </main>
+
+    <script>
+        function copyToClipboard(textToCopy, buttonElement) {
+            // The Clipboard API is the modern and secure way to copy text.
+            navigator.clipboard.writeText(textToCopy).then(function() {
+                // Success feedback!
+                const originalText = buttonElement.innerText;
+                buttonElement.innerText = 'Copied!';
+                buttonElement.style.backgroundColor = '#28a745'; // Green color for success
+                
+                // Revert the button back to its original state after 2 seconds.
+                setTimeout(function() {
+                    buttonElement.innerText = originalText;
+                    buttonElement.style.backgroundColor = ''; // Revert to original color
+                }, 2000);
+            }, function(err) {
+                // Error feedback (less common, but good to have)
+                alert('Could not copy text: ', err);
+            });
+        }
+    </script>
 </body>
 </html>
 

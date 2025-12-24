@@ -1,0 +1,21 @@
+<!-- templates/builds/partials/build_list.html akn -->
+
+<div class="dashboard-grid">
+    {% for build in builds %}
+        <div class="card">
+            <!-- This is the container for the swappable content -->
+            <div id="build-card-{{ build.id }}">
+                {% include 'builds/partials/build_card_view.html' %}
+            </div>
+        </div>
+    {% empty %}
+        <!-- This message shows if there are no builds, or no search results -->
+        <p style="grid-column: 1 / -1; text-align: center; color: #6c757d;">
+            {% if request.GET.q %}
+                No builds found matching your search.
+            {% else %}
+                You haven't created any builds yet.
+            {% endif %}
+        </p>
+    {% endfor %}
+</div>

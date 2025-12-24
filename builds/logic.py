@@ -46,36 +46,43 @@ def detect_bottleneck(cpu_item, gpu_item):
 
 def calculate_psu_wattage(components_in_build):
     """
-    Calculates a recommended PSU wattage based on the components in a build.
-    Since we don't have real TDP, we'll use estimates based on performance tier.
+    Calculates a recommended PSU wattage by summing the actual TDP values
+    of all components in the build from the database.
     """
     total_tdp = 0
     
-   
-    # Base power draw for other components
-    base_power_others = 50  # Motherboard, RAM, fans, etc.
+    # We can add a small base value to account for things that don't have a TDP,
+    # like motherboard chipsets, fans, and SSDs. 50W is a safe estimate.
+    base_power_others = 50
     total_tdp += base_power_others
 
+    # Loop through every single item in the build.
     for item in components_in_build:
+        # Get the actual component object.
         component = item.component
         
-        
-        if component.tdp:
-           
-            total_tdp += component.tdp * item.quantity
+        # Check if the component has a valid TDP value in the database.
+        # The 'is not None' check is important to avoid errors if TDP is blank.
+        if component.tdp is not None and component.tdp > 0:
+            # Add the component's TDP multiplied by its quantity to the total.
+            total_tdp += (component.tdp * item.quantity)
 
+    # If the total is still just our base value, it means no components with TDP were found.
     if total_tdp <= base_power_others:
-        return "Add a CPU and GPU to estimate wattage."
+        return "Add components with TDP values (like a CPU or GPU) to estimate wattage."
 
-    # Add a safety margin (e.g., 30% headroom)
-    recommended_wattage = total_tdp * 1.3
+    # Add a safety margin for efficiency and future upgrades.
+    # 1.3 to 1.5 is a good range (30-50% headroom). Let's use 1.4 for a 40% margin.
+    recommended_wattage = total_tdp * 1.4
 
-    # Round up to the nearest common PSU wattage (e.g., 550, 650, 750)
+    # Round up to the nearest common PSU wattage for a clean recommendation.
     standard_psu_sizes = [450, 550, 650, 750, 850, 1000, 1200, 1600]
     for size in standard_psu_sizes:
         if size >= recommended_wattage:
-            return f"Recommended PSU: ~{size}W (Estimated load: {total_tdp}W)"
+            # Provide a more informative message to the user.
+            return f"Recommended PSU: ~{size}W (Estimated Load: {total_tdp}W)"
             
-    return f"Recommended PSU: >{standard_psu_sizes[-1]}W (High-power build)"
+    # If the build is extremely high-power, recommend the highest standard size.
+    return f"Recommended PSU: >{standard_psu_sizes[-1]}W (High-power build, Estimated Load: {total_tdp}W)"
 
 #__________________________________________________________________________________________________________________________ 

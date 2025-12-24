@@ -123,8 +123,7 @@
   "tdp": 9,
   "price": "6500",
   "capacity_gb": "500GB",
-  "storage_type": "SSD",
-  "Column11": 9
+  "storage_type": "SSD"
  },
  {
   "name": "MP34 M.2 NVMe SSD",
