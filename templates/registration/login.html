@@ -1,16 +1,16 @@
-<!-- akn -->
-
 <!-- templates/registration/login.html -->
+{% extends "auth_base.html" %}
 
-{% extends "base.html" %}
+{% block auth_content %}
+    <h2>Login to Your Account</h2>
 
-{% block content %}
-    <h2>Login</h2>
-    <form method="post">
+    <form method="post" class="auth-form">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Login</button>
+        <button type="submit" class="auth-button">Login</button>
     </form>
-{% endblock %}
 
-<!-- akn -->
+    <div class="auth-switch-link">
+        <p>Don't have an account? <a href="{% url 'users:register' %}">Register now</a></p>
+    </div>
+{% endblock %}
