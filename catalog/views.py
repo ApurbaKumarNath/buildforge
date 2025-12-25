@@ -3,7 +3,7 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from django.http import Http404
-from .models import CPU, GPU, Motherboard, RAM, Storage, PSU, Case
+from .models import Component, CPU, GPU, Motherboard, RAM, Storage, PSU, Case
 from django.db.models import Q
 
 # This map is our secure way of translating a URL part into a database model.
@@ -81,3 +81,46 @@ def component_list_view(request, component_type):
     return render(request, 'catalog/component_list.html', context)
 
 
+# catalog/views.py
+
+def catalog_chooser_view(request):
+    """
+    Displays component categories and a searchable/sortable list of ALL components.
+    """
+    component_types = COMPONENT_MODEL_MAP.keys()
+
+    # Start with all components.
+    component_queryset = Component.objects.all()
+
+    search_query = request.GET.get('q', '')
+    sort_order = request.GET.get('sort', 'name')
+
+    if search_query:
+        component_queryset = component_queryset.filter(
+            Q(name__icontains=search_query) | 
+            Q(manufacturer__icontains=search_query)
+        )
+
+    if sort_order == 'price_asc':
+        component_queryset = component_queryset.order_by('price')
+    elif sort_order == 'price_desc':
+        component_queryset = component_queryset.order_by('-price')
+    else:
+        component_queryset = component_queryset.order_by('name')
+
+    # --- THE FIX IS HERE ---
+    # We now create a single, consistent context dictionary.
+    context = {
+        'component_types': component_types,
+        # The key for the list is now 'components', which the partial expects.
+        'components': component_queryset, 
+        'search_query': search_query,
+        'sort_order': sort_order,
+    }
+    # ========================
+
+    if request.htmx:
+        # The view now correctly renders the partial with the 'components' variable.
+        return render(request, 'catalog/partials/component_grid.html', context)
+    
+    return render(request, 'catalog/catalog_chooser.html', context)

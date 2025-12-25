@@ -61,7 +61,7 @@ class CPU(Component):
 
 class GPU(Component):
     vram_gb = models.CharField(max_length=7,help_text="VRAM in Gigabytes")
-    gpu_clock_speed = models.CharField(max_length=20, help_text="Clock speed in MHz")
+    gpu_clock_speed = models.CharField(max_length=20, null=True,help_text="Clock speed in MHz")
 
 class Motherboard(Component):
     # Using 'choices' creates a dropdown menu in forms and the admin panel, ensuring data consistency.
