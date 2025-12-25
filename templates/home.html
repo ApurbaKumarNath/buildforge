@@ -64,7 +64,7 @@
             <div class="card-actions">
                 <!-- This link will eventually point to Risalat's catalog page. -->
                 <!-- For now, we use a placeholder '#'. -->
-                <a href="#" class="btn btn-primary">Browse Catalog</a>
+                <a href="{% url 'catalog:chooser' %}" class="btn btn-primary">Browse Catalog</a>
             </div>
         </div>
 
@@ -79,7 +79,7 @@
             <h3>Your Wishlist</h3>
             <p>Keep track of all your favorite parts for future builds or upgrades.</p>
             <div class="card-actions">
-                <a href="#" class="btn btn-primary">View Wishlist</a>
+                <a href="{% url 'builds:wishlist' %}" class="btn btn-primary">View Wishlist</a>
             </div>
         </div>
         <div class="card">
