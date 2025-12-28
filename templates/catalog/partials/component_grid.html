@@ -4,15 +4,16 @@
     
     {% for component in components %}
     <div class="card">
-                <a href="{% url 'catalog:component_detail' component.id %}" style="text-decoration: none; color: inherit;"></a>
-        {% if component.image %}
-             <img src="{{ component.image }}" alt="{{ component.name }}" style="max-height: 150px; object-fit: contain; margin-bottom: 1em;">
-        {% else %}
-            <div style="height: 150px; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center; color: #ccc; margin-bottom: 1em;">No Image</div>
-        {% endif %}
-             <a href="{% url 'catalog:component_detail' component.id %}" class="card-link">
+            <a href="{% url 'catalog:component_detail' component.id %}" class="card-link">
+            
+            {% if component.image %}
+                 <img src="{{ component.image }}" alt="{{ component.name }}" style="width: 100%; max-height: 150px; object-fit: contain; margin-bottom: 1em; ">
+            {% else %}
+                <div style="height: 150px; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center; color: #ccc; margin-bottom: 1em;">No Image</div>
+            {% endif %}
+            
             <h4>{{ component.name }}</h4>
-        
+           
         </a>
        
         <div class="card-price">৳{{ component.price|floatformat:2 }}</div>
