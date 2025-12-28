@@ -1,0 +1,101 @@
+<!-- templates/catalog/component_detail.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    .product-page { display: flex; gap: 2em; margin-bottom: 2em; }
+    .product-image { flex: 1; max-width: 400px; }
+    .product-image img { width: 85%; border: 1px solid #dee2e6; border-radius: 8px; }
+    .product-info { flex: 2; }
+    .product-title { font-size: 2em; margin-top: 0; margin-bottom: 0.5em; }
+    .product-price { font-size: 1.8em; font-weight: bold; color: #28a745; margin-bottom: 1em; }
+    .specs-table { width: 100%; border-collapse: collapse; margin-bottom: 1.5em; }
+    .specs-table td { padding: 0.5em; border-bottom: 1px solid #f0f0f0; }
+    .specs-table td:first-child { font-weight: bold; width: 150px; }
+    .review-card { border: 1px solid #eee; border-radius: 8px; padding: 1.5em; margin-bottom: 1em; }
+    .review-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5em; }
+    .review-rating { font-weight: bold; color: #ffc107; }
+    .review-actions { text-align: right; margin-top: 1em; display: flex; justify-content: flex-end; align-items: center; gap: 1em; }
+    .btn-danger { background-color: #dc3545; color: white; }
+    .btn-sm { padding: 0.25em 0.5em; font-size: 0.875em; }
+</style>
+
+<div class="product-page">
+    <div class="product-image">
+        {% if component.image %}
+            <img src="{{ component.image }}" alt="{{ component.name }}">
+        {% else %}
+            <img src="https://via.placeholder.com/400" alt="No image available">
+        {% endif %}
+    </div>
+    <div class="product-info">
+        <h1 class="product-title">{{ component.name }}</h1>
+        <div class="product-price">৳{{ component.price|floatformat:2 }}</div>
+        <h3>Specifications</h3>
+        <table class="specs-table">
+            <tr><td>Type</td><td>{{ component_type }}</td></tr>
+            <tr><td>Manufacturer</td><td>{{ component.manufacturer }}</td></tr>
+            {% for key, value in specs.items %}
+                <tr><td>{{ key }}</td><td>{{ value }}</td></tr>
+            {% endfor %}
+        </table>
+        <div id="wishlist-btn-{{ component.id }}">
+            {% if user.is_authenticated %}
+                <button class="btn btn-primary" style="background-color: #007bff; color:#f0f0f0" hx-post="{% url 'builds:add_to_wishlist' %}" hx-vals='{"component_id": "{{ component.id }}"}' hx-target="#wishlist-btn-{{ component.id }}" hx-swap="innerHTML" hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'>Add to Wishlist</button>
+            {% else %}
+                <a href="{% url 'users:login' %}" class="btn btn-primary" >Add to Wishlist</a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="reviews-section">
+    <h2>User Reviews</h2>
+    <div id="review-form-container" style="margin-bottom: 2em; padding: 1.5em; background: #f8f9fa; border-radius: 8px;">
+        {% if user.is_authenticated %}
+            {% if user_review %}
+                <h4>Your Review</h4>
+                <div class="review-card" style="background: #fff;">
+                    {% include 'catalog/partials/review_display.html' with review=user_review %}
+                </div>
+            {% else %}
+                <h4>Write a Review</h4>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-primary" style="background-color: #007bff; color:#f0f0f0">Submit Review</button>
+                </form>
+            {% endif %}
+        {% else %}
+            <p><a href="{% url 'users:login' %}">Log in</a> to write a review.</p>
+        {% endif %}
+    </div>
+
+    
+    {% for review in reviews %}
+        {% if review != user_review %}
+            <div class="review-card" style="background-color: white;">
+                <div class="review-header">
+                    <strong>{{ review.user.username|default:"An anonymous user" }}</strong>
+                    <span class="review-rating">{% for i in "x"|ljust:review.rating %}★{% endfor %}</span>
+                </div>
+                <p>{{ review.review_text|linebreaksbr }}</p>
+                 <small class="text-muted" style="color: rgb(121, 122, 123);">Posted on {{ review.date_posted|date:"F j, Y" }}</small>
+                <div class="review-actions">
+                   
+                    {% if request.user.is_staff %}
+                        <form action="{% url 'catalog:delete_review' review.id %}" method="post" style="display: inline;">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('ADMIN: Delete this review?');">Delete (Admin)</button>
+                        </form>
+                    {% endif %}
+                </div>
+            </div>
+        {% endif %}
+    {% empty %}
+        <p>There are no reviews for this component yet.</p>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -15,6 +15,7 @@ urlpatterns = [
     path('accounts/', include('users.urls')),
     path('builds/', include('builds.urls')),
     path('catalog/', include('catalog.urls')),
+   
 
     path('', build_views.home_view, name='home'),
 ]

@@ -1,0 +1,17 @@
+<!-- templates/catalog/partials/review_edit_form.html -->
+<form hx-post="{% url 'catalog:save_review_changes' review.id %}" hx-target="closest .review-card" hx-swap="innerHTML">
+    {% csrf_token %}
+    <h4>Edit Your Review</h4>
+    {{ form.as_p }}
+    <div class="review-actions">
+        <button type="submit" class="btn btn-primary" style="background-color: #007bff; color:#f0f0f0">Save Changes</button>
+        <!-- This Cancel button is simplified. It just re-fetches the display partial. -->
+        <button type="button" class="btn btn-secondary"
+                hx-get="{% url 'catalog:component_detail' review.component.id %}"
+                hx-target="closest .review-card"
+                hx-select=".review-card" 
+                hx-swap="innerHTML">
+            Cancel
+        </button>
+    </div>
+</form>
