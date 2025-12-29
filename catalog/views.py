@@ -148,10 +148,10 @@ def component_detail_view(request, component_id):
 
     if component_type == "CPU":
         child = component.cpu
-        specs = {"Socket": child.socket, "Core Count": child.core_count, "Clock Speed": child.clock_speed}
+        specs = {"Socket": child.socket, "Core Count": child.core_count, "Clock Speed (GHz)": child.clock_speed}
     elif component_type == "GPU":
         child = component.gpu
-        specs = {"VRAM": child.vram_gb, "Clock Speed": child.gpu_clock_speed}
+        specs = {"VRAM (GB)": child.vram_gb, "Clock Speed (MHz)": child.gpu_clock_speed}
     elif component_type == "Motherboard":
         child = component.motherboard
         specs = {"Socket": child.socket, "Form Factor": child.form_factor, "RAM Slots": child.ram_slots}
