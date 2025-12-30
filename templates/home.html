@@ -16,7 +16,7 @@
         </div>
         {% else %}
         <div class="hero-actions">
-            <a href="{% url 'catalog:chooser' %}" class="btn btn-primary btn-lg">New Build</a>
+            <a href="{% url 'builds:create' %}" class="btn btn-primary btn-lg">New Build</a>
             <a href="{% url 'marketplace:list' %}" class="btn btn-outline-light btn-lg">Browse Market</a>
         </div>
         {% endif %}
