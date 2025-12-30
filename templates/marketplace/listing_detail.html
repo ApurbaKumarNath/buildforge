@@ -24,6 +24,14 @@
                 <span>Listed on</span>
                 <strong>{{ listing.date_listed|date:"F j, Y" }}</strong>
             </div>
+            <div class="meta-row">
+                <span>Contact</span>
+                {% if listing.contact_info %}
+                <strong>{{ listing.contact_info }}</strong>
+                {% else %}
+                <strong><a href="mailto:{{ listing.seller.email }}">{{ listing.seller.email }}</a></strong>
+                {% endif %}
+            </div>
 
             {% if request.user == listing.seller %}
             <div style="margin-top: 1.5rem; display: flex; gap: 0.5rem;">

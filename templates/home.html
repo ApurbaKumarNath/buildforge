@@ -3,8 +3,7 @@
 
 {% block content %}
 <!-- Hero Section -->
-<div class="hero-section"
-    style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('{% static 'images/hero_bg.png' %}');">
+<div class="hero-section" style="--hero-bg: url('{% static 'images/hero_bg.png' %}');">
     <div class="hero-content">
         <h1>Build Your Dream Machine</h1>
         <p>The ultimate workbench for PC enthusiasts. Plan, share, and trade components with a community of builders.
@@ -67,6 +66,7 @@
             <input type="search" name="q" placeholder="Search your builds..." class="search-input"
                 hx-get="{% url 'home' %}" hx-trigger="keyup changed delay:300ms, search"
                 hx-target="#build-list-container" hx-select="#build-list-container" hx-swap="outerHTML">
+
         </div>
 
         <div id="build-list-container" class="builds-list-wrapper">

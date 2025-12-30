@@ -347,8 +347,17 @@ select:focus {
 .meta-row {
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem 0;
+    align-items: flex-start;
+    padding: 0.8rem 0;
     border-bottom: 1px solid var(--border);
+    gap: 1.5rem;
+}
+
+.meta-row strong {
+    text-align: right;
+    max-width: 60%;
+    word-wrap: break-word;
+    color: var(--text-main);
 }
 
 .meta-row:last-child {
@@ -528,6 +537,7 @@ select:focus {
 .hero-section {
     position: relative;
     height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), var(--hero-bg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
