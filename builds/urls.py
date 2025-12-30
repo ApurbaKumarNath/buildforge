@@ -14,6 +14,8 @@ urlpatterns = [
     # and passes it as an argument named 'build_id' to our view function.
     path('<int:build_id>/', views.workbench_view, name='workbench'),
 
+    path('create/', views.create_build_view, name='create'),
+
     path('share/<int:build_id>/', views.share_build_view, name='share_build'),
 
     # This is the URL for our new Curated Guides page.

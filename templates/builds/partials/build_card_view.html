@@ -1,32 +1,23 @@
-<!-- templates/builds/partials/build_card_view.html akn -->
-<div class="build-card-content">
-    <h3>{{ build.name }}</h3>
-    <p>{{ build.description|default:"No description."|truncatewords:15 }}</p>
-</div>
-<div class="build-card-actions">
-    <a href="{% url 'builds:workbench' build.id %}" class="btn btn-primary">Workbench</a>
-    <button 
-        class="btn btn-secondary" 
-        onclick="copyToClipboard('{{ request.scheme }}://{{ request.get_host }}{% url 'builds:share_build' build.id %}', this)">
-        Copy Link
-    </button>
-    <!-- The "Edit" button now triggers an HTMX request to get the edit form -->
-    <button 
-        class="btn btn-secondary" 
-        style="background-color: #ffc107; color: black;"
-        hx-get="{% url 'builds:get_edit_form' build.id %}"
-        hx-target="closest .card"
-        hx-swap="innerHTML">
-        Edit
-    </button>
-    <button 
-        class="btn btn-secondary" 
-        style="background-color: #dc3545;"
-        hx-post="{% url 'builds:delete_build' build.id %}"
-        hx-target="closest .card"
-        hx-swap="delete"
-        hx-confirm="Are you sure you want to permanently delete '{{ build.name }}'?"
-        hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'>
-        Delete
-    </button>
+<div style="display: flex; justify-content: space-between; align-items: flex-start;">
+    <div>
+        <h2 style="margin-bottom: 0.25em; display: flex; align-items: center; gap: 0.5em;">
+            Workbench: {{ build.name }}
+            <span
+                style="font-size: 0.5em; font-weight: normal; background-color: #dcfce7; color: #166534; padding: 2px 8px; border-radius: 9999px; letter-spacing: 0.5px;">
+                Changes auto-saved
+            </span>
+        </h2>
+        <p style="margin-top: 0; color: var(--text-muted);">{{ build.description|default:"No description" }}</p>
+    </div>
+    <div style="display: flex; gap: 0.5rem; align-items: center;">
+        <button class="btn btn-outline" hx-get="{% url 'builds:get_edit_form' build.id %}"
+            hx-target="#build-header-card" hx-swap="innerHTML" style="padding: 0.4rem 0.8rem; font-size: 0.9em;">
+            Edit Details
+        </button>
+        <button class="btn btn-secondary"
+            onclick="copyToClipboard('{{ request.scheme }}://{{ request.get_host }}{% url 'builds:share_build' build.id %}', this)"
+            style="padding: 0.4rem 0.8rem; font-size: 0.9em;">
+            Copy Link
+        </button>
+    </div>
 </div>

@@ -2,14 +2,13 @@
 
 #_________________________________________________________________________________________________________________________ (akn)
 
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.http import Http404, HttpResponse, HttpResponseForbidden
 from .models import Build, BuildComponent, WishlistItem
 from catalog.models import Component
-from django.shortcuts import get_object_or_404
 from .logic import detect_bottleneck, calculate_psu_wattage
-from django.db.models import Q, Sum, F, DecimalField, CharField
+from django.db.models import Q, Sum, F, DecimalField, CharField, Case, When
 from django.db import models
 from .forms import BuildForm
 from django.db.models.functions import Cast
@@ -17,28 +16,6 @@ from django.utils import timezone
 
 # This is the view for our new homepage.
 def home_view(request):
-    # This view now handles both displaying builds and creating new ones.
-    if request.method == 'POST':
-        # This block runs only when the "Create Build" form is submitted.
-        # We only allow logged-in users to create builds.
-        if request.user.is_authenticated:
-            form = BuildForm(request.POST)
-            if form.is_valid():
-                # The form is valid, but DON'T save it to the database yet.
-                # commit=False gives us the model object without saving.
-                new_build = form.save(commit=False)
-                
-                # Now, we manually assign the current logged-in user to the build.
-                new_build.user = request.user
-                
-                # Now we can save it to the database with the user assigned.
-                new_build.save()
-                
-                # Redirect to the new workbench page for the build they just created.
-                return redirect('builds:workbench', build_id=new_build.id)
-        # If a non-logged-in user somehow POSTs, just redirect them.
-        return redirect('home')
-
     # This part runs for a normal GET request (just visiting the page).
     builds = None
     if request.user.is_authenticated:
@@ -60,15 +37,28 @@ def home_view(request):
         # Always order the final result
         builds = builds.order_by('-date_created')
     
-    # We create an empty instance of the form to display on the page.
-    form = BuildForm()
-    
     context = {
         'builds': builds,
-        'form': form, # Add the form to the context
         'request': request, # Pass the request object for the partial template
     }
     return render(request, 'home.html', context)
+
+@login_required
+def create_build_view(request):
+    if request.method == 'POST':
+        form = BuildForm(request.POST)
+        if form.is_valid():
+            new_build = form.save(commit=False)
+            new_build.user = request.user
+            new_build.save()
+            return redirect('builds:workbench', build_id=new_build.id)
+    else:
+        form = BuildForm()
+    
+    context = {
+        'form': form
+    }
+    return render(request, 'builds/create_build.html', context)
 
 
 # @login_required is a "decorator". It's a simple and powerful way to protect a view.
@@ -210,7 +200,8 @@ def share_build_view(request, build_id):
 # It does not require a login.
 def guides_view(request):
     # Step 1: Annotate to create the 'total_price' field.
-    all_guides = Build.objects.filter(user__is_staff=True).annotate(
+    # We now show ALL builds to the community.
+    all_guides = Build.objects.all().annotate(
         total_price=Sum(
             F('components__price') * F('buildcomponent__quantity'),
             output_field=DecimalField()
@@ -470,6 +461,7 @@ def remove_component_from_build(request, build_id):
 def search_components(request, build_id):
     # Get the search term from the query parameters (e.g., /search/?q=intel)
     search_term = request.GET.get('q', '')
+    component_type = request.GET.get('type', '') # Get type filter
 
     # We still need the build to know which components to exclude.
     build = get_object_or_404(Build, pk=build_id, user=request.user)
@@ -480,12 +472,32 @@ def search_components(request, build_id):
     # so we can exclude them from the search results if they are already in the build.
     unique_types_in_build = ['CPU', 'Motherboard', 'GPU', 'PSU', 'Case']
     unique_component_ids_to_exclude = []
+    
+    # Only exclude items if we are NOT specifically looking for that type to swap it
+    # But for now, let's keep the exclusion logic simple.
+    # If a user wants to swap, they might need to remove first or we handle it in add logic.
+    # Actually, if I filter by type=CPU, I probably want to see CPUs even if I have one?
+    # The original logic excluded them. Let's stick to the current logic but refine the base query.
+    
     for item in components_in_build:
         if item.component.get_type() in unique_types_in_build:
             unique_component_ids_to_exclude.append(item.component.id)
 
-    # Start with all components, excluding the unique ones already in the build.
-    available_components = Component.objects.exclude(id__in=unique_component_ids_to_exclude)
+    # Start with all components
+    available_components = Component.objects.all()
+    
+    # If we are NOT filtering by a specific type (general search), keep the exclusion logic.
+    # If we ARE filtering by type (e.g. clicking "Select CPU"), we might want to show compatible items.
+    # For simplicity and robust "swap" logic later, let's just exclude the exact instances we own?
+    # The unique_component_ids_to_exclude prevents showing what is ALREADY INSTALLED. 
+    # That is good.
+    available_components = available_components.exclude(id__in=unique_component_ids_to_exclude)
+
+    # Filter by Type if provided
+    if component_type:
+        # Use dynamic kwargs to filter by the related name check
+        # e.g. cpu__isnull=False
+        available_components = available_components.filter(**{f'{component_type.lower()}__isnull': False})
 
     # If a search term was provided, filter the queryset.
     if search_term:
@@ -498,7 +510,8 @@ def search_components(request, build_id):
 
     context = {
         'build': build,
-        'all_components': available_components.order_by('name') # Pass the filtered list
+        'all_components': available_components.order_by('name'), # Pass the filtered list
+        'current_type': component_type
     }
 
     # Render and return the partial template containing ONLY the list.

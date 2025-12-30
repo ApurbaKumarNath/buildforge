@@ -3,18 +3,24 @@
 <!-- templates/builds/partials/available_components_list.html -->
 
 <!-- This is NOT a full page. It's just the list of components. -->
+<!-- This is NOT a full page. It's just the list of components. -->
 {% for component in all_components %}
-    <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.5em 0; border-bottom: 1px solid #eee;">
-        <span>{{ component.name }}</span>
-        <button 
-            hx-post="{% url 'builds:add_component' build.id %}"
-            hx-vals='{"component_id": "{{ component.id }}"}'
-            hx-target="#components-list"
-            hx-swap="innerHTML"
-            hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'>
-            Add
-        </button>
+<div class="component-card-premium">
+    <div class="component-info">
+        <h4>{{ component.name }}</h4>
+        <span>{{ component.manufacturer }}</span>
     </div>
+    <button hx-post="{% url 'builds:add_component' build.id %}" hx-vals='{"component_id": "{{ component.id }}"}'
+        hx-target="#components-list" hx-swap="innerHTML" hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'
+        class="btn btn-primary" style="padding: 0.4rem 1rem; font-size: 0.9rem;">
+        Add
+    </button>
+</div>
 {% empty %}
-    <p style="color: #888; text-align: center; padding-top: 1em;">No components found.</p>
+<div style="text-align: center; padding: 2rem; color: var(--text-muted);">
+    <p style="margin-bottom: 0.5rem; font-size: 1.1rem;">No components found.</p>
+    {% if current_type %}
+    <p style="font-size: 0.9rem;">Try searching for a different {{ current_type }}.</p>
+    {% endif %}
+</div>
 {% endfor %}
