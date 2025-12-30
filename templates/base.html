@@ -1,97 +1,19 @@
-<!-- akn -->
-
 <!-- templates/base.html -->
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BuildForge</title>
 
-    <script src="https://unpkg.com/htmx.org@1.9.12" integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2" crossorigin="anonymous"></script>
-    
-    <!-- Simple CSS for now, you can replace this with a proper CSS file later -->
-    <style>
-        body { font-family: sans-serif; margin: 0; background-color: #f4f4f4; color: #333; }
-
-        nav { background-color: #2c3e50; color: white; padding: 1em; display: flex; justify-content: space-between; align-items: center; }
-        nav a { color: white; text-decoration: none; padding: 0 1em; font-weight: bold; }
-        nav .brand a { font-size: 1.5em; }
-
-        nav {
-            background-color: #ffffff;
-            color: #333;
-            padding: 0 2em;
-            display: flex;
-            justify-content: space-between;
-            align-items: center; /* Vertically center items */
-            border-bottom: 1px solid #dee2e6;
-            height: 60px;
-        }
-        .nav-left, .nav-right, .nav-center {
-            display: flex;
-            align-items: center;
-            gap: 1.5em; /* Space between links */
-        }
-        .nav-brand a {
-            font-weight: bold;
-            font-size: 1.5em;
-            color: #007bff;
-            text-decoration: none;
-        }
-        .nav-links a {
-            text-decoration: none;
-            color: #495057;
-            font-weight: 500;
-            padding: 5px 0;
-            border-bottom: 2px solid transparent;
-            transition: color 0.2s, border-bottom-color 0.2s;
-        }
-        .nav-links a:hover {
-            display: block; 
-            color: #0056b3;
-            border-bottom-color: #0056b3;
-        }
-        .nav-user span {
-            color: #6c757d;
-        }
-        .nav-user a {
-            text-decoration: none;
-            color: #007bff;
-            font-weight: bold;
-        }
-
-        .main-content { padding: 2em; max-width: 1200px; margin: auto; }
-        h1, h2, h3 { color: #2c3e50; }
-
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5em; }
-        .card { background: #fff; border: 1px solid #dee2e6; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); padding: 1.5em; display: flex; flex-direction: column; }
-        .card h4 { margin-top: 0; }
-        .card-price { font-size: 1.2em; font-weight: bold; color: #28a745; margin: 0.5em 0; }
-        .card-actions { margin-top: auto; }
-        .btn { text-decoration: none; padding: 0.6em 1.2em; border-radius: 5px; font-weight: bold; display: inline-block; text-align: center; border: none; cursor: pointer; }
-        .btn-secondary { background-color: #6c757d; color: white; }
-
-    
-        .card-link {
-            text-decoration: none;
-            color: #343a40; /* A standard dark text color */
-            transition: color 0.2s ease-in-out; /* Smooth color change */
-
-        }
-
-        /* This rule applies ONLY when you hover over the link */
-        .card-link:hover {
-            color: #0e71db; /* The primary blue color */
-        }
-        /* ========================== */
-
-    </style>
+    <script src="https://unpkg.com/htmx.org@1.9.12"
+        integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
 </head>
 
-
-    </style>
-</head>
 <body>
     <nav>
         <div class="nav-left">
@@ -101,28 +23,39 @@
         </div>
 
         <div class="nav-center nav-links">
-            <!-- These links are visible to everyone -->
             <a href="{% url 'catalog:chooser' %}">Catalog</a>
             <a href="{% url 'builds:guides' %}">Guides</a>
             <a href="{% url 'marketplace:list' %}">Marketplace</a>
         </div>
 
         <div class="nav-right">
-            <!-- This logic checks if the user is logged in -->
             {% if user.is_authenticated %}
-                <div class="nav-links">
-                    <!-- These links are only for logged-in users -->
-                    <a href="{% url 'builds:wishlist' %}">Wishlist</a>
+            <div class="nav-links">
+                <a href="{% url 'builds:wishlist' %}">Wishlist</a>
+            </div>
+            <div class="nav-user-menu">
+                <a href="{% url 'users:profile' user.username %}" class="nav-user-link">
+                    {% if user.avatar %}
+                    <img src="{{ user.avatar.url }}" alt="{{ user.username }}" class="nav-avatar">
+                    {% else %}
+                    <div class="nav-avatar-placeholder">{{ user.username|first|upper }}</div>
+                    {% endif %}
+                    <span class="nav-username">{{ user.username }}</span>
+                </a>
+                <div class="nav-dropdown">
+                    <a href="{% url 'users:profile' user.username %}">View Profile</a>
+                    <a href="{% url 'users:profile_edit' %}">Edit Profile</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="{% url 'users:logout' %}" style="color: var(--danger);">Logout</a>
                 </div>
-                <div class="nav-user">
-                    <span>Hello, {{ user.username }}!</span>
-                    <a href="{% url 'users:logout' %}" style="margin-left: 1em;">Logout</a>
-                </div>
+            </div>
             {% else %}
-                <div class="nav-user">
-                    <a href="{% url 'users:login' %}">Login</a>
-                    <a href="{% url 'users:register' %}" style="margin-left: 1em;">Register</a>
-                </div>
+            <div class="nav-auth-buttons">
+                <a href="{% url 'users:login' %}" class="btn btn-outline"
+                    style="padding: 0.4rem 0.8rem; font-size: 0.9em;">Login</a>
+                <a href="{% url 'users:register' %}" class="btn btn-primary"
+                    style="padding: 0.4rem 0.8rem; font-size: 0.9em;">Register</a>
+            </div>
             {% endif %}
         </div>
     </nav>
@@ -136,24 +69,24 @@
     <script>
         function copyToClipboard(textToCopy, buttonElement) {
             // The Clipboard API is the modern and secure way to copy text.
-            navigator.clipboard.writeText(textToCopy).then(function() {
+            navigator.clipboard.writeText(textToCopy).then(function () {
                 // Success feedback!
                 const originalText = buttonElement.innerText;
                 buttonElement.innerText = 'Copied!';
-                buttonElement.style.backgroundColor = '#28a745'; // Green color for success
-                
+                buttonElement.style.backgroundColor = '#10b981'; // Green color from new palette
+
                 // Revert the button back to its original state after 2 seconds.
-                setTimeout(function() {
+                setTimeout(function () {
                     buttonElement.innerText = originalText;
                     buttonElement.style.backgroundColor = ''; // Revert to original color
                 }, 2000);
-            }, function(err) {
+            }, function (err) {
                 // Error feedback (less common, but good to have)
                 alert('Could not copy text: ', err);
             });
         }
     </script>
 </body>
-</html>
 
+</html>
 <!-- akn -->

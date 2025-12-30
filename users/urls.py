@@ -18,6 +18,9 @@ urlpatterns = [
 
     # Django's built-in Logout view. It doesn't even need a template.
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
+    
+    path('profile/edit/', views.profile_edit, name='profile_edit'),
+    path('profile/<str:username>/', views.profile, name='profile'),
 ]
 
 #_________________________________________________________________________________________________________________________ (akn)
