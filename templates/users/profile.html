@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="profile-header">
+    <div class="profile-avatar">
+        {% if profile_user.avatar %}
+        <img class="profile-avatar-img" src="{{ profile_user.avatar.url }}" alt="{{ profile_user.username }}">
+        {% else %}
+        <img class="profile-avatar-img"
+            src="https://via.placeholder.com/150?text={{ profile_user.username|first|upper }}"
+            alt="{{ profile_user.username }}">
+        {% endif %}
+    </div>
+    <div class="profile-info">
+        <h1>{{ profile_user.username }}</h1>
+        <p style="color: var(--text-muted); margin-bottom: 0.5rem; font-style: italic;">
+            {% if profile_user.bio %}
+            {{ profile_user.bio }}
+            {% else %}
+            No bio provided.
+            {% endif %}
+        </p>
+        <p style="font-size: 0.9rem; color: var(--text-muted);">Member since: {{ profile_user.date_joined|date:"F Y" }}
+        </p>
+    </div>
+</div>
+
+<h2 style="margin-bottom: 1.5rem;">Listings by {{ profile_user.username }}</h2>
+<div class="grid-container">
+    {% for listing in listings %}
+    <div class="listing-card">
+        <a href="{% url 'marketplace:detail' listing.id %}">
+            {% if listing.image %}
+            <img src="{{ listing.image.url }}" alt="{{ listing.title }}">
+            {% else %}
+            <img src="https://via.placeholder.com/280x180.png?text=No+Image" alt="No image">
+            {% endif %}
+        </a>
+        <div class="listing-card-content">
+            <h3><a href="{% url 'marketplace:detail' listing.id %}">{{ listing.title }}</a></h3>
+            <div class="listing-card-footer">
+                <span class="price-tag">৳{{ listing.price|floatformat:2 }}</span>
+                {% if listing.status == 'Available' %}
+                <span class="status-badge status-available">{{ listing.status }}</span>
+                {% else %}
+                <span class="status-badge status-sold">{{ listing.status }}</span>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <p style="grid-column: 1/-1; color: var(--text-muted);">No listings found for this user.</p>
+    {% endfor %}
+</div>
+{% endblock %}
