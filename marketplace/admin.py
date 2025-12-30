@@ -1,10 +1,24 @@
 # marketplace/admin.py
 
-#__________________________________________________________________________________________________________________________ (akn)
-
 from django.contrib import admin
-from .models import MarketplaceListing
+# Import the models from THIS app (marketplace), not from builds.
+from .models import MarketplaceListing, Comment
 
-admin.site.register(MarketplaceListing)
+# This class customizes how listings are displayed in the admin panel.
+class MarketplaceListingAdmin(admin.ModelAdmin):
+    # These fields will be displayed in the main list view.
+    list_display = ('title', 'seller', 'status', 'price', 'date_listed')
+    # These fields can be used to filter the list.
+    list_filter = ('status', 'date_listed')
+    # This adds a search bar.
+    search_fields = ('title', 'description', 'seller__username')
 
-#__________________________________________________________________________________________________________________________
+# This class customizes the display for comments.
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ('author', 'listing', 'created_at')
+    list_filter = ('created_at',)
+    search_fields = ('body', 'author__username', 'listing__title')
+
+# Now, we register our marketplace models with their custom admin classes.
+admin.site.register(MarketplaceListing, MarketplaceListingAdmin)
+admin.site.register(Comment, CommentAdmin)

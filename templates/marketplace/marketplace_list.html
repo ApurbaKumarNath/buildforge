@@ -1,0 +1,45 @@
+<!-- templates/marketplace/marketplace_list.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    .page-header { text-align: center; margin-bottom: 2.5em; }
+    .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5em; }
+    .listing-card { border: 1px solid #dee2e6; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; }
+    .listing-card img { width: 100%; height: 200px; object-fit: cover; }
+    .listing-card-content { padding: 1em; flex-grow: 1; display: flex; flex-direction: column; }
+    .listing-card-content h3 { margin-top: 0; }
+    .listing-card-content h3 a { text-decoration: none; color: #343a40; }
+    .listing-card-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 1em; }
+    .price { font-weight: bold; font-size: 1.2em; color: #28a745; }
+</style>
+
+<div class="page-header">
+    <h1>Community Marketplace</h1>
+    <p>Buy and sell used components with other PC enthusiasts.</p>
+</div>
+
+<div class="grid-container">
+    {% for listing in listings %}
+        <div class="listing-card">
+            <a href="{% url 'marketplace:detail' listing.id %}">
+                {% if listing.image %}
+                    <img src="{{ listing.image.url }}" alt="{{ listing.title }}">
+                {% else %}
+                    <!-- Placeholder image -->
+                    <img src="https://via.placeholder.com/300x200.png?text=No+Image" alt="No image available">
+                {% endif %}
+            </a>
+            <div class="listing-card-content">
+                <h3><a href="{% url 'marketplace:detail' listing.id %}">{{ listing.title }}</a></h3>
+                <div class="listing-card-footer">
+                    <span class="price">৳{{ listing.price|floatformat:2 }}</span>
+                    <span>Sold by: <strong>{{ listing.seller.username }}</strong></span>
+                </div>
+            </div>
+        </div>
+    {% empty %}
+        <p>No listings are currently available. Check back soon!</p>
+    {% endfor %}
+</div>
+{% endblock %}
