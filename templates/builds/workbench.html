@@ -4,7 +4,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div id="build-header-card" style="margin-bottom: 1em;">
+<div id="build-card-{{ build.id }}" style="margin-bottom: 1em;">
     {% include 'builds/partials/build_card_view.html' %}
 </div>
 

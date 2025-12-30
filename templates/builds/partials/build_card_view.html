@@ -11,11 +11,12 @@
     </div>
     <div style="display: flex; gap: 0.5rem; align-items: center;">
         <button class="btn btn-outline" hx-get="{% url 'builds:get_edit_form' build.id %}"
-            hx-target="#build-header-card" hx-swap="innerHTML" style="padding: 0.4rem 0.8rem; font-size: 0.9em;">
+            hx-target="#build-card-{{ build.id }}" hx-swap="innerHTML"
+            style="padding: 0.4rem 0.8rem; font-size: 0.9em;">
             Edit Details
         </button>
         <button class="btn btn-secondary"
-            onclick="copyToClipboard('{{ request.scheme }}://{{ request.get_host }}{% url 'builds:share_build' build.id %}', this)"
+            onclick="copyToClipboard(`{{ request.scheme }}://{{ request.get_host }}{% url 'builds:share_build' build.id %}`, this)"
             style="padding: 0.4rem 0.8rem; font-size: 0.9em;">
             Copy Link
         </button>
