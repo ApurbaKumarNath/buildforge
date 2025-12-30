@@ -10,11 +10,18 @@
         <p style="margin-top: 0; color: var(--text-muted);">{{ build.description|default:"No description" }}</p>
     </div>
     <div style="display: flex; gap: 0.5rem; align-items: center;">
+        {% if request.resolver_match.url_name == 'workbench' %}
         <button class="btn btn-outline" hx-get="{% url 'builds:get_edit_form' build.id %}"
             hx-target="#build-card-{{ build.id }}" hx-swap="innerHTML"
             style="padding: 0.4rem 0.8rem; font-size: 0.9em;">
             Edit Details
         </button>
+        {% else %}
+        <a href="{% url 'builds:workbench' build.id %}" class="btn btn-outline"
+            style="padding: 0.4rem 0.8rem; font-size: 0.9em;">
+            View Build
+        </a>
+        {% endif %}
         <button class="btn btn-secondary"
             onclick="copyToClipboard(`{{ request.scheme }}://{{ request.get_host }}{% url 'builds:share_build' build.id %}`, this)"
             style="padding: 0.4rem 0.8rem; font-size: 0.9em;">
