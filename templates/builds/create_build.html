@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container" style="max-width: 800px; margin: 2rem auto; padding: 0 1rem;">
+    <div class="card"
+        style="background-color: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 2rem;">
+        <h1 style="color: var(--text-primary); margin-bottom: 2rem; font-size: 2rem;">Start a New Build</h1>
+
+        <form method="post">
+            {% csrf_token %}
+
+            <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label for="{{ form.name.id_for_label }}"
+                    style="display: block; color: var(--text-secondary); margin-bottom: 0.5rem; font-weight: 500;">Build
+                    Name</label>
+                {{ form.name }}
+                {% if form.name.errors %}
+                <div class="error-message" style="color: var(--danger); font-size: 0.9em; margin-top: 0.25rem;">
+                    {{ form.name.errors }}
+                </div>
+                {% endif %}
+            </div>
+
+            <div class="form-group" style="margin-bottom: 2rem;">
+                <label for="{{ form.description.id_for_label }}"
+                    style="display: block; color: var(--text-secondary); margin-bottom: 0.5rem; font-weight: 500;">Description
+                    (Optional)</label>
+                {{ form.description }}
+                {% if form.description.errors %}
+                <div class="error-message" style="color: var(--danger); font-size: 0.9em; margin-top: 0.25rem;">
+                    {{ form.description.errors }}
+                </div>
+                {% endif %}
+            </div>
+
+            <div class="form-actions" style="display: flex; gap: 1rem; align-items: center;">
+                <button type="submit" class="btn btn-primary btn-lg" style="padding: 0.75rem 2rem;">Create
+                    Build</button>
+                <a href="{% url 'home' %}" class="btn btn-outline" style="padding: 0.75rem 2rem;">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<style>
+    /* Scoped styles for the form inputs to match the theme */
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 0.75rem;
+        background-color: var(--background);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        color: var(--text-primary);
+        font-size: 1rem;
+        transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    input[type="text"]:focus,
+    textarea:focus {
+        border-color: var(--primary);
+        box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+        /* Assuming primary blue */
+        outline: none;
+    }
+</style>
+{% endblock %}
