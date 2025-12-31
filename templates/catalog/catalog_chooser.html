@@ -5,8 +5,8 @@
 <style>
     .page-header { text-align: center; margin-bottom: 2.5em; }
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1em; }
-    .grid-selector { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 0.7em; }
-    .category-card { background: #fff; border: 1px solid #dee2e6; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; padding: 0.2em; text-decoration: none; color: #343a40; display: block; transition: transform 0.2s, box-shadow 0.2s; }
+    .grid-selector { display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr)); gap: 0.7em;}
+    .category-card { background: #fff; border: 1px solid #dee2e6; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; padding-top: 15px; text-decoration: none; color: #343a40; display: block; transition: transform 0.2s, box-shadow 0.2s; }
     .category-card:hover { transform: translateY(-5px); box-shadow: 0 8px 12px rgba(0,0,0,0.08); }
     .category-card h3 { margin: 0; }
 
@@ -65,19 +65,6 @@
     <p>Select a category to browse, or view all components below.</p>
 </div>
 
-<!-- This is the original category chooser grid -->
-<div class="grid-selector">
-    {% for type in component_types %}
-        <a href="{% url 'catalog:component_list' type %}" class="category-card">
-            <h4>{{ type|title }}s</h4>
-        </a>
-    {% endfor %}
-</div>
-
-
-
-<h2 style="text-align: center; margin-bottom: 1em;"></h2>
-
 <!-- New Filter Bar for "All Components" -->
 <div class="filter-bar">
     <input class="search-bar"
@@ -102,6 +89,21 @@
         <option value="price_desc" {% if sort_order == 'price_desc' %}selected{% endif %}>Sort by Price (High to Low)</option>
     </select>
 </div>
+
+<!-- This is the original category chooser grid -->
+<div class="grid-selector">
+    {% for type in component_types %}
+        <a href="{% url 'catalog:component_list' type %}" class="category-card">
+            <h4>{{ type|title }}s</h4>
+        </a>
+    {% endfor %}
+</div>
+
+
+
+<h2 style="text-align: center; margin-bottom: 1em;"></h2>
+
+
 
 <!-- Container for the "All Components" grid -->
 <div id="all-components-container" class="grid">
