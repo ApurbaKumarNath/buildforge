@@ -1,13 +1,14 @@
 # users/views.py
 
 #_________________________________________________________________________________________________________________________ (akn)
-
+from .forms import PasswordToggleWidget
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth import login
 from django.contrib.auth.decorators import login_required
 from .forms import CustomUserCreationForm, UserUpdateForm, ProfileUpdateForm
 from .models import CustomUser
+
 
 # This is the view for the registration page.
 def register(request):
@@ -65,5 +66,8 @@ def profile_edit(request):
     }
 
     return render(request, 'users/profile_edit.html', context)
+
+
+
 
 #_________________________________________________________________________________________________________________________
