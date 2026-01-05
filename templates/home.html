@@ -1,96 +1,64 @@
-<!-- akn -->
-
-
-<!-- templates/home.html -->
+<!--akn -->
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
-<style>
-    .dashboard-header {
-        text-align: center;
-        margin-bottom: 2.5em;
-        padding: 2em 1em;
-        background-color: #f8f9fa;
-        border-radius: 12px;
-        border: 1px solid #dee2e6;
-    }
-    .dashboard-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: 1.5em;
-        margin-top: 2em;
-    }
-    .card {
-        background: #fff;
-        border: 1px solid #dee2e6;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        padding: 1.5em;
-        display: flex;
-        flex-direction: column;
-    }
-    .card h3 { margin-top: 0; }
-    .card p { color: #6c757d; flex-grow: 1; }
-    .card-actions { margin-top: 1em; }
-    .btn { text-decoration: none; padding: 0.6em 1.2em; border-radius: 5px; font-weight: bold; display: inline-block; text-align: center; border: none; cursor: pointer; }
-    .btn-primary { background-color: #007bff; color: white; }
-    .btn-secondary { background-color: #6c757d; color: white; }
-    
-    /* Styles for the new build cards */
-    .build-card-content { flex-grow: 1; }
-    .build-card-actions { display: flex; flex-wrap: wrap; gap: 0.5em; margin-top: 1em; }
+<!-- Hero Section -->
+{% if not user.is_authenticated %}
+<div class="hero-section" style="--hero-bg: url('{% static 'images/hero_bg.png' %}');">
+    <div class="hero-content">
+        <h1>Build Your Dream Machine</h1>
+        <p>The ultimate workbench for PC enthusiasts. Plan, share, and trade components with a community of builders.
+        </p>
+        
+        <div class="hero-actions">
+            <a href="{% url 'users:register' %}" class="btn btn-primary btn-lg">Start Building</a>
+            <a href="{% url 'users:login' %}" class="btn btn-outline-light btn-lg">Login</a>
+        </div>
+        {% else %}
 
-    /* Modern Form Styles */
-    .form-container { grid-column: 1 / -1; margin-top: 2.5em; }
-    .form-container form p { margin-bottom: 1em; }
-    .form-container label { display: block; margin-bottom: 0.5em; font-weight: bold; color: #495057; }
-    .form-container input[type="text"], .form-container textarea { width: 100%; padding: 0.75em; border: 1px solid #ced4da; border-radius: 4px; box-sizing: border-box; }
-</style>
-
-<div class="dashboard-header">
-    <h1>Welcome, {{ user.username|default:'Guest' }}!</h1>
-    <p>Your central hub for creating, managing, and sharing dream PC builds.</p>
+        {% endif %}
+    </div>
 </div>
 
-<!-- This section will only be shown to logged-in users -->
-{% if user.is_authenticated %}
+<div class="main-content">
+    {% if user.is_authenticated %}
+    <div class="dashboard-header-modern">
+        <h2>Welcome back, {{ user.username }}!</h2>
+    </div>
 
-    <!-- Main Navigation Cards -->
-    <div class="dashboard-grid">
-
-        <div class="card">
+    <!-- Feature Grid -->
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">🔍</div>
             <h3>Component Catalog</h3>
-            <p>Browse and filter thousands of PC parts to find the perfect components for your next build.</p>
-            <div class="card-actions">
-                <!-- This link will eventually point to Risalat's catalog page. -->
-                <!-- For now, we use a placeholder '#'. -->
-                <a href="{% url 'catalog:chooser' %}" class="btn btn-primary">Browse Catalog</a>
-            </div>
+            <p>Browse thousands of parts with detailed specs to find exactly what you need.</p>
+            <a href="{% url 'catalog:chooser' %}" class="feature-link">Open Catalog &rarr;</a>
         </div>
 
-        <div class="card">
-            <h3>Curated Guides</h3>
-            <p>New to PC building? Explore pre-configured guides to get a great starting point.</p>
-            <div class="card-actions">
-                <a href="{% url 'builds:guides' %}" class="btn btn-primary">Explore Guides</a>
-            </div>
+        <div class="feature-card">
+            <div class="feature-icon">📚</div>
+            <h3>Build Guides</h3>
+            <p>Follow expert-curated guides or create your own to share with the world.</p>
+            <a href="{% url 'builds:guides' %}" class="feature-link">View Guides &rarr;</a>
         </div>
-        <div class="card">
-            <h3>Your Wishlist</h3>
-            <p>Keep track of all your favorite parts for future builds or upgrades.</p>
-            <div class="card-actions">
-                <a href="{% url 'builds:wishlist' %}" class="btn btn-primary">View Wishlist</a>
-            </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🛒</div>
+            <h3>Marketplace</h3>
+            <p>Buy and sell pre-loved components safely within the community.</p>
+            <a href="{% url 'marketplace:list' %}" class="feature-link">Visit Market &rarr;</a>
         </div>
-        <div class="card">
-            <h3>Community Marketplace</h3>
-            <p>Buy and sell used components with other enthusiasts on the platform.</p>
-            <div class="card-actions">
-                <a href="#" class="btn btn-primary">Go to Marketplace</a>
-            </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">⭐</div>
+            <h3>Wishlist</h3>
+            <p>Track price drops and save components for your future dream build.</p>
+            <a href="{% url 'builds:wishlist' %}" class="feature-link">My Wishlist &rarr;</a>
         </div>
     </div>
 
+    <!-- User's Builds Section -->
     <!-- Your Builds Section -->
     <div style="margin-top: 2.5em;">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1em;">
@@ -109,32 +77,43 @@
 
         <!-- The Scrollable Container -->
         <div id="build-list-container" style="max-height: 600px; overflow-y: auto; padding: 1em; border: 1px solid #dee2e6; border-radius: 8px; background: #f8f9fa;">
-            <!-- We include the new partial here for the initial page load -->
             {% include 'builds/partials/build_list.html' %}
         </div>
     </div>
 
-    <!-- New Build Form Section -->
-    <div class="form-container card">
-        <h3>Start a New Build</h3>
-        <form method="post" action="{% url 'home' %}">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit" class="btn btn-primary">Create and Go to Workbench</button>
-        </form>
-    </div>
-
-{% else %}
-    <!-- This section is shown to logged-out users -->
-    <div class="card" style="text-align: center; margin-top: 2em;">
-        <h3>Welcome to BuildForge!</h3>
-        <p>The ultimate workshop for PC enthusiasts. Design, validate, and share your dream PC builds.</p>
-        <div class="card-actions" style="justify-content: center;">
-            <a href="{% url 'users:login' %}" class="btn btn-primary">Login</a>
-            <a href="{% url 'users:register' %}" class="btn btn-secondary">Register Now</a>
+    {% else %}
+    <!-- Features for Guest -->
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">🚀</div>
+            <h3>Performance First</h3>
+            <p>Optimize your build with compatibility checks and performance estimates.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🤝</div>
+            <h3>Community Driven</h3>
+            <p>Join thousands of builders sharing knowledge and components.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🛡️</div>
+            <h3>Safe Trading</h3>
+            <p>Our marketplace is built for enthusiasts, by enthusiasts.</p>
         </div>
     </div>
-{% endif %}
+    {% endif %}
+</div>
 
+<!-- New Build Form Section -->
+{% if user.is_authenticated %}
+<div class="form-container card" style="margin-top: 2em;">
+
+    <h3>Start a New Build</h3>
+    <form method="post" action="{% url 'home' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Create and Go to Workbench</button>
+    </form>
+</div>
+
+{% endif %}
 {% endblock %}
-<!-- akn -->

@@ -1,0 +1,79 @@
+<!-- templates/marketplace/listing_detail.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<div class="detail-container">
+    <div class="detail-image">
+        {% if listing.image %}
+        <img src="{{ listing.image.url }}" alt="{{ listing.title }}">
+        {% else %}
+        <img src="https://via.placeholder.com/600x400.png?text=No+Image" alt="No image available">
+        {% endif %}
+    </div>
+    <div class="detail-info">
+        <h1>{{ listing.title }}</h1>
+        <p class="detail-price">৳{{ listing.price|floatformat:2 }}</p>
+        <p>{{ listing.description|linebreaks }}</p>
+
+        <div class="detail-meta">
+            <div class="meta-row">
+                <span>Seller</span>
+                <strong><a href="{% url 'users:profile' listing.seller.username %}">{{ listing.seller }}</a></strong>
+            </div>
+            <div class="meta-row">
+                <span>Listed on</span>
+                <strong>{{ listing.date_listed|date:"F j, Y" }}</strong>
+            </div>
+            <div class="meta-row">
+                <span>Contact</span>
+                {% if listing.contact_info %}
+                <strong>{{ listing.contact_info }}</strong>
+                {% else %}
+                <strong><a href="mailto:{{ listing.seller.email }}">{{ listing.seller.email }}</a></strong>
+                {% endif %}
+            </div>
+
+            {% if request.user == listing.seller %}
+            <div style="margin-top: 1.5rem; display: flex; gap: 0.5rem;">
+                <a href="{% url 'marketplace:edit' listing.id %}" class="btn btn-secondary">Edit Listing</a>
+                <a href="{% url 'marketplace:delete' listing.id %}" class="btn btn-danger">Delete</a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<div class="comments-section">
+    <h2>Comments</h2>
+    <hr style="border: 0; border-top: 1px solid var(--border); margin: 1.5rem 0;">
+
+    {% for comment in comments %}
+    <div class="comment">
+        <div class="comment-header">
+            <span class="comment-author">
+                <a href="{% url 'users:profile' comment.author.username %}">{{ comment.author.username }}</a>
+            </span>
+            <span class="comment-date">{{ comment.created_at|date:"F j, Y, P" }}</span>
+        </div>
+        <p style="margin: 0;">{{ comment.body }}</p>
+    </div>
+    {% empty %}
+    <p style="color: var(--text-muted); font-style: italic;">No comments yet. Be the first to ask a question!</p>
+    {% endfor %}
+
+    {% if user.is_authenticated %}
+    <div style="margin-top: 2rem; background: var(--background); padding: 1.5rem; border-radius: var(--radius);">
+        <h3 style="margin-bottom: 1rem;">Post a Comment</h3>
+        <form method="post" action="{% url 'marketplace:add_comment' listing.id %}">
+            {% csrf_token %}
+            <div style="margin-bottom: 1rem;">
+                {{ form.body }}
+            </div>
+            <button type="submit" class="btn btn-primary">Post Comment</button>
+        </form>
+    </div>
+    {% else %}
+    <p style="margin-top: 2rem;">Please <a href="{% url 'users:login' %}">log in</a> to post a comment.</p>
+    {% endif %}
+</div>
+{% endblock %}

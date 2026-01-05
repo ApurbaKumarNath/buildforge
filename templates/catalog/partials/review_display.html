@@ -1,0 +1,21 @@
+<!-- templates/catalog/partials/review_display.html -->
+<div class="review-header">
+    <strong>{{ review.user.username }}</strong>
+    <span class="review-rating">{% for i in "x"|ljust:review.rating %}★{% endfor %}</span>
+</div>
+<p>{{ review.review_text|linebreaksbr }}</p>
+<small class="text-muted" style="color: rgb(121, 122, 123);">Posted on {{ review.date_posted|date:"F j, Y" }}</small>
+                
+
+<div class="review-actions">
+    <button class="btn btn-secondary"
+            hx-get="{% url 'catalog:get_review_edit_form' review.id %}"
+            hx-target="closest .review-card"
+            hx-swap="innerHTML">
+        Edit
+    </button>
+    <form action="{% url 'catalog:delete_review' review.id %}" method="post" style="display: inline;">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?');">Delete</button>
+    </form>
+</div>

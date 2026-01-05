@@ -4,22 +4,115 @@
 {% block content %}
 <style>
     .page-header { text-align: center; margin-bottom: 2.5em; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5em; }
-    .card { background: #fff; border: 1px solid #dee2e6; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; padding: 2em; text-decoration: none; color: #343a40; display: block; transition: transform 0.2s, box-shadow 0.2s; }
-    .card:hover { transform: translateY(-5px); box-shadow: 0 8px 12px rgba(0,0,0,0.08); }
-    .card h3 { margin: 0; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1em; }
+    .grid-selector { display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr)); gap: 0.7em;}
+    .category-card { background: #fff; border: 1px solid #dee2e6; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; padding-top: 15px; text-decoration: none; color: #343a40; display: block; transition: transform 0.2s, box-shadow 0.2s; }
+    .category-card:hover { transform: translateY(-5px); box-shadow: 0 8px 12px rgba(0,0,0,0.08); }
+    .category-card h3 { margin: 0; }
+
+    /* Styles for the new "All Components" section */
+    .section-divider {
+        text-align: center;
+        margin: 4em 0 2em 0;
+        border-bottom: 1px solid #dee2e6;
+        line-height: 0.1em;
+    }
+    .section-divider span {
+        background: #fff;
+        padding: 0 20px;
+        font-size: 1.5em;
+        color: #6c757d;
+    }
+    .filter-bar { 
+        display: flex; 
+        justify-content: center; 
+        gap: 1em; 
+        margin-bottom: 2em; 
+        width: 100%; /* Changed from 10% to 100% */
+        max-width: 900px; /* Optional: keeps the bar from getting too wide on desktop */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .search-bar { 
+        flex: 3; ; /* Takes up 3x more space than the sort dropdown */
+    }
+
+    #sort-select { 
+        flex: 1; /* Takes up less space */
+        min-width: 180px; /* Prevents it from becoming too small to read */
+        cursor: pointer;
+    }
+
+    .filter-bar input, .filter-bar select { 
+        padding: 0.75em; 
+        border-radius: 5px; 
+        border: 1px solid #ced4da; 
+        box-sizing: border-box;  
+    }
+    /* Reusing styles from component_list for consistency */
+    .component-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5em; }
+    .card { background: #fff; border: 1px solid #dee2e6; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); padding: 1.5em; display: flex; flex-direction: column; }
+    .card h4 { margin-top: 0; }
+    .card-price { font-size: 1.2em; font-weight: bold; color: #28a745; margin: 0.5em 0; }
+    .card-actions { margin-top: auto; }
+    .btn { text-decoration: none; padding: 0.6em 1.2em; border-radius: 5px; font-weight: bold; display: inline-block; text-align: center; border: none; cursor: pointer; }
+    .btn-primary { background-color: #007bff; color: white; }
 </style>
 
 <div class="page-header">
     <h1>Component Catalog</h1>
-    <p>Select a category to browse all available components</p>
+    <p>Select a category to browse, or view all components below.</p>
 </div>
 
-<div class="grid">
+<!-- New Filter Bar for "All Components" -->
+<div class="filter-bar">
+    <input class="search-bar"
+           type="search" 
+           name="q" 
+           placeholder="Search all components by name or manufacturer..."
+           value="{{ search_query|default:'' }}"
+           hx-get="{% url 'catalog:chooser' %}"
+           hx-trigger="keyup changed delay:300ms, search"
+           hx-target="#all-components-container"
+           hx-swap="innerHTML"
+           hx-include="[name='sort']">
+
+    <select id="sort-select" name="sort"
+            hx-get="{% url 'catalog:chooser' %}"
+            hx-trigger="change"
+            hx-target="#all-components-container"
+            hx-swap="innerHTML"
+            hx-include="[name='q']">
+        <option value="name" {% if sort_order == 'name' %}selected{% endif %}>Sort by Name (A-Z)</option>
+        <option value="price_asc" {% if sort_order == 'price_asc' %}selected{% endif %}>Sort by Price (Low to High)</option>
+        <option value="price_desc" {% if sort_order == 'price_desc' %}selected{% endif %}>Sort by Price (High to Low)</option>
+    </select>
+</div>
+
+<!-- This is the original category chooser grid -->
+<div class="grid-selector">
     {% for type in component_types %}
-        <a href="{% url 'catalog:component_list' type %}" class="card">
-            <h3>{{ type|title }}</h3>
+        <a href="{% url 'catalog:component_list' type %}" class="category-card">
+            <h4>{{ type|title }}s</h4>
         </a>
     {% endfor %}
 </div>
+
+
+
+<h2 style="text-align: center; margin-bottom: 1em;"></h2>
+
+
+
+<!-- Container for the "All Components" grid -->
+<div id="all-components-container" class="grid">
+    <!-- 
+        IMPORTANT: We are reusing the exact same partial template here.
+        We just need to pass it the 'all_components' variable instead of 'components'.
+        The view handles this by naming the variable 'components' in the context for the partial.
+    -->
+    {% include 'catalog/partials/component_grid.html' %}
+</div>
+
 {% endblock %}

@@ -38,9 +38,9 @@
 
     <hr>
 
-    <div style="display: flex; gap: 2em;">
+    <div style="display: flex; gap: 2em; align-items: stretch;">
         <!-- Left Side: Components in Build -->
-        <div style="flex: 1;">
+        <div style="flex: 1; display: flex; flex-direction: column;">
             <h3>Components in this Build</h3>
             <table border="1" style="width:100%; border-collapse: collapse;">
                 <thead>
@@ -61,7 +61,7 @@
         </div>
 
         <!-- Right Side: Available Components (The Parts Shelf) -->
-        <div style="flex: 1;">
+        <div style="flex: 1; display: flex; flex-direction: column;">
             <h3>Available Components</h3>
 
             <input type="search" 
@@ -74,7 +74,7 @@
                    hx-swap="innerHTML">
 
             <!-- The container for our dynamic list -->
-            <div id="available-components-list" style="height: 350px; overflow-y: auto; border: 1px solid #ccc; padding: 1em;">
+            <div id="available-components-list" style="height: 650px; overflow-y: auto; border: 1px solid #ccc; padding: 1em;">
                 <!-- We now include the partial for the initial page load -->
                 {% include 'builds/partials/available_components_list.html' %}
             </div>

@@ -1,0 +1,36 @@
+<!-- templates/marketplace/marketplace_list.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<div style="text-align: center; margin-bottom: 3rem;">
+    <h1>Community Marketplace</h1>
+    <p style="color: var(--text-muted); font-size: 1.1rem;">Buy and sell used components with other PC enthusiasts.</p>
+    {% if user.is_authenticated %}
+    <a href="{% url 'marketplace:create' %}" class="btn btn-primary" style="margin-top: 1rem;">+ Create New Listing</a>
+    {% endif %}
+</div>
+
+<div class="grid-container">
+    {% for listing in listings %}
+    <div class="listing-card">
+        <a href="{% url 'marketplace:detail' listing.id %}">
+            {% if listing.image %}
+            <img src="{{ listing.image.url }}" alt="{{ listing.title }}">
+            {% else %}
+            <!-- Placeholder image -->
+            <img src="https://via.placeholder.com/300x200.png?text=No+Image" alt="No image available">
+            {% endif %}
+        </a>
+        <div class="listing-card-content">
+            <h3><a href="{% url 'marketplace:detail' listing.id %}">{{ listing.title }}</a></h3>
+            <div class="listing-card-footer">
+                <span class="price-tag">৳{{ listing.price|floatformat:2 }}</span>
+                <span class="seller-tag">by <strong>{{ listing.seller.username }}</strong></span>
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <p style="text-align: center; grid-column: 1/-1;">No listings are currently available. Check back soon!</p>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card" style="max-width: 500px; margin: 2rem auto; text-align: center;">
+    <h2 style="color: var(--danger);">Confirm Deletion</h2>
+    <p>Are you sure you want to delete the listing "<strong>{{ listing.title }}</strong>"?</p>
+    <p style="color: var(--danger); font-size: 0.9em; margin-bottom: 2rem;">This action cannot be undone.</p>
+
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Yes, Delete</button>
+        <a href="{% url 'marketplace:detail' listing.id %}" class="btn btn-secondary"
+            style="margin-left: 10px;">Cancel</a>
+    </form>
+</div>
+{% endblock %}
