@@ -1,0 +1,122 @@
+[
+{
+  "model": "users.customuser",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$JPKDIlsytCvTre6YVnorqj$3wqU6byVCS5k9hkU7T8qr20HzgPAB6vIMYSzw/rtOwU=",
+    "last_login": "2026-01-06T21:19:02.223Z",
+    "is_superuser": true,
+    "username": "ARD",
+    "first_name": "",
+    "last_name": "",
+    "email": "didarulnayan@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-12-28T11:58:56.386Z",
+    "bio": "tech lover",
+    "avatar": "avatars/download_1.jfif",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.customuser",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$7pI8SEvxdXLMckVda1ROot$KzaFLXeLXYZdmaCQXNNrK8k/CBUvX8npa+n7xs11MMg=",
+    "last_login": "2026-01-01T08:01:51.613Z",
+    "is_superuser": false,
+    "username": "testuser",
+    "first_name": "",
+    "last_name": "",
+    "email": "testuser@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-12-30T19:59:58.932Z",
+    "bio": "I love building PCs!",
+    "avatar": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.customuser",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$B5uOx6Pj5iomoZsKPOdhPk$zeqerYwpwYGhc/ZdIgoxA03HnqXbps+V2LoxdLlSE2Y=",
+    "last_login": "2025-12-30T20:15:39.170Z",
+    "is_superuser": false,
+    "username": "Sakib",
+    "first_name": "",
+    "last_name": "",
+    "email": "sakib@seller.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-12-30T20:15:38.841Z",
+    "bio": "Ami shukh jagania pakhi. eshechi shukher dala niye.",
+    "avatar": "avatars/potatoavatar.png",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.customuser",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$84ZmLOTsmRVgjOMItxevRJ$nr94rpdMzepCIYdWduqD6EzrQpim17AF1iGPbJ5iyjs=",
+    "last_login": "2026-01-06T21:14:15.561Z",
+    "is_superuser": false,
+    "username": "mamunbhai",
+    "first_name": "",
+    "last_name": "",
+    "email": "baccharbaap@mamun.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-12-30T22:19:04.662Z",
+    "bio": null,
+    "avatar": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.customuser",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$5yDV4VXuP6USNqR3jc5vCg$/XqCpejf/JBxAZMdVkJzeMXBN9KGEEf64j7VOH1HKas=",
+    "last_login": "2026-01-06T19:14:26.271Z",
+    "is_superuser": false,
+    "username": "aminayan",
+    "first_name": "",
+    "last_name": "",
+    "email": "nayan@me.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-12-30T22:42:19.609Z",
+    "bio": null,
+    "avatar": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.customuser",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$j5V43vSI5MQivyUNNw1PGv$sfRr6PojW8VBjnFX7XlTqrs/UVtLp2txtXDlXPXAR0Y=",
+    "last_login": "2026-01-06T17:00:16.813Z",
+    "is_superuser": false,
+    "username": "nayan111",
+    "first_name": "",
+    "last_name": "",
+    "email": "didarulnayan@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-01-05T19:26:05.620Z",
+    "bio": "techlover",
+    "avatar": "avatars/images.jfif",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

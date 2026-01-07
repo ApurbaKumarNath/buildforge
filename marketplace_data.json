@@ -1,0 +1,142 @@
+[
+{
+  "model": "marketplace.marketplacelisting",
+  "pk": 1,
+  "fields": {
+    "title": "Used NVIDIA GeForce RTX 3060 - Great Condition",
+    "description": "Selling my RTX 3060, used for about a year for 1080p gaming. Never used for mining. Works perfectly. Upgrading to a new card",
+    "image": "listings/download_3.jfif",
+    "price": "35000.00",
+    "contact_info": "42425242424",
+    "date_listed": "2025-12-30T18:03:53.352Z",
+    "status": "Available",
+    "seller": 1
+  }
+},
+{
+  "model": "marketplace.marketplacelisting",
+  "pk": 2,
+  "fields": {
+    "title": "AMD Ryzen 5 5600X CPU for Sale",
+    "description": "Slightly used Ryzen 5 5600X. Perfect for a mid-range gaming build. Comes with the original box",
+    "image": "listings/download_2.jfif",
+    "price": "12000.00",
+    "contact_info": "0124578",
+    "date_listed": "2025-12-30T18:05:12.550Z",
+    "status": "Available",
+    "seller": 1
+  }
+},
+{
+  "model": "marketplace.marketplacelisting",
+  "pk": 4,
+  "fields": {
+    "title": "Sakib er puran pc",
+    "description": "Ekta puran pc, with potato specs. Btw, GPU ache.",
+    "image": "listings/potatopc_5h96XIB.jpeg",
+    "price": "5000.00",
+    "contact_info": "brac er piche. Salt er samne. phone: 01234567890",
+    "date_listed": "2025-12-30T20:18:05.937Z",
+    "status": "Available",
+    "seller": 3
+  }
+},
+{
+  "model": "marketplace.marketplacelisting",
+  "pk": 5,
+  "fields": {
+    "title": "SSD for sale",
+    "description": "in good condition .Netac SA500 128GB 2.5-inch SATAIII",
+    "image": "listings/ls-ne-sa500-01-228x228.webp",
+    "price": "1500.00",
+    "contact_info": "012455434",
+    "date_listed": "2025-12-30T22:21:02.247Z",
+    "status": "Sold",
+    "seller": 4
+  }
+},
+{
+  "model": "marketplace.marketplacelisting",
+  "pk": 7,
+  "fields": {
+    "title": "used MSI GeForce GT 730",
+    "description": "upgrading to a new one , so selling it , Used it for 8months",
+    "image": "listings/gt-730-01-228x228.webp",
+    "price": "5000.00",
+    "contact_info": "012457",
+    "date_listed": "2026-01-05T19:31:50.823Z",
+    "status": "Available",
+    "seller": 6
+  }
+},
+{
+  "model": "marketplace.comment",
+  "pk": 1,
+  "fields": {
+    "listing": 1,
+    "author": 1,
+    "body": "Hi, is the price negotiable?",
+    "created_at": "2025-12-30T18:06:10.481Z"
+  }
+},
+{
+  "model": "marketplace.comment",
+  "pk": 2,
+  "fields": {
+    "listing": 1,
+    "author": 1,
+    "body": "Also, are you located in Dhaka?",
+    "created_at": "2025-12-30T18:06:32.194Z"
+  }
+},
+{
+  "model": "marketplace.comment",
+  "pk": 3,
+  "fields": {
+    "listing": 2,
+    "author": 2,
+    "body": "Testing comment display",
+    "created_at": "2025-12-30T20:04:43.886Z"
+  }
+},
+{
+  "model": "marketplace.comment",
+  "pk": 4,
+  "fields": {
+    "listing": 2,
+    "author": 3,
+    "body": "Sakib er comment 8)",
+    "created_at": "2025-12-30T20:29:50.902Z"
+  }
+},
+{
+  "model": "marketplace.comment",
+  "pk": 5,
+  "fields": {
+    "listing": 4,
+    "author": 4,
+    "body": "chudlam na",
+    "created_at": "2025-12-30T22:19:58.210Z"
+  }
+},
+{
+  "model": "marketplace.comment",
+  "pk": 7,
+  "fields": {
+    "listing": 7,
+    "author": 1,
+    "body": "fafaf",
+    "created_at": "2026-01-06T21:13:37.313Z"
+  }
+},
+{
+  "model": "marketplace.comment",
+  "pk": 8,
+  "fields": {
+    "listing": 5,
+    "author": 1,
+    "body": "fafafaws",
+    "created_at": "2026-01-06T21:14:06.293Z"
+  }
+}
+]
